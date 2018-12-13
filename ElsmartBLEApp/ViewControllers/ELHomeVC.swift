@@ -3,7 +3,7 @@
 //  ElsmartBLEApp
 //
 //  Created by Mahak_Mobiloitte on 20/04/18.
-//  Copyright © 2018 Mahak_Mobiloitte. All rights reserved.
+//  vghCopyright © 2018 Mahak_Mobiloitte. All rights reserved.
 //
 
 import UIKit
