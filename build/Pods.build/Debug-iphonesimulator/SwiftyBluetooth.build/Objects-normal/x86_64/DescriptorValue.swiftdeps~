@@ -1,0 +1,187 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DescriptorValue"
+provides-nominal:
+- "15SwiftyBluetooth15DescriptorValueO"
+provides-member:
+- ["15SwiftyBluetooth15DescriptorValueO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AnyObject"
+- "AssignmentPrecedence"
+- "CBDescriptor"
+- !private "CBUUIDCharacteristicAggregateFormatString"
+- !private "CBUUIDCharacteristicExtendedPropertiesString"
+- !private "CBUUIDCharacteristicFormatString"
+- !private "CBUUIDCharacteristicUserDescriptionString"
+- !private "CBUUIDClientCharacteristicConfigurationString"
+- !private "CBUUIDServerCharacteristicConfigurationString"
+- "CastingPrecedence"
+- "Data"
+- "DescriptorValue"
+- !private "SBError"
+- "String"
+- "UInt16"
+- !private "~="
+depends-member:
+- !private ["Sz", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So11CBAttributeC", "CBUUIDRepresentation"]
+- !private ["So11CBAttributeC", "value"]
+- !private ["So12CBDescriptorC", "CBUUIDRepresentation"]
+- !private ["So12CBDescriptorC", "value"]
+- !private ["So6CBUUIDC", "uuidString"]
+- !private ["15SwiftyBluetooth17CBUUIDConvertibleP", "CBUUIDRepresentation"]
+- !private ["15SwiftyBluetooth17CBUUIDConvertibleP", "uuidString"]
+- !private ["15SwiftyBluetooth17CBUUIDConvertibleP", "value"]
+- !private ["s7CVarArgP", "CBUUIDRepresentation"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "uuidString"]
+- !private ["s7CVarArgP", "value"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "CBUUIDRepresentation"]
+- !private ["s28CustomDebugStringConvertibleP", "uuidString"]
+- !private ["s28CustomDebugStringConvertibleP", "value"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "CBUUIDRepresentation"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "uuidString"]
+- !private ["s23CustomStringConvertibleP", "value"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "init"]
+- ["15SwiftyBluetooth15DescriptorValueO", "AnyObject"]
+- ["15SwiftyBluetooth15DescriptorValueO", "CBDescriptor"]
+- !private ["15SwiftyBluetooth15DescriptorValueO", "CBUUIDCharacteristicAggregateFormatString"]
+- !private ["15SwiftyBluetooth15DescriptorValueO", "CBUUIDCharacteristicExtendedPropertiesString"]
+- !private ["15SwiftyBluetooth15DescriptorValueO", "CBUUIDCharacteristicFormatString"]
+- !private ["15SwiftyBluetooth15DescriptorValueO", "CBUUIDCharacteristicUserDescriptionString"]
+- !private ["15SwiftyBluetooth15DescriptorValueO", "CBUUIDClientCharacteristicConfigurationString"]
+- !private ["15SwiftyBluetooth15DescriptorValueO", "CBUUIDServerCharacteristicConfigurationString"]
+- ["15SwiftyBluetooth15DescriptorValueO", "Data"]
+- !private ["15SwiftyBluetooth15DescriptorValueO", "SBError"]
+- ["15SwiftyBluetooth15DescriptorValueO", "String"]
+- ["15SwiftyBluetooth15DescriptorValueO", "UInt16"]
+- ["15SwiftyBluetooth15DescriptorValueO", "characteristicAggregateFormatString"]
+- ["15SwiftyBluetooth15DescriptorValueO", "characteristicExtendedProperties"]
+- ["15SwiftyBluetooth15DescriptorValueO", "characteristicFormatString"]
+- ["15SwiftyBluetooth15DescriptorValueO", "characteristicUserDescription"]
+- ["15SwiftyBluetooth15DescriptorValueO", "clientCharacteristicConfigurationString"]
+- ["15SwiftyBluetooth15DescriptorValueO", "customValue"]
+- ["15SwiftyBluetooth15DescriptorValueO", "init"]
+- ["15SwiftyBluetooth15DescriptorValueO", "serverCharacteristicConfigurationString"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "init"]
+- !private ["SQ", "CBUUIDRepresentation"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "init"]
+- !private ["SQ", "uuidString"]
+- !private ["SQ", "value"]
+- !private ["s5ErrorP", "invalidDescriptorValue"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SH", "CBUUIDRepresentation"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "init"]
+- !private ["SH", "uuidString"]
+- !private ["SH", "value"]
+- !private ["10Foundation14LocalizedErrorP", "invalidDescriptorValue"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["So9NSCopyingP", "uuidString"]
+- !private ["So8NSObjectC", "CBUUIDRepresentation"]
+- !private ["So8NSObjectC", "uuidString"]
+- !private ["So8NSObjectC", "value"]
+- !private ["So8NSObjectP", "CBUUIDRepresentation"]
+- !private ["So8NSObjectP", "uuidString"]
+- !private ["So8NSObjectP", "value"]
+- !private ["Sj", "init"]
+- !private ["15SwiftyBluetooth7SBErrorO", "deinit"]
+- !private ["15SwiftyBluetooth7SBErrorO", "invalidDescriptorValue"]
+- !private ["Sx", "init"]
+- !private ["s6UInt16V", "init"]
+- !private ["SU", "init"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CBUUIDRepresentation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "uuidString"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s14_StringElementP", "init"]
+depends-nominal:
+- !private "Sz"
+- !private "Sb"
+- !private "So11CBAttributeC"
+- !private "So12CBDescriptorC"
+- !private "So6CBUUIDC"
+- !private "15SwiftyBluetooth17CBUUIDConvertibleP"
+- !private "s7CVarArgP"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- "15SwiftyBluetooth15DescriptorValueO"
+- !private "SE"
+- !private "SQ"
+- !private "s5ErrorP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "SH"
+- !private "10Foundation14LocalizedErrorP"
+- !private "s25LosslessStringConvertibleP"
+- !private "So9NSCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "Sj"
+- !private "15SwiftyBluetooth7SBErrorO"
+- !private "Sx"
+- !private "s6UInt16V"
+- !private "SU"
+- !private "s18_BitwiseOperationsP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s14_StringElementP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/Target Support Files/SwiftyBluetooth/SwiftyBluetooth-umbrella.h"
+- "/Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/build/Pods.build/Debug-iphonesimulator/SwiftyBluetooth.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "80f9fdde763e1f74847d51d06162955f"

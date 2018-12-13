@@ -1,0 +1,10 @@
+framework module SwiftyBluetooth {
+  umbrella header "SwiftyBluetooth-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftyBluetooth.__Swift {
+    exclude header "SwiftyBluetooth-Swift.h"
+}

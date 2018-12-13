@@ -1,0 +1,16 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "2b4483898886e6494e3fe1a83c844c2b"
+build_time: [1542780007, 596286000]
+inputs:
+  "/Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/SwiftyBluetooth/SwiftyBluetooth/Source/CBExtensions.swift": [1542643300, 0]
+  "/Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/SwiftyBluetooth/SwiftyBluetooth/Source/CBUUIDConvertible.swift": [1542643300, 0]
+  "/Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/SwiftyBluetooth/SwiftyBluetooth/Source/CBUUIDPath.swift": [1542643300, 0]
+  "/Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/SwiftyBluetooth/SwiftyBluetooth/Source/Central.swift": [1542643300, 0]
+  "/Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/SwiftyBluetooth/SwiftyBluetooth/Source/CentralProxy.swift": [1542643300, 0]
+  "/Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/SwiftyBluetooth/SwiftyBluetooth/Source/DescriptorValue.swift": [1542643300, 0]
+  "/Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/SwiftyBluetooth/SwiftyBluetooth/Source/Peripheral.swift": [1542643300, 0]
+  "/Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/SwiftyBluetooth/SwiftyBluetooth/Source/PeripheralProxy.swift": [1542643300, 0]
+  "/Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/SwiftyBluetooth/SwiftyBluetooth/Source/Result.swift": [1542643300, 0]
+  "/Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/SwiftyBluetooth/SwiftyBluetooth/Source/SBError.swift": [1542643300, 0]
+  "/Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/SwiftyBluetooth/SwiftyBluetooth/Source/SwiftyBluetooth.swift": [1542643300, 0]
+  "/Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/SwiftyBluetooth/SwiftyBluetooth/Source/Util.swift": [1542643300, 0]

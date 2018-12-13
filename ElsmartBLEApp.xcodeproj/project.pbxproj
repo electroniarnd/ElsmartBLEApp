@@ -1,0 +1,1246 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12C671B92091BAD300D6C3CD /* ELDeviceListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C671B82091BAD300D6C3CD /* ELDeviceListVC.swift */; };
+		12C671BB2091C02E00D6C3CD /* ELDeviceListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C671BA2091C02E00D6C3CD /* ELDeviceListTableCell.swift */; };
+		12C671BE2091D3AE00D6C3CD /* ELDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C671BD2091D3AE00D6C3CD /* ELDeviceInfo.swift */; };
+		12C671C62091E55E00D6C3CD /* RappleActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C671C12091E55E00D6C3CD /* RappleActivityIndicatorView.swift */; };
+		12C671C72091E55E00D6C3CD /* RappleAIAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C671C22091E55E00D6C3CD /* RappleAIAction.swift */; };
+		12C671C82091E55E00D6C3CD /* RappleAIPrivate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C671C32091E55E00D6C3CD /* RappleAIPrivate.swift */; };
+		12C671C92091E55E00D6C3CD /* RappleAIUIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C671C42091E55E00D6C3CD /* RappleAIUIs.swift */; };
+		12C671CA2091E55E00D6C3CD /* ServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C671C52091E55E00D6C3CD /* ServiceHelper.swift */; };
+		12C671CD2091E71A00D6C3CD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C671CC2091E71A00D6C3CD /* SystemConfiguration.framework */; };
+		12C671CF2091E72100D6C3CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C671CE2091E72000D6C3CD /* Foundation.framework */; };
+		12C671D12091E8F800D6C3CD /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C671D02091E8F700D6C3CD /* AlertController.swift */; };
+		12C671D32091E93500D6C3CD /* GeneralExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C671D22091E93500D6C3CD /* GeneralExtensions.swift */; };
+		183CFD5021C2503C00C06A2A /* TerminalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CFD4F21C2503C00C06A2A /* TerminalCollectionViewCell.swift */; };
+		183CFD5821C2519A00C06A2A /* TerminalCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CFD5721C2519A00C06A2A /* TerminalCollectionViewLayout.swift */; };
+		183CFD5C21C255CE00C06A2A /* TerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CFD5B21C255CE00C06A2A /* TerDetails.swift */; };
+		18700F1221B952FD00681C8F /* ELLogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18700F1121B952FD00681C8F /* ELLogsViewController.swift */; };
+		18700F1821B9531900681C8F /* ELTerminalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18700F1721B9531900681C8F /* ELTerminalViewController.swift */; };
+		18ED334F21B8215F00D98C9A /* ELSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED334E21B8215F00D98C9A /* ELSettingsViewController.swift */; };
+		18FF432121C0FF8E006709F6 /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF432021C0FF8E006709F6 /* ContentCollectionViewCell.swift */; };
+		18FF432D21C1049E006709F6 /* CustomCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF432C21C1049E006709F6 /* CustomCollectionViewLayout.swift */; };
+		18FF433321C1587B006709F6 /* logs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF433221C1587B006709F6 /* logs.swift */; };
+		39D309D4208B7F6400ACE0A6 /* ELHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D309D3208B7F6400ACE0A6 /* ELHomeVC.swift */; };
+		39D309D8208B8C8000ACE0A6 /* ELCustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D309D7208B8C8000ACE0A6 /* ELCustomLabel.swift */; };
+		39D309DB208B962400ACE0A6 /* ELCustomShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D309DA208B962400ACE0A6 /* ELCustomShadowButton.swift */; };
+		39D309DD208BA16A00ACE0A6 /* ELConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D309DC208BA16A00ACE0A6 /* ELConstant.swift */; };
+		39D309E1208BA3C000ACE0A6 /* ELAppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D309E0208BA3C000ACE0A6 /* ELAppFont.swift */; };
+		60070E7F208F128600D999D0 /* validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60070E7E208F128600D999D0 /* validation.swift */; };
+		601B8D0C209339AC00B04B75 /* ELRegistrationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601B8D0B209339AC00B04B75 /* ELRegistrationInfo.swift */; };
+		603771D52091FE8100B93932 /* ELAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603771D42091FE8100B93932 /* ELAboutViewController.swift */; };
+		60515F53208DE4A8005CAD7B /* ELHomeOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60515F52208DE4A8005CAD7B /* ELHomeOptionTableViewCell.swift */; };
+		60515F58208DF1C0005CAD7B /* roboto.light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60515F55208DF1C0005CAD7B /* roboto.light.ttf */; };
+		60515F59208DF1C0005CAD7B /* roboto.medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60515F56208DF1C0005CAD7B /* roboto.medium.ttf */; };
+		60515F5A208DF1C0005CAD7B /* roboto.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60515F57208DF1C0005CAD7B /* roboto.regular.ttf */; };
+		6079A36E208F384A00B0D013 /* ELRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6079A36D208F384A00B0D013 /* ELRegistrationVC.swift */; };
+		6079A370208F38D900B0D013 /* ELRegistrationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6079A36F208F38D900B0D013 /* ELRegistrationTableViewCell.swift */; };
+		6079A385208F5C6800B0D013 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6079A387208F5C6800B0D013 /* Localizable.strings */; };
+		60899A6820944C63004F125F /* EDKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60899A6120944C63004F125F /* EDKeyboardAvoidingCollectionView.m */; };
+		60899A6920944C63004F125F /* EDKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60899A6320944C63004F125F /* EDKeyboardAvoidingScrollView.m */; };
+		60899A6A20944C63004F125F /* EDKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60899A6520944C63004F125F /* EDKeyboardAvoidingTableView.m */; };
+		60899A6B20944C63004F125F /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 60899A6720944C63004F125F /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		6BDC93CD35D0F6F8FCEFBD2D /* Pods_ElsmartBLEAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C3F629F1DB61CE1FFD59B0 /* Pods_ElsmartBLEAppTests.framework */; };
+		8584D7C397C2EF22C3FAAA84 /* Pods_ElsmartBLEAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA9A79F6656BD634B995B71 /* Pods_ElsmartBLEAppUITests.framework */; };
+		948ACFF220936AFD000FCF10 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948ACFF120936AFD000FCF10 /* CoreBluetooth.framework */; };
+		948ACFF420936B60000FCF10 /* ELCBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948ACFF320936B60000FCF10 /* ELCBHelper.swift */; };
+		94D2CD38208A05D80094DFEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D2CD37208A05D80094DFEE /* AppDelegate.swift */; };
+		94D2CD3D208A05D80094DFEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D2CD3B208A05D80094DFEE /* Main.storyboard */; };
+		94D2CD3F208A05D80094DFEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D2CD3E208A05D80094DFEE /* Assets.xcassets */; };
+		94D2CD42208A05D80094DFEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D2CD40208A05D80094DFEE /* LaunchScreen.storyboard */; };
+		94D2CD4D208A05D80094DFEE /* ElsmartBLEAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D2CD4C208A05D80094DFEE /* ElsmartBLEAppTests.swift */; };
+		94D2CD58208A05D80094DFEE /* ElsmartBLEAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D2CD57208A05D80094DFEE /* ElsmartBLEAppUITests.swift */; };
+		B09663A8524F65C3A7CD1C3C /* Pods_ElsmartBLEApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9241AE10B52D7609F883D0E /* Pods_ElsmartBLEApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		180BACC721A68A63003BB829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180BAC8321A68A63003BB829 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B35A6CFE736D31D6ECF442F0C719C5D0;
+			remoteInfo = "Pods-ElsmartBLEApp";
+		};
+		180BACC921A68A63003BB829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180BAC8321A68A63003BB829 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 97BC79E86629A330FF82ED3FA5558A22;
+			remoteInfo = "Pods-ElsmartBLEAppTests";
+		};
+		180BACCB21A68A63003BB829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180BAC8321A68A63003BB829 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1216DE381C842E41550287394DDDAC8F;
+			remoteInfo = "Pods-ElsmartBLEAppUITests";
+		};
+		180BACCD21A68A63003BB829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180BAC8321A68A63003BB829 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B4634EAF9CA3B8E6D67F7E523226E767;
+			remoteInfo = SwiftyBluetooth;
+		};
+		94D2CD49208A05D80094DFEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94D2CD2C208A05D80094DFEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94D2CD33208A05D80094DFEE;
+			remoteInfo = ElsmartBLEApp;
+		};
+		94D2CD54208A05D80094DFEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94D2CD2C208A05D80094DFEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94D2CD33208A05D80094DFEE;
+			remoteInfo = ElsmartBLEApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12C671B82091BAD300D6C3CD /* ELDeviceListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELDeviceListVC.swift; sourceTree = "<group>"; };
+		12C671BA2091C02E00D6C3CD /* ELDeviceListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELDeviceListTableCell.swift; sourceTree = "<group>"; };
+		12C671BD2091D3AE00D6C3CD /* ELDeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELDeviceInfo.swift; sourceTree = "<group>"; };
+		12C671C12091E55E00D6C3CD /* RappleActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RappleActivityIndicatorView.swift; sourceTree = "<group>"; };
+		12C671C22091E55E00D6C3CD /* RappleAIAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RappleAIAction.swift; sourceTree = "<group>"; };
+		12C671C32091E55E00D6C3CD /* RappleAIPrivate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RappleAIPrivate.swift; sourceTree = "<group>"; };
+		12C671C42091E55E00D6C3CD /* RappleAIUIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RappleAIUIs.swift; sourceTree = "<group>"; };
+		12C671C52091E55E00D6C3CD /* ServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHelper.swift; sourceTree = "<group>"; };
+		12C671CC2091E71A00D6C3CD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		12C671CE2091E72000D6C3CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		12C671D02091E8F700D6C3CD /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		12C671D22091E93500D6C3CD /* GeneralExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralExtensions.swift; sourceTree = "<group>"; };
+		180BAC7F21A6894A003BB829 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
+		180BAC8121A68A29003BB829 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
+		180BAC8321A68A63003BB829 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
+		180BAC8821A68A63003BB829 /* Pods-ElsmartBLEAppTests-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-ElsmartBLEAppTests-resources.sh"; sourceTree = "<group>"; };
+		180BAC8921A68A63003BB829 /* Pods-ElsmartBLEAppTests.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ElsmartBLEAppTests.modulemap"; sourceTree = "<group>"; };
+		180BAC8A21A68A63003BB829 /* Pods-ElsmartBLEAppTests.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-ElsmartBLEAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		180BAC8B21A68A63003BB829 /* Pods-ElsmartBLEAppTests-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElsmartBLEAppTests-dummy.m"; sourceTree = "<group>"; };
+		180BAC8C21A68A63003BB829 /* Pods-ElsmartBLEAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-ElsmartBLEAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		180BAC8D21A68A63003BB829 /* Pods-ElsmartBLEAppTests-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-ElsmartBLEAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		180BAC8E21A68A63003BB829 /* Pods-ElsmartBLEAppTests-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pods-ElsmartBLEAppTests-umbrella.h"; sourceTree = "<group>"; };
+		180BAC8F21A68A63003BB829 /* Pods-ElsmartBLEAppTests.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-ElsmartBLEAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		180BAC9021A68A63003BB829 /* Pods-ElsmartBLEAppTests-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-ElsmartBLEAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		180BAC9121A68A63003BB829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180BAC9321A68A63003BB829 /* SwiftyBluetooth-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftyBluetooth-prefix.pch"; sourceTree = "<group>"; };
+		180BAC9421A68A63003BB829 /* SwiftyBluetooth.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SwiftyBluetooth.xcconfig; sourceTree = "<group>"; };
+		180BAC9521A68A63003BB829 /* SwiftyBluetooth-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftyBluetooth-umbrella.h"; sourceTree = "<group>"; };
+		180BAC9621A68A63003BB829 /* SwiftyBluetooth-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SwiftyBluetooth-dummy.m"; sourceTree = "<group>"; };
+		180BAC9721A68A63003BB829 /* SwiftyBluetooth.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = SwiftyBluetooth.modulemap; sourceTree = "<group>"; };
+		180BAC9821A68A63003BB829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180BAC9A21A68A63003BB829 /* Pods-ElsmartBLEAppUITests-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-ElsmartBLEAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		180BAC9B21A68A63003BB829 /* Pods-ElsmartBLEAppUITests-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElsmartBLEAppUITests-dummy.m"; sourceTree = "<group>"; };
+		180BAC9C21A68A63003BB829 /* Pods-ElsmartBLEAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-ElsmartBLEAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		180BAC9D21A68A63003BB829 /* Pods-ElsmartBLEAppUITests-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-ElsmartBLEAppUITests-resources.sh"; sourceTree = "<group>"; };
+		180BAC9E21A68A63003BB829 /* Pods-ElsmartBLEAppUITests-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pods-ElsmartBLEAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		180BAC9F21A68A63003BB829 /* Pods-ElsmartBLEAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-ElsmartBLEAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		180BACA021A68A63003BB829 /* Pods-ElsmartBLEAppUITests.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ElsmartBLEAppUITests.modulemap"; sourceTree = "<group>"; };
+		180BACA121A68A63003BB829 /* Pods-ElsmartBLEAppUITests.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-ElsmartBLEAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		180BACA221A68A63003BB829 /* Pods-ElsmartBLEAppUITests.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-ElsmartBLEAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		180BACA321A68A63003BB829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180BACA521A68A63003BB829 /* Pods-ElsmartBLEApp.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ElsmartBLEApp.modulemap"; sourceTree = "<group>"; };
+		180BACA621A68A63003BB829 /* Pods-ElsmartBLEApp-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pods-ElsmartBLEApp-umbrella.h"; sourceTree = "<group>"; };
+		180BACA721A68A63003BB829 /* Pods-ElsmartBLEApp-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElsmartBLEApp-dummy.m"; sourceTree = "<group>"; };
+		180BACA821A68A63003BB829 /* Pods-ElsmartBLEApp-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-ElsmartBLEApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		180BACA921A68A63003BB829 /* Pods-ElsmartBLEApp.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-ElsmartBLEApp.release.xcconfig"; sourceTree = "<group>"; };
+		180BACAA21A68A63003BB829 /* Pods-ElsmartBLEApp.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-ElsmartBLEApp.debug.xcconfig"; sourceTree = "<group>"; };
+		180BACAB21A68A63003BB829 /* Pods-ElsmartBLEApp-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-ElsmartBLEApp-frameworks.sh"; sourceTree = "<group>"; };
+		180BACAC21A68A63003BB829 /* Pods-ElsmartBLEApp-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-ElsmartBLEApp-resources.sh"; sourceTree = "<group>"; };
+		180BACAD21A68A63003BB829 /* Pods-ElsmartBLEApp-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-ElsmartBLEApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		180BACAE21A68A63003BB829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180BACAF21A68A63003BB829 /* Manifest.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
+		180BACB221A68A63003BB829 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		180BACB521A68A63003BB829 /* CentralProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralProxy.swift; sourceTree = "<group>"; };
+		180BACB621A68A63003BB829 /* Peripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peripheral.swift; sourceTree = "<group>"; };
+		180BACB721A68A63003BB829 /* CBUUIDConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBUUIDConvertible.swift; sourceTree = "<group>"; };
+		180BACB821A68A63003BB829 /* Central.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Central.swift; sourceTree = "<group>"; };
+		180BACB921A68A63003BB829 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		180BACBA21A68A63003BB829 /* PeripheralProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralProxy.swift; sourceTree = "<group>"; };
+		180BACBB21A68A63003BB829 /* SBError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBError.swift; sourceTree = "<group>"; };
+		180BACBC21A68A63003BB829 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		180BACBD21A68A63003BB829 /* SwiftyBluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyBluetooth.swift; sourceTree = "<group>"; };
+		180BACBE21A68A63003BB829 /* CBUUIDPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBUUIDPath.swift; sourceTree = "<group>"; };
+		180BACBF21A68A63003BB829 /* DescriptorValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptorValue.swift; sourceTree = "<group>"; };
+		180BACC021A68A63003BB829 /* CBExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBExtensions.swift; sourceTree = "<group>"; };
+		180BACC121A68A63003BB829 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		183CFD4F21C2503C00C06A2A /* TerminalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalCollectionViewCell.swift; sourceTree = "<group>"; };
+		183CFD5721C2519A00C06A2A /* TerminalCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalCollectionViewLayout.swift; sourceTree = "<group>"; };
+		183CFD5B21C255CE00C06A2A /* TerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerDetails.swift; sourceTree = "<group>"; };
+		18700F1121B952FD00681C8F /* ELLogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELLogsViewController.swift; sourceTree = "<group>"; };
+		18700F1721B9531900681C8F /* ELTerminalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELTerminalViewController.swift; sourceTree = "<group>"; };
+		18ED334E21B8215F00D98C9A /* ELSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELSettingsViewController.swift; sourceTree = "<group>"; };
+		18FF432021C0FF8E006709F6 /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
+		18FF432C21C1049E006709F6 /* CustomCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewLayout.swift; sourceTree = "<group>"; };
+		18FF433221C1587B006709F6 /* logs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logs.swift; sourceTree = "<group>"; };
+		349C41CD9F92D8A3D0B518CD /* Pods-ElsmartBLEAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElsmartBLEAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ElsmartBLEAppUITests/Pods-ElsmartBLEAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		36C3F629F1DB61CE1FFD59B0 /* Pods_ElsmartBLEAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElsmartBLEAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D309CB208B74F200ACE0A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39D309D3208B7F6400ACE0A6 /* ELHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELHomeVC.swift; sourceTree = "<group>"; };
+		39D309D5208B894D00ACE0A6 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		39D309D6208B894D00ACE0A6 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		39D309D7208B8C8000ACE0A6 /* ELCustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCustomLabel.swift; sourceTree = "<group>"; };
+		39D309DA208B962400ACE0A6 /* ELCustomShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCustomShadowButton.swift; sourceTree = "<group>"; };
+		39D309DC208BA16A00ACE0A6 /* ELConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELConstant.swift; sourceTree = "<group>"; };
+		39D309E0208BA3C000ACE0A6 /* ELAppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELAppFont.swift; sourceTree = "<group>"; };
+		402E2BDF693F0FFD0AA52FEF /* Pods-ElsmartBLEApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElsmartBLEApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ElsmartBLEApp/Pods-ElsmartBLEApp.release.xcconfig"; sourceTree = "<group>"; };
+		60070E7E208F128600D999D0 /* validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = validation.swift; sourceTree = "<group>"; };
+		601B8D0B209339AC00B04B75 /* ELRegistrationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELRegistrationInfo.swift; sourceTree = "<group>"; };
+		603771D42091FE8100B93932 /* ELAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELAboutViewController.swift; sourceTree = "<group>"; };
+		60515F52208DE4A8005CAD7B /* ELHomeOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELHomeOptionTableViewCell.swift; sourceTree = "<group>"; };
+		60515F55208DF1C0005CAD7B /* roboto.light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roboto.light.ttf; sourceTree = "<group>"; };
+		60515F56208DF1C0005CAD7B /* roboto.medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roboto.medium.ttf; sourceTree = "<group>"; };
+		60515F57208DF1C0005CAD7B /* roboto.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roboto.regular.ttf; sourceTree = "<group>"; };
+		6079A36D208F384A00B0D013 /* ELRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELRegistrationVC.swift; sourceTree = "<group>"; };
+		6079A36F208F38D900B0D013 /* ELRegistrationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELRegistrationTableViewCell.swift; sourceTree = "<group>"; };
+		6079A388208F5C6B00B0D013 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6079A389208F5C8F00B0D013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		60899A6020944C63004F125F /* EDKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		60899A6120944C63004F125F /* EDKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		60899A6220944C63004F125F /* EDKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		60899A6320944C63004F125F /* EDKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		60899A6420944C63004F125F /* EDKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		60899A6520944C63004F125F /* EDKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		60899A6620944C63004F125F /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		60899A6720944C63004F125F /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		68FC67236B1BC0624812413A /* Pods-ElsmartBLEAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElsmartBLEAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ElsmartBLEAppTests/Pods-ElsmartBLEAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DA9A79F6656BD634B995B71 /* Pods_ElsmartBLEAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElsmartBLEAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		948ACFF120936AFD000FCF10 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		948ACFF320936B60000FCF10 /* ELCBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCBHelper.swift; sourceTree = "<group>"; };
+		94D2CD34208A05D80094DFEE /* ElsmartBLEApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElsmartBLEApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D2CD37208A05D80094DFEE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94D2CD3E208A05D80094DFEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94D2CD41208A05D80094DFEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94D2CD43208A05D80094DFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94D2CD48208A05D80094DFEE /* ElsmartBLEAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElsmartBLEAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D2CD4C208A05D80094DFEE /* ElsmartBLEAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElsmartBLEAppTests.swift; sourceTree = "<group>"; };
+		94D2CD4E208A05D80094DFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94D2CD53208A05D80094DFEE /* ElsmartBLEAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElsmartBLEAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D2CD57208A05D80094DFEE /* ElsmartBLEAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElsmartBLEAppUITests.swift; sourceTree = "<group>"; };
+		94D2CD59208A05D80094DFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A14096E23C3DD1C49BA22463 /* Pods-ElsmartBLEApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElsmartBLEApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ElsmartBLEApp/Pods-ElsmartBLEApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D9241AE10B52D7609F883D0E /* Pods_ElsmartBLEApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElsmartBLEApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5CF669032A5F6B9134384E9 /* Pods-ElsmartBLEAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElsmartBLEAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ElsmartBLEAppUITests/Pods-ElsmartBLEAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFB699C1979BC526C7A2D003 /* Pods-ElsmartBLEAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElsmartBLEAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ElsmartBLEAppTests/Pods-ElsmartBLEAppTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94D2CD31208A05D80094DFEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948ACFF220936AFD000FCF10 /* CoreBluetooth.framework in Frameworks */,
+				12C671CF2091E72100D6C3CD /* Foundation.framework in Frameworks */,
+				12C671CD2091E71A00D6C3CD /* SystemConfiguration.framework in Frameworks */,
+				B09663A8524F65C3A7CD1C3C /* Pods_ElsmartBLEApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D2CD45208A05D80094DFEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BDC93CD35D0F6F8FCEFBD2D /* Pods_ElsmartBLEAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D2CD50208A05D80094DFEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8584D7C397C2EF22C3FAAA84 /* Pods_ElsmartBLEAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BB27DD0DFD5D9C5B19B5EEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A14096E23C3DD1C49BA22463 /* Pods-ElsmartBLEApp.debug.xcconfig */,
+				402E2BDF693F0FFD0AA52FEF /* Pods-ElsmartBLEApp.release.xcconfig */,
+				68FC67236B1BC0624812413A /* Pods-ElsmartBLEAppTests.debug.xcconfig */,
+				EFB699C1979BC526C7A2D003 /* Pods-ElsmartBLEAppTests.release.xcconfig */,
+				E5CF669032A5F6B9134384E9 /* Pods-ElsmartBLEAppUITests.debug.xcconfig */,
+				349C41CD9F92D8A3D0B518CD /* Pods-ElsmartBLEAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		12C671BC2091D39200D6C3CD /* ModelClasses */ = {
+			isa = PBXGroup;
+			children = (
+				12C671BD2091D3AE00D6C3CD /* ELDeviceInfo.swift */,
+				601B8D0B209339AC00B04B75 /* ELRegistrationInfo.swift */,
+				18FF433221C1587B006709F6 /* logs.swift */,
+				183CFD5B21C255CE00C06A2A /* TerDetails.swift */,
+			);
+			path = ModelClasses;
+			sourceTree = "<group>";
+		};
+		12C671BF2091E39000D6C3CD /* WebServiceHelper */ = {
+			isa = PBXGroup;
+			children = (
+				12C671C02091E55E00D6C3CD /* ProgressHUD */,
+				12C671C52091E55E00D6C3CD /* ServiceHelper.swift */,
+			);
+			path = WebServiceHelper;
+			sourceTree = "<group>";
+		};
+		12C671C02091E55E00D6C3CD /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				12C671C12091E55E00D6C3CD /* RappleActivityIndicatorView.swift */,
+				12C671C22091E55E00D6C3CD /* RappleAIAction.swift */,
+				12C671C32091E55E00D6C3CD /* RappleAIPrivate.swift */,
+				12C671C42091E55E00D6C3CD /* RappleAIUIs.swift */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		12C671CB2091E71900D6C3CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				180BAC7F21A6894A003BB829 /* Pods */,
+				948ACFF120936AFD000FCF10 /* CoreBluetooth.framework */,
+				12C671CE2091E72000D6C3CD /* Foundation.framework */,
+				12C671CC2091E71A00D6C3CD /* SystemConfiguration.framework */,
+				D9241AE10B52D7609F883D0E /* Pods_ElsmartBLEApp.framework */,
+				36C3F629F1DB61CE1FFD59B0 /* Pods_ElsmartBLEAppTests.framework */,
+				6DA9A79F6656BD634B995B71 /* Pods_ElsmartBLEAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		180BAC8221A68A63003BB829 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				180BAC8321A68A63003BB829 /* Pods.xcodeproj */,
+				180BAC8621A68A63003BB829 /* Target Support Files */,
+				180BACAF21A68A63003BB829 /* Manifest.lock */,
+				180BACB021A68A63003BB829 /* Local Podspecs */,
+				180BACB121A68A63003BB829 /* SwiftyBluetooth */,
+				180BACC221A68A63003BB829 /* Headers */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		180BAC8421A68A63003BB829 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180BACC821A68A63003BB829 /* Pods_ElsmartBLEApp.framework */,
+				180BACCA21A68A63003BB829 /* Pods_ElsmartBLEAppTests.framework */,
+				180BACCC21A68A63003BB829 /* Pods_ElsmartBLEAppUITests.framework */,
+				180BACCE21A68A63003BB829 /* SwiftyBluetooth.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180BAC8621A68A63003BB829 /* Target Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				180BAC8721A68A63003BB829 /* Pods-ElsmartBLEAppTests */,
+				180BAC9221A68A63003BB829 /* SwiftyBluetooth */,
+				180BAC9921A68A63003BB829 /* Pods-ElsmartBLEAppUITests */,
+				180BACA421A68A63003BB829 /* Pods-ElsmartBLEApp */,
+			);
+			path = "Target Support Files";
+			sourceTree = "<group>";
+		};
+		180BAC8721A68A63003BB829 /* Pods-ElsmartBLEAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				180BAC8821A68A63003BB829 /* Pods-ElsmartBLEAppTests-resources.sh */,
+				180BAC8921A68A63003BB829 /* Pods-ElsmartBLEAppTests.modulemap */,
+				180BAC8A21A68A63003BB829 /* Pods-ElsmartBLEAppTests.debug.xcconfig */,
+				180BAC8B21A68A63003BB829 /* Pods-ElsmartBLEAppTests-dummy.m */,
+				180BAC8C21A68A63003BB829 /* Pods-ElsmartBLEAppTests-acknowledgements.markdown */,
+				180BAC8D21A68A63003BB829 /* Pods-ElsmartBLEAppTests-frameworks.sh */,
+				180BAC8E21A68A63003BB829 /* Pods-ElsmartBLEAppTests-umbrella.h */,
+				180BAC8F21A68A63003BB829 /* Pods-ElsmartBLEAppTests.release.xcconfig */,
+				180BAC9021A68A63003BB829 /* Pods-ElsmartBLEAppTests-acknowledgements.plist */,
+				180BAC9121A68A63003BB829 /* Info.plist */,
+			);
+			path = "Pods-ElsmartBLEAppTests";
+			sourceTree = "<group>";
+		};
+		180BAC9221A68A63003BB829 /* SwiftyBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				180BAC9321A68A63003BB829 /* SwiftyBluetooth-prefix.pch */,
+				180BAC9421A68A63003BB829 /* SwiftyBluetooth.xcconfig */,
+				180BAC9521A68A63003BB829 /* SwiftyBluetooth-umbrella.h */,
+				180BAC9621A68A63003BB829 /* SwiftyBluetooth-dummy.m */,
+				180BAC9721A68A63003BB829 /* SwiftyBluetooth.modulemap */,
+				180BAC9821A68A63003BB829 /* Info.plist */,
+			);
+			path = SwiftyBluetooth;
+			sourceTree = "<group>";
+		};
+		180BAC9921A68A63003BB829 /* Pods-ElsmartBLEAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				180BAC9A21A68A63003BB829 /* Pods-ElsmartBLEAppUITests-frameworks.sh */,
+				180BAC9B21A68A63003BB829 /* Pods-ElsmartBLEAppUITests-dummy.m */,
+				180BAC9C21A68A63003BB829 /* Pods-ElsmartBLEAppUITests-acknowledgements.markdown */,
+				180BAC9D21A68A63003BB829 /* Pods-ElsmartBLEAppUITests-resources.sh */,
+				180BAC9E21A68A63003BB829 /* Pods-ElsmartBLEAppUITests-umbrella.h */,
+				180BAC9F21A68A63003BB829 /* Pods-ElsmartBLEAppUITests-acknowledgements.plist */,
+				180BACA021A68A63003BB829 /* Pods-ElsmartBLEAppUITests.modulemap */,
+				180BACA121A68A63003BB829 /* Pods-ElsmartBLEAppUITests.release.xcconfig */,
+				180BACA221A68A63003BB829 /* Pods-ElsmartBLEAppUITests.debug.xcconfig */,
+				180BACA321A68A63003BB829 /* Info.plist */,
+			);
+			path = "Pods-ElsmartBLEAppUITests";
+			sourceTree = "<group>";
+		};
+		180BACA421A68A63003BB829 /* Pods-ElsmartBLEApp */ = {
+			isa = PBXGroup;
+			children = (
+				180BACA521A68A63003BB829 /* Pods-ElsmartBLEApp.modulemap */,
+				180BACA621A68A63003BB829 /* Pods-ElsmartBLEApp-umbrella.h */,
+				180BACA721A68A63003BB829 /* Pods-ElsmartBLEApp-dummy.m */,
+				180BACA821A68A63003BB829 /* Pods-ElsmartBLEApp-acknowledgements.markdown */,
+				180BACA921A68A63003BB829 /* Pods-ElsmartBLEApp.release.xcconfig */,
+				180BACAA21A68A63003BB829 /* Pods-ElsmartBLEApp.debug.xcconfig */,
+				180BACAB21A68A63003BB829 /* Pods-ElsmartBLEApp-frameworks.sh */,
+				180BACAC21A68A63003BB829 /* Pods-ElsmartBLEApp-resources.sh */,
+				180BACAD21A68A63003BB829 /* Pods-ElsmartBLEApp-acknowledgements.plist */,
+				180BACAE21A68A63003BB829 /* Info.plist */,
+			);
+			path = "Pods-ElsmartBLEApp";
+			sourceTree = "<group>";
+		};
+		180BACB021A68A63003BB829 /* Local Podspecs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Local Podspecs";
+			sourceTree = "<group>";
+		};
+		180BACB121A68A63003BB829 /* SwiftyBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				180BACB221A68A63003BB829 /* LICENSE */,
+				180BACB321A68A63003BB829 /* SwiftyBluetooth */,
+				180BACC121A68A63003BB829 /* README.md */,
+			);
+			path = SwiftyBluetooth;
+			sourceTree = "<group>";
+		};
+		180BACB321A68A63003BB829 /* SwiftyBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				180BACB421A68A63003BB829 /* Source */,
+			);
+			path = SwiftyBluetooth;
+			sourceTree = "<group>";
+		};
+		180BACB421A68A63003BB829 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				180BACB521A68A63003BB829 /* CentralProxy.swift */,
+				180BACB621A68A63003BB829 /* Peripheral.swift */,
+				180BACB721A68A63003BB829 /* CBUUIDConvertible.swift */,
+				180BACB821A68A63003BB829 /* Central.swift */,
+				180BACB921A68A63003BB829 /* Result.swift */,
+				180BACBA21A68A63003BB829 /* PeripheralProxy.swift */,
+				180BACBB21A68A63003BB829 /* SBError.swift */,
+				180BACBC21A68A63003BB829 /* Util.swift */,
+				180BACBD21A68A63003BB829 /* SwiftyBluetooth.swift */,
+				180BACBE21A68A63003BB829 /* CBUUIDPath.swift */,
+				180BACBF21A68A63003BB829 /* DescriptorValue.swift */,
+				180BACC021A68A63003BB829 /* CBExtensions.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		180BACC221A68A63003BB829 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		18FF432721C1041E006709F6 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				18FF432C21C1049E006709F6 /* CustomCollectionViewLayout.swift */,
+				183CFD5721C2519A00C06A2A /* TerminalCollectionViewLayout.swift */,
+			);
+			name = Layout;
+			path = ElsmartBLEApp/Layout;
+			sourceTree = SOURCE_ROOT;
+		};
+		39D309D0208B7EE000ACE0A6 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				60899A5F20944C63004F125F /* EDKeyboardAvoiding */,
+				39D309D7208B8C8000ACE0A6 /* ELCustomLabel.swift */,
+				39D309DA208B962400ACE0A6 /* ELCustomShadowButton.swift */,
+				39D309DC208BA16A00ACE0A6 /* ELConstant.swift */,
+				39D309E0208BA3C000ACE0A6 /* ELAppFont.swift */,
+				948ACFF320936B60000FCF10 /* ELCBHelper.swift */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+		39D309D2208B7F6400ACE0A6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				39D309D3208B7F6400ACE0A6 /* ELHomeVC.swift */,
+				6079A36D208F384A00B0D013 /* ELRegistrationVC.swift */,
+				12C671B82091BAD300D6C3CD /* ELDeviceListVC.swift */,
+				603771D42091FE8100B93932 /* ELAboutViewController.swift */,
+				18ED334E21B8215F00D98C9A /* ELSettingsViewController.swift */,
+				18700F1121B952FD00681C8F /* ELLogsViewController.swift */,
+				18700F1721B9531900681C8F /* ELTerminalViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		60070E7D208F126000D999D0 /* AppUtility */ = {
+			isa = PBXGroup;
+			children = (
+				12C671D22091E93500D6C3CD /* GeneralExtensions.swift */,
+				12C671D02091E8F700D6C3CD /* AlertController.swift */,
+				60070E7E208F128600D999D0 /* validation.swift */,
+			);
+			path = AppUtility;
+			sourceTree = "<group>";
+		};
+		60515F51208DE47F005CAD7B /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				60515F52208DE4A8005CAD7B /* ELHomeOptionTableViewCell.swift */,
+				6079A36F208F38D900B0D013 /* ELRegistrationTableViewCell.swift */,
+				12C671BA2091C02E00D6C3CD /* ELDeviceListTableCell.swift */,
+				18FF432021C0FF8E006709F6 /* ContentCollectionViewCell.swift */,
+				183CFD4F21C2503C00C06A2A /* TerminalCollectionViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		60515F54208DF162005CAD7B /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				60515F55208DF1C0005CAD7B /* roboto.light.ttf */,
+				60515F56208DF1C0005CAD7B /* roboto.medium.ttf */,
+				60515F57208DF1C0005CAD7B /* roboto.regular.ttf */,
+			);
+			path = CustomFonts;
+			sourceTree = "<group>";
+		};
+		60899A5F20944C63004F125F /* EDKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				60899A6020944C63004F125F /* EDKeyboardAvoidingCollectionView.h */,
+				60899A6120944C63004F125F /* EDKeyboardAvoidingCollectionView.m */,
+				60899A6220944C63004F125F /* EDKeyboardAvoidingScrollView.h */,
+				60899A6320944C63004F125F /* EDKeyboardAvoidingScrollView.m */,
+				60899A6420944C63004F125F /* EDKeyboardAvoidingTableView.h */,
+				60899A6520944C63004F125F /* EDKeyboardAvoidingTableView.m */,
+				60899A6620944C63004F125F /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				60899A6720944C63004F125F /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			path = EDKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		94D2CD2B208A05D80094DFEE = {
+			isa = PBXGroup;
+			children = (
+				180BAC8121A68A29003BB829 /* Pods */,
+				180BAC8221A68A63003BB829 /* Pods */,
+				6079A387208F5C6800B0D013 /* Localizable.strings */,
+				94D2CD36208A05D80094DFEE /* ElsmartBLEApp */,
+				94D2CD4B208A05D80094DFEE /* ElsmartBLEAppTests */,
+				94D2CD56208A05D80094DFEE /* ElsmartBLEAppUITests */,
+				94D2CD35208A05D80094DFEE /* Products */,
+				12C671CB2091E71900D6C3CD /* Frameworks */,
+				0BB27DD0DFD5D9C5B19B5EEF /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		94D2CD35208A05D80094DFEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94D2CD34208A05D80094DFEE /* ElsmartBLEApp.app */,
+				94D2CD48208A05D80094DFEE /* ElsmartBLEAppTests.xctest */,
+				94D2CD53208A05D80094DFEE /* ElsmartBLEAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94D2CD36208A05D80094DFEE /* ElsmartBLEApp */ = {
+			isa = PBXGroup;
+			children = (
+				18FF432721C1041E006709F6 /* Layout */,
+				12C671BF2091E39000D6C3CD /* WebServiceHelper */,
+				12C671BC2091D39200D6C3CD /* ModelClasses */,
+				60070E7D208F126000D999D0 /* AppUtility */,
+				60515F54208DF162005CAD7B /* CustomFonts */,
+				60515F51208DE47F005CAD7B /* CustomCells */,
+				39D309D2208B7F6400ACE0A6 /* ViewControllers */,
+				39D309D0208B7EE000ACE0A6 /* CustomClasses */,
+				94D2CD37208A05D80094DFEE /* AppDelegate.swift */,
+				94D2CD3B208A05D80094DFEE /* Main.storyboard */,
+				94D2CD40208A05D80094DFEE /* LaunchScreen.storyboard */,
+				94D2CD3E208A05D80094DFEE /* Assets.xcassets */,
+				94D2CD43208A05D80094DFEE /* Info.plist */,
+			);
+			path = ElsmartBLEApp;
+			sourceTree = "<group>";
+		};
+		94D2CD4B208A05D80094DFEE /* ElsmartBLEAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				94D2CD4C208A05D80094DFEE /* ElsmartBLEAppTests.swift */,
+				94D2CD4E208A05D80094DFEE /* Info.plist */,
+			);
+			path = ElsmartBLEAppTests;
+			sourceTree = "<group>";
+		};
+		94D2CD56208A05D80094DFEE /* ElsmartBLEAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				94D2CD57208A05D80094DFEE /* ElsmartBLEAppUITests.swift */,
+				94D2CD59208A05D80094DFEE /* Info.plist */,
+			);
+			path = ElsmartBLEAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94D2CD33208A05D80094DFEE /* ElsmartBLEApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94D2CD5C208A05D80094DFEE /* Build configuration list for PBXNativeTarget "ElsmartBLEApp" */;
+			buildPhases = (
+				760000F1C85DDB3D12E8EFBC /* [CP] Check Pods Manifest.lock */,
+				94D2CD30208A05D80094DFEE /* Sources */,
+				94D2CD31208A05D80094DFEE /* Frameworks */,
+				94D2CD32208A05D80094DFEE /* Resources */,
+				FBA2FF744BDE56193831DBBC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElsmartBLEApp;
+			productName = ElsmartBLEApp;
+			productReference = 94D2CD34208A05D80094DFEE /* ElsmartBLEApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94D2CD47208A05D80094DFEE /* ElsmartBLEAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94D2CD5F208A05D80094DFEE /* Build configuration list for PBXNativeTarget "ElsmartBLEAppTests" */;
+			buildPhases = (
+				7D2073A2F87D6782A7F0F642 /* [CP] Check Pods Manifest.lock */,
+				94D2CD44208A05D80094DFEE /* Sources */,
+				94D2CD45208A05D80094DFEE /* Frameworks */,
+				94D2CD46208A05D80094DFEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94D2CD4A208A05D80094DFEE /* PBXTargetDependency */,
+			);
+			name = ElsmartBLEAppTests;
+			productName = ElsmartBLEAppTests;
+			productReference = 94D2CD48208A05D80094DFEE /* ElsmartBLEAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		94D2CD52208A05D80094DFEE /* ElsmartBLEAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94D2CD62208A05D80094DFEE /* Build configuration list for PBXNativeTarget "ElsmartBLEAppUITests" */;
+			buildPhases = (
+				750E654BBB4A519ED739D0CF /* [CP] Check Pods Manifest.lock */,
+				94D2CD4F208A05D80094DFEE /* Sources */,
+				94D2CD50208A05D80094DFEE /* Frameworks */,
+				94D2CD51208A05D80094DFEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94D2CD55208A05D80094DFEE /* PBXTargetDependency */,
+			);
+			name = ElsmartBLEAppUITests;
+			productName = ElsmartBLEAppUITests;
+			productReference = 94D2CD53208A05D80094DFEE /* ElsmartBLEAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94D2CD2C208A05D80094DFEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EL;
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Mahak_Mobiloitte;
+				TargetAttributes = {
+					94D2CD33208A05D80094DFEE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					94D2CD47208A05D80094DFEE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 94D2CD33208A05D80094DFEE;
+					};
+					94D2CD52208A05D80094DFEE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 94D2CD33208A05D80094DFEE;
+					};
+				};
+			};
+			buildConfigurationList = 94D2CD2F208A05D80094DFEE /* Build configuration list for PBXProject "ElsmartBLEApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ar,
+			);
+			mainGroup = 94D2CD2B208A05D80094DFEE;
+			productRefGroup = 94D2CD35208A05D80094DFEE /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 180BAC8421A68A63003BB829 /* Products */;
+					ProjectRef = 180BAC8321A68A63003BB829 /* Pods.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				94D2CD33208A05D80094DFEE /* ElsmartBLEApp */,
+				94D2CD47208A05D80094DFEE /* ElsmartBLEAppTests */,
+				94D2CD52208A05D80094DFEE /* ElsmartBLEAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		180BACC821A68A63003BB829 /* Pods_ElsmartBLEApp.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_ElsmartBLEApp.framework;
+			remoteRef = 180BACC721A68A63003BB829 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		180BACCA21A68A63003BB829 /* Pods_ElsmartBLEAppTests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_ElsmartBLEAppTests.framework;
+			remoteRef = 180BACC921A68A63003BB829 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		180BACCC21A68A63003BB829 /* Pods_ElsmartBLEAppUITests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_ElsmartBLEAppUITests.framework;
+			remoteRef = 180BACCB21A68A63003BB829 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		180BACCE21A68A63003BB829 /* SwiftyBluetooth.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyBluetooth.framework;
+			remoteRef = 180BACCD21A68A63003BB829 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94D2CD32208A05D80094DFEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D2CD42208A05D80094DFEE /* LaunchScreen.storyboard in Resources */,
+				94D2CD3F208A05D80094DFEE /* Assets.xcassets in Resources */,
+				94D2CD3D208A05D80094DFEE /* Main.storyboard in Resources */,
+				6079A385208F5C6800B0D013 /* Localizable.strings in Resources */,
+				60515F5A208DF1C0005CAD7B /* roboto.regular.ttf in Resources */,
+				60515F59208DF1C0005CAD7B /* roboto.medium.ttf in Resources */,
+				60515F58208DF1C0005CAD7B /* roboto.light.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D2CD46208A05D80094DFEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D2CD51208A05D80094DFEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		750E654BBB4A519ED739D0CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElsmartBLEAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		760000F1C85DDB3D12E8EFBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElsmartBLEApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D2073A2F87D6782A7F0F642 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElsmartBLEAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBA2FF744BDE56193831DBBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ElsmartBLEApp/Pods-ElsmartBLEApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBluetooth/SwiftyBluetooth.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBluetooth.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ElsmartBLEApp/Pods-ElsmartBLEApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94D2CD30208A05D80094DFEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FF432121C0FF8E006709F6 /* ContentCollectionViewCell.swift in Sources */,
+				60899A6920944C63004F125F /* EDKeyboardAvoidingScrollView.m in Sources */,
+				12C671D32091E93500D6C3CD /* GeneralExtensions.swift in Sources */,
+				6079A36E208F384A00B0D013 /* ELRegistrationVC.swift in Sources */,
+				60515F53208DE4A8005CAD7B /* ELHomeOptionTableViewCell.swift in Sources */,
+				601B8D0C209339AC00B04B75 /* ELRegistrationInfo.swift in Sources */,
+				603771D52091FE8100B93932 /* ELAboutViewController.swift in Sources */,
+				18ED334F21B8215F00D98C9A /* ELSettingsViewController.swift in Sources */,
+				12C671BE2091D3AE00D6C3CD /* ELDeviceInfo.swift in Sources */,
+				12C671C62091E55E00D6C3CD /* RappleActivityIndicatorView.swift in Sources */,
+				183CFD5021C2503C00C06A2A /* TerminalCollectionViewCell.swift in Sources */,
+				183CFD5821C2519A00C06A2A /* TerminalCollectionViewLayout.swift in Sources */,
+				183CFD5C21C255CE00C06A2A /* TerDetails.swift in Sources */,
+				39D309DB208B962400ACE0A6 /* ELCustomShadowButton.swift in Sources */,
+				12C671CA2091E55E00D6C3CD /* ServiceHelper.swift in Sources */,
+				60899A6A20944C63004F125F /* EDKeyboardAvoidingTableView.m in Sources */,
+				18700F1221B952FD00681C8F /* ELLogsViewController.swift in Sources */,
+				18700F1821B9531900681C8F /* ELTerminalViewController.swift in Sources */,
+				6079A370208F38D900B0D013 /* ELRegistrationTableViewCell.swift in Sources */,
+				94D2CD38208A05D80094DFEE /* AppDelegate.swift in Sources */,
+				60899A6B20944C63004F125F /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				39D309DD208BA16A00ACE0A6 /* ELConstant.swift in Sources */,
+				948ACFF420936B60000FCF10 /* ELCBHelper.swift in Sources */,
+				12C671D12091E8F800D6C3CD /* AlertController.swift in Sources */,
+				39D309D8208B8C8000ACE0A6 /* ELCustomLabel.swift in Sources */,
+				18FF432D21C1049E006709F6 /* CustomCollectionViewLayout.swift in Sources */,
+				12C671C82091E55E00D6C3CD /* RappleAIPrivate.swift in Sources */,
+				18FF433321C1587B006709F6 /* logs.swift in Sources */,
+				39D309D4208B7F6400ACE0A6 /* ELHomeVC.swift in Sources */,
+				12C671B92091BAD300D6C3CD /* ELDeviceListVC.swift in Sources */,
+				60070E7F208F128600D999D0 /* validation.swift in Sources */,
+				60899A6820944C63004F125F /* EDKeyboardAvoidingCollectionView.m in Sources */,
+				39D309E1208BA3C000ACE0A6 /* ELAppFont.swift in Sources */,
+				12C671BB2091C02E00D6C3CD /* ELDeviceListTableCell.swift in Sources */,
+				12C671C72091E55E00D6C3CD /* RappleAIAction.swift in Sources */,
+				12C671C92091E55E00D6C3CD /* RappleAIUIs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D2CD44208A05D80094DFEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D2CD4D208A05D80094DFEE /* ElsmartBLEAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D2CD4F208A05D80094DFEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D2CD58208A05D80094DFEE /* ElsmartBLEAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94D2CD4A208A05D80094DFEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94D2CD33208A05D80094DFEE /* ElsmartBLEApp */;
+			targetProxy = 94D2CD49208A05D80094DFEE /* PBXContainerItemProxy */;
+		};
+		94D2CD55208A05D80094DFEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94D2CD33208A05D80094DFEE /* ElsmartBLEApp */;
+			targetProxy = 94D2CD54208A05D80094DFEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6079A387208F5C6800B0D013 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6079A388208F5C6B00B0D013 /* ar */,
+				6079A389208F5C8F00B0D013 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		94D2CD3B208A05D80094DFEE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39D309CB208B74F200ACE0A6 /* Base */,
+				39D309D5208B894D00ACE0A6 /* ar */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94D2CD40208A05D80094DFEE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94D2CD41208A05D80094DFEE /* Base */,
+				39D309D6208B894D00ACE0A6 /* ar */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94D2CD5A208A05D80094DFEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mobiloitte Technologies India Private Limited";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "c34d1180-c270-4c31-bdb2-0ae2dfb37a88";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94D2CD5B208A05D80094DFEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mobiloitte Technologies India Private Limited";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "c34d1180-c270-4c31-bdb2-0ae2dfb37a88";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94D2CD5D208A05D80094DFEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A14096E23C3DD1C49BA22463 /* Pods-ElsmartBLEApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GPJ7VNJD68;
+				INFOPLIST_FILE = ElsmartBLEApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.electronia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7874b0ac-fe93-437d-8a53-079dbac1126b";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		94D2CD5E208A05D80094DFEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 402E2BDF693F0FFD0AA52FEF /* Pods-ElsmartBLEApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GPJ7VNJD68;
+				INFOPLIST_FILE = ElsmartBLEApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.electronia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7874b0ac-fe93-437d-8a53-079dbac1126b";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		94D2CD60208A05D80094DFEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68FC67236B1BC0624812413A /* Pods-ElsmartBLEAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ElsmartBLEAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobiloitte.ElsmartBLEAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElsmartBLEApp.app/ElsmartBLEApp";
+			};
+			name = Debug;
+		};
+		94D2CD61208A05D80094DFEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFB699C1979BC526C7A2D003 /* Pods-ElsmartBLEAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ElsmartBLEAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobiloitte.ElsmartBLEAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElsmartBLEApp.app/ElsmartBLEApp";
+			};
+			name = Release;
+		};
+		94D2CD63208A05D80094DFEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5CF669032A5F6B9134384E9 /* Pods-ElsmartBLEAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ElsmartBLEAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobiloitte.ElsmartBLEAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ElsmartBLEApp;
+			};
+			name = Debug;
+		};
+		94D2CD64208A05D80094DFEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 349C41CD9F92D8A3D0B518CD /* Pods-ElsmartBLEAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ElsmartBLEAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobiloitte.ElsmartBLEAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ElsmartBLEApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94D2CD2F208A05D80094DFEE /* Build configuration list for PBXProject "ElsmartBLEApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D2CD5A208A05D80094DFEE /* Debug */,
+				94D2CD5B208A05D80094DFEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94D2CD5C208A05D80094DFEE /* Build configuration list for PBXNativeTarget "ElsmartBLEApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D2CD5D208A05D80094DFEE /* Debug */,
+				94D2CD5E208A05D80094DFEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94D2CD5F208A05D80094DFEE /* Build configuration list for PBXNativeTarget "ElsmartBLEAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D2CD60208A05D80094DFEE /* Debug */,
+				94D2CD61208A05D80094DFEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94D2CD62208A05D80094DFEE /* Build configuration list for PBXNativeTarget "ElsmartBLEAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D2CD63208A05D80094DFEE /* Debug */,
+				94D2CD64208A05D80094DFEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94D2CD2C208A05D80094DFEE /* Project object */;
+}

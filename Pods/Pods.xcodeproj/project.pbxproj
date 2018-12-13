@@ -1,0 +1,983 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11DDDA997CBA0F2530422FBB9AC15088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		33EDEF7D35998F6750A24A2DE1CA98CC /* Pods-ElsmartBLEApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F90BBC075BC4AA7E3B4C03F9E8E0F3 /* Pods-ElsmartBLEApp-dummy.m */; };
+		378899D6F6B1C051AE2866D877FA2FA0 /* CentralProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0EF538E2A09B71C1D40AF94E2193DD /* CentralProxy.swift */; };
+		379FB83B4EC014D0B9FA272B9438142E /* Pods-ElsmartBLEAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C21CC69D45F316C03EC4ED1BDA793EED /* Pods-ElsmartBLEAppTests-dummy.m */; };
+		4483D051F04FCD2DA53B9E6AA0FF1E36 /* SwiftyBluetooth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10DC42C50505151A80626133E8769CFC /* SwiftyBluetooth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44A77F93026E1445F95801AC8682FFFB /* CBExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10B1F0A742209759EC4A89E0E8EA5C9 /* CBExtensions.swift */; };
+		46B02738582E600FFC85C68748A394AF /* DescriptorValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFA4551EEEF63C85B881B2D9726CA24 /* DescriptorValue.swift */; };
+		4FCF139A74C2C7F6FB0868A18289B8A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		53C304976C5A99F73139835A84D785A6 /* Central.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF66270192887B6BB045330CD2AD811 /* Central.swift */; };
+		5A710B84FD2EC7E4980BC16233F8D9CE /* Pods-ElsmartBLEAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2A6700B9E6E3D566D78AF1C7D319D2 /* Pods-ElsmartBLEAppUITests-dummy.m */; };
+		7206887C3B8920113962D418C374C88C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		8D3D7F314166C266C7E5CDFB2AE12DCC /* SBError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF30D72D0DE2C62E1D92E045FE0A63E6 /* SBError.swift */; };
+		974FDF0D74DCB1000E04CE4E4689B04B /* Pods-ElsmartBLEAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6414D1F45E9A23B4CB0B2E959A23A582 /* Pods-ElsmartBLEAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99FF2E7E3ACBD3637B8A30C449D878AC /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611B7CB20674F9E9D1C3B89C6B303366 /* Util.swift */; };
+		B4A3312A4AE0D26013CE4C98E7138BE1 /* SwiftyBluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD6A150BA425D4FCCD714EA567EB94F /* SwiftyBluetooth.swift */; };
+		B978A45256D40742DC36109968B447FD /* Peripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A44105222553D9B77D4D92D15C9376B /* Peripheral.swift */; };
+		CBA51DCDF38AAC19F4BF3BFA9FCB4020 /* PeripheralProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612B71F6EAA129B6E06C58125C835D14 /* PeripheralProxy.swift */; };
+		CCD1BB750A26A8689348C670081AF573 /* Pods-ElsmartBLEApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4C10A620E1735D3132305D9FDB22B37 /* Pods-ElsmartBLEApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD279984D1267B381ACC05B3F27C2C7E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4274B17D96A1DE62EBF20B71974FFFD /* Result.swift */; };
+		CDB093580C1DCB1568B4C553A4A7B312 /* Pods-ElsmartBLEAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5899128E489A74C12322D153A6F69E /* Pods-ElsmartBLEAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBC1F4BB14E51D0C28276B71F10F59E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		EA6204410C6246907EA20C3A77B38895 /* CBUUIDPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9EC1E63354AFC84016A8E51D64BF /* CBUUIDPath.swift */; };
+		F9D5CE31044508AACDD47B38F8AD4F67 /* CBUUIDConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA1C30F8AA36DCDEA1E3F03BC3705F5 /* CBUUIDConvertible.swift */; };
+		FF660AE095857938A764FADC43F3244B /* SwiftyBluetooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C1C8F392BD2FE323F7B2DC1DD52EE1 /* SwiftyBluetooth-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08BA9D63E624B84BB106E2825A160659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B4E53744B62D78C566165DFF3A4B04C;
+			remoteInfo = "Pods-ElsmartBLEApp";
+		};
+		3E03D784067E147FCB5EA88D50C0AB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B4E53744B62D78C566165DFF3A4B04C;
+			remoteInfo = "Pods-ElsmartBLEApp";
+		};
+		6CD3976DF4F52BEFD6FD118E76C4A229 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BBC3A0A57552E5876A51B824246AD34;
+			remoteInfo = SwiftyBluetooth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02D4BEA469A7DB3D4B2DED4AAAB97655 /* Pods-ElsmartBLEAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElsmartBLEAppTests-resources.sh"; sourceTree = "<group>"; };
+		03567485C8D105DF20E3CBAD9D27A468 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A44105222553D9B77D4D92D15C9376B /* Peripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Peripheral.swift; path = SwiftyBluetooth/Source/Peripheral.swift; sourceTree = "<group>"; };
+		0BAF50D63D5FC5C8D6F913D52C4C87AF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10DC42C50505151A80626133E8769CFC /* SwiftyBluetooth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyBluetooth-umbrella.h"; sourceTree = "<group>"; };
+		11F90BBC075BC4AA7E3B4C03F9E8E0F3 /* Pods-ElsmartBLEApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElsmartBLEApp-dummy.m"; sourceTree = "<group>"; };
+		1216DE381C842E41550287394DDDAC8F /* Pods_ElsmartBLEAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ElsmartBLEAppUITests.framework; path = "Pods-ElsmartBLEAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE30244F6BB4D081832091E8CF2E76E /* Pods-ElsmartBLEAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ElsmartBLEAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1D0EF538E2A09B71C1D40AF94E2193DD /* CentralProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CentralProxy.swift; path = SwiftyBluetooth/Source/CentralProxy.swift; sourceTree = "<group>"; };
+		1F87F756C70F31C9827F546D41011F00 /* SwiftyBluetooth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyBluetooth.xcconfig; sourceTree = "<group>"; };
+		3A5899128E489A74C12322D153A6F69E /* Pods-ElsmartBLEAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ElsmartBLEAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		3AF66270192887B6BB045330CD2AD811 /* Central.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Central.swift; path = SwiftyBluetooth/Source/Central.swift; sourceTree = "<group>"; };
+		453E70E6445E1745E548542A9F0F3F0F /* Pods-ElsmartBLEApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElsmartBLEApp.debug.xcconfig"; sourceTree = "<group>"; };
+		49471F9548E4A256DE5F42ED7B863FC8 /* SwiftyBluetooth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyBluetooth.modulemap; sourceTree = "<group>"; };
+		4E2515270B26DFCA59F9C6983DBC999F /* Pods-ElsmartBLEAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElsmartBLEAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4ED4191315F128CD41A4F3547757D720 /* Pods-ElsmartBLEApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ElsmartBLEApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		54D6DD8BB29C857789A851D46D77EF27 /* Pods-ElsmartBLEAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElsmartBLEAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		55DEC2EFF20F724E5C9DF3BD61009754 /* Pods-ElsmartBLEAppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElsmartBLEAppUITests-resources.sh"; sourceTree = "<group>"; };
+		611B7CB20674F9E9D1C3B89C6B303366 /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Util.swift; path = SwiftyBluetooth/Source/Util.swift; sourceTree = "<group>"; };
+		612B71F6EAA129B6E06C58125C835D14 /* PeripheralProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeripheralProxy.swift; path = SwiftyBluetooth/Source/PeripheralProxy.swift; sourceTree = "<group>"; };
+		6414D1F45E9A23B4CB0B2E959A23A582 /* Pods-ElsmartBLEAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ElsmartBLEAppTests-umbrella.h"; sourceTree = "<group>"; };
+		6FA1C30F8AA36DCDEA1E3F03BC3705F5 /* CBUUIDConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBUUIDConvertible.swift; path = SwiftyBluetooth/Source/CBUUIDConvertible.swift; sourceTree = "<group>"; };
+		72B4AB62A02ECDD02F6226B0B842BD46 /* Pods-ElsmartBLEAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElsmartBLEAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		75C025AEC6C2FDC97E1DFAA9FB45802D /* Pods-ElsmartBLEApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElsmartBLEApp-resources.sh"; sourceTree = "<group>"; };
+		800BBEB76EB378D58C4A1FBF9DAB3215 /* Pods-ElsmartBLEAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ElsmartBLEAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		883F931615E29176EB2F8F787E869DC7 /* Pods-ElsmartBLEAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElsmartBLEAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8CD9921C0D50B9A7FA88B904F6A9F574 /* Pods-ElsmartBLEAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElsmartBLEAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97BC79E86629A330FF82ED3FA5558A22 /* Pods_ElsmartBLEAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ElsmartBLEAppTests.framework; path = "Pods-ElsmartBLEAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D3774894B0C8EE8504C2534080CF69D /* Pods-ElsmartBLEApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElsmartBLEApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		9FFA4551EEEF63C85B881B2D9726CA24 /* DescriptorValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DescriptorValue.swift; path = SwiftyBluetooth/Source/DescriptorValue.swift; sourceTree = "<group>"; };
+		A10B1F0A742209759EC4A89E0E8EA5C9 /* CBExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBExtensions.swift; path = SwiftyBluetooth/Source/CBExtensions.swift; sourceTree = "<group>"; };
+		A975DF93E9BD1AA9F4BB14D4D004241D /* Pods-ElsmartBLEApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElsmartBLEApp.release.xcconfig"; sourceTree = "<group>"; };
+		AC2A6700B9E6E3D566D78AF1C7D319D2 /* Pods-ElsmartBLEAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElsmartBLEAppUITests-dummy.m"; sourceTree = "<group>"; };
+		B2DE636103DF2CBFC966D805C0F1C061 /* Pods-ElsmartBLEApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ElsmartBLEApp.modulemap"; sourceTree = "<group>"; };
+		B35A6CFE736D31D6ECF442F0C719C5D0 /* Pods_ElsmartBLEApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ElsmartBLEApp.framework; path = "Pods-ElsmartBLEApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4634EAF9CA3B8E6D67F7E523226E767 /* SwiftyBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyBluetooth.framework; path = SwiftyBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF30D72D0DE2C62E1D92E045FE0A63E6 /* SBError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SBError.swift; path = SwiftyBluetooth/Source/SBError.swift; sourceTree = "<group>"; };
+		C21CC69D45F316C03EC4ED1BDA793EED /* Pods-ElsmartBLEAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElsmartBLEAppTests-dummy.m"; sourceTree = "<group>"; };
+		C4C10A620E1735D3132305D9FDB22B37 /* Pods-ElsmartBLEApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ElsmartBLEApp-umbrella.h"; sourceTree = "<group>"; };
+		C6A358C596C0AF2C1D63C3A1DFD8CA3F /* Pods-ElsmartBLEAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElsmartBLEAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBD6A150BA425D4FCCD714EA567EB94F /* SwiftyBluetooth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyBluetooth.swift; path = SwiftyBluetooth/Source/SwiftyBluetooth.swift; sourceTree = "<group>"; };
+		D20B7507A9B9484C570F205BDEE18CEE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D87D64E73140E5C305F381453EC8483D /* Pods-ElsmartBLEAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ElsmartBLEAppTests.modulemap"; sourceTree = "<group>"; };
+		DE4B9EC1E63354AFC84016A8E51D64BF /* CBUUIDPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBUUIDPath.swift; path = SwiftyBluetooth/Source/CBUUIDPath.swift; sourceTree = "<group>"; };
+		E30F6B627375CB51FB330B363A815B11 /* Pods-ElsmartBLEAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElsmartBLEAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		E393CF504E702CD0DEB5354FCC3839CF /* Pods-ElsmartBLEAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElsmartBLEAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E4ACA791201399319E38601FF81CFED2 /* Pods-ElsmartBLEAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ElsmartBLEAppUITests.modulemap"; sourceTree = "<group>"; };
+		E8C1C8F392BD2FE323F7B2DC1DD52EE1 /* SwiftyBluetooth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyBluetooth-dummy.m"; sourceTree = "<group>"; };
+		E92F0C94CADBADB590EA3132AC7C4B22 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC5DC7C665050915DD11B0EDB46072B9 /* Pods-ElsmartBLEApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElsmartBLEApp-frameworks.sh"; sourceTree = "<group>"; };
+		F3319FE96C09F80E527E0C7A5D7E5F95 /* SwiftyBluetooth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyBluetooth-prefix.pch"; sourceTree = "<group>"; };
+		F4274B17D96A1DE62EBF20B71974FFFD /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = SwiftyBluetooth/Source/Result.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A6812935E044003C80E1B838474FFC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7206887C3B8920113962D418C374C88C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C321FBC3EDDCAA71CD1BA9A86B760B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DDDA997CBA0F2530422FBB9AC15088 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55DE0FF9E49C32DBD2055BC4D67F8A43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FCF139A74C2C7F6FB0868A18289B8A2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		966CA7BC6FF199A25BFAD082DE7DB909 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC1F4BB14E51D0C28276B71F10F59E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		593C35C77165816FE18F6D44D9541A4A /* Pods-ElsmartBLEApp */ = {
+			isa = PBXGroup;
+			children = (
+				D20B7507A9B9484C570F205BDEE18CEE /* Info.plist */,
+				B2DE636103DF2CBFC966D805C0F1C061 /* Pods-ElsmartBLEApp.modulemap */,
+				4ED4191315F128CD41A4F3547757D720 /* Pods-ElsmartBLEApp-acknowledgements.markdown */,
+				9D3774894B0C8EE8504C2534080CF69D /* Pods-ElsmartBLEApp-acknowledgements.plist */,
+				11F90BBC075BC4AA7E3B4C03F9E8E0F3 /* Pods-ElsmartBLEApp-dummy.m */,
+				EC5DC7C665050915DD11B0EDB46072B9 /* Pods-ElsmartBLEApp-frameworks.sh */,
+				75C025AEC6C2FDC97E1DFAA9FB45802D /* Pods-ElsmartBLEApp-resources.sh */,
+				C4C10A620E1735D3132305D9FDB22B37 /* Pods-ElsmartBLEApp-umbrella.h */,
+				453E70E6445E1745E548542A9F0F3F0F /* Pods-ElsmartBLEApp.debug.xcconfig */,
+				A975DF93E9BD1AA9F4BB14D4D004241D /* Pods-ElsmartBLEApp.release.xcconfig */,
+			);
+			name = "Pods-ElsmartBLEApp";
+			path = "Target Support Files/Pods-ElsmartBLEApp";
+			sourceTree = "<group>";
+		};
+		6A878D1A721F7EE51E951D66DE953617 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87F699F6A0EDE46A0DFE5E33EE06DA00 /* SwiftyBluetooth */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6A878D1A721F7EE51E951D66DE953617 /* Pods */,
+				E1F3E030ADC41D7EE53DFD70C04BC6AB /* Products */,
+				98D39BE8B050D08B7BE87CC5C68D364E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		820C86C6FD1BCF4C2358F06C416C7E32 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BAF50D63D5FC5C8D6F913D52C4C87AF /* Info.plist */,
+				49471F9548E4A256DE5F42ED7B863FC8 /* SwiftyBluetooth.modulemap */,
+				1F87F756C70F31C9827F546D41011F00 /* SwiftyBluetooth.xcconfig */,
+				E8C1C8F392BD2FE323F7B2DC1DD52EE1 /* SwiftyBluetooth-dummy.m */,
+				F3319FE96C09F80E527E0C7A5D7E5F95 /* SwiftyBluetooth-prefix.pch */,
+				10DC42C50505151A80626133E8769CFC /* SwiftyBluetooth-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyBluetooth";
+			sourceTree = "<group>";
+		};
+		87F699F6A0EDE46A0DFE5E33EE06DA00 /* SwiftyBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				A10B1F0A742209759EC4A89E0E8EA5C9 /* CBExtensions.swift */,
+				6FA1C30F8AA36DCDEA1E3F03BC3705F5 /* CBUUIDConvertible.swift */,
+				DE4B9EC1E63354AFC84016A8E51D64BF /* CBUUIDPath.swift */,
+				3AF66270192887B6BB045330CD2AD811 /* Central.swift */,
+				1D0EF538E2A09B71C1D40AF94E2193DD /* CentralProxy.swift */,
+				9FFA4551EEEF63C85B881B2D9726CA24 /* DescriptorValue.swift */,
+				0A44105222553D9B77D4D92D15C9376B /* Peripheral.swift */,
+				612B71F6EAA129B6E06C58125C835D14 /* PeripheralProxy.swift */,
+				F4274B17D96A1DE62EBF20B71974FFFD /* Result.swift */,
+				BF30D72D0DE2C62E1D92E045FE0A63E6 /* SBError.swift */,
+				CBD6A150BA425D4FCCD714EA567EB94F /* SwiftyBluetooth.swift */,
+				611B7CB20674F9E9D1C3B89C6B303366 /* Util.swift */,
+				820C86C6FD1BCF4C2358F06C416C7E32 /* Support Files */,
+			);
+			name = SwiftyBluetooth;
+			path = SwiftyBluetooth;
+			sourceTree = "<group>";
+		};
+		8DFBDFA8B0A5EAB0C3E695264514FBFE /* Pods-ElsmartBLEAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E92F0C94CADBADB590EA3132AC7C4B22 /* Info.plist */,
+				E4ACA791201399319E38601FF81CFED2 /* Pods-ElsmartBLEAppUITests.modulemap */,
+				800BBEB76EB378D58C4A1FBF9DAB3215 /* Pods-ElsmartBLEAppUITests-acknowledgements.markdown */,
+				883F931615E29176EB2F8F787E869DC7 /* Pods-ElsmartBLEAppUITests-acknowledgements.plist */,
+				AC2A6700B9E6E3D566D78AF1C7D319D2 /* Pods-ElsmartBLEAppUITests-dummy.m */,
+				72B4AB62A02ECDD02F6226B0B842BD46 /* Pods-ElsmartBLEAppUITests-frameworks.sh */,
+				55DEC2EFF20F724E5C9DF3BD61009754 /* Pods-ElsmartBLEAppUITests-resources.sh */,
+				3A5899128E489A74C12322D153A6F69E /* Pods-ElsmartBLEAppUITests-umbrella.h */,
+				C6A358C596C0AF2C1D63C3A1DFD8CA3F /* Pods-ElsmartBLEAppUITests.debug.xcconfig */,
+				E393CF504E702CD0DEB5354FCC3839CF /* Pods-ElsmartBLEAppUITests.release.xcconfig */,
+			);
+			name = "Pods-ElsmartBLEAppUITests";
+			path = "Target Support Files/Pods-ElsmartBLEAppUITests";
+			sourceTree = "<group>";
+		};
+		94D5B9DF9D71B40DD5A5ED3ACC253EDA /* Pods-ElsmartBLEAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				03567485C8D105DF20E3CBAD9D27A468 /* Info.plist */,
+				D87D64E73140E5C305F381453EC8483D /* Pods-ElsmartBLEAppTests.modulemap */,
+				1CE30244F6BB4D081832091E8CF2E76E /* Pods-ElsmartBLEAppTests-acknowledgements.markdown */,
+				8CD9921C0D50B9A7FA88B904F6A9F574 /* Pods-ElsmartBLEAppTests-acknowledgements.plist */,
+				C21CC69D45F316C03EC4ED1BDA793EED /* Pods-ElsmartBLEAppTests-dummy.m */,
+				E30F6B627375CB51FB330B363A815B11 /* Pods-ElsmartBLEAppTests-frameworks.sh */,
+				02D4BEA469A7DB3D4B2DED4AAAB97655 /* Pods-ElsmartBLEAppTests-resources.sh */,
+				6414D1F45E9A23B4CB0B2E959A23A582 /* Pods-ElsmartBLEAppTests-umbrella.h */,
+				4E2515270B26DFCA59F9C6983DBC999F /* Pods-ElsmartBLEAppTests.debug.xcconfig */,
+				54D6DD8BB29C857789A851D46D77EF27 /* Pods-ElsmartBLEAppTests.release.xcconfig */,
+			);
+			name = "Pods-ElsmartBLEAppTests";
+			path = "Target Support Files/Pods-ElsmartBLEAppTests";
+			sourceTree = "<group>";
+		};
+		98D39BE8B050D08B7BE87CC5C68D364E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				593C35C77165816FE18F6D44D9541A4A /* Pods-ElsmartBLEApp */,
+				94D5B9DF9D71B40DD5A5ED3ACC253EDA /* Pods-ElsmartBLEAppTests */,
+				8DFBDFA8B0A5EAB0C3E695264514FBFE /* Pods-ElsmartBLEAppUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1F3E030ADC41D7EE53DFD70C04BC6AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B35A6CFE736D31D6ECF442F0C719C5D0 /* Pods_ElsmartBLEApp.framework */,
+				97BC79E86629A330FF82ED3FA5558A22 /* Pods_ElsmartBLEAppTests.framework */,
+				1216DE381C842E41550287394DDDAC8F /* Pods_ElsmartBLEAppUITests.framework */,
+				B4634EAF9CA3B8E6D67F7E523226E767 /* SwiftyBluetooth.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		49AD2AC04552286791E5EE5829F1B48B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDB093580C1DCB1568B4C553A4A7B312 /* Pods-ElsmartBLEAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88CEA975C135504E9141A2144B19C93B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD1BB750A26A8689348C670081AF573 /* Pods-ElsmartBLEApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B32AF9A2532E8AC9A8AEF44186AF5025 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				974FDF0D74DCB1000E04CE4E4689B04B /* Pods-ElsmartBLEAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD3475FC86FE13C307813CD676F3C549 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4483D051F04FCD2DA53B9E6AA0FF1E36 /* SwiftyBluetooth-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B4E53744B62D78C566165DFF3A4B04C /* Pods-ElsmartBLEApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B854541346154D74CA23951A1F0B841A /* Build configuration list for PBXNativeTarget "Pods-ElsmartBLEApp" */;
+			buildPhases = (
+				88CEA975C135504E9141A2144B19C93B /* Headers */,
+				0B071A5BEFD84183783003C910D69182 /* Sources */,
+				0C321FBC3EDDCAA71CD1BA9A86B760B8 /* Frameworks */,
+				608EC692C92CC1A1DF7394F29E520685 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F36BCD3AFB43C31DFCFACDD887C46A9B /* PBXTargetDependency */,
+			);
+			name = "Pods-ElsmartBLEApp";
+			productName = "Pods-ElsmartBLEApp";
+			productReference = B35A6CFE736D31D6ECF442F0C719C5D0 /* Pods_ElsmartBLEApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3BBC3A0A57552E5876A51B824246AD34 /* SwiftyBluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A0E3F465D4F9B1A5CCB21C4DF9380C /* Build configuration list for PBXNativeTarget "SwiftyBluetooth" */;
+			buildPhases = (
+				DD3475FC86FE13C307813CD676F3C549 /* Headers */,
+				B20DF02BDFD598D1679C9F22AEF3425C /* Sources */,
+				55DE0FF9E49C32DBD2055BC4D67F8A43 /* Frameworks */,
+				42AEBA9D8A1BD658601C0F6DBF1EE908 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyBluetooth;
+			productName = SwiftyBluetooth;
+			productReference = B4634EAF9CA3B8E6D67F7E523226E767 /* SwiftyBluetooth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D74EB27C339ED972EC496A01A19C13F0 /* Pods-ElsmartBLEAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 222644346B6AA334CF87787C6C044AE5 /* Build configuration list for PBXNativeTarget "Pods-ElsmartBLEAppTests" */;
+			buildPhases = (
+				B32AF9A2532E8AC9A8AEF44186AF5025 /* Headers */,
+				F619BCE62A44514F027AB422BFEB73CC /* Sources */,
+				966CA7BC6FF199A25BFAD082DE7DB909 /* Frameworks */,
+				00EB4FAF9A2835DA8393E24251592B59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B248FDC313C1E2CCBD7C32381FE10D2 /* PBXTargetDependency */,
+			);
+			name = "Pods-ElsmartBLEAppTests";
+			productName = "Pods-ElsmartBLEAppTests";
+			productReference = 97BC79E86629A330FF82ED3FA5558A22 /* Pods_ElsmartBLEAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E378400094259F9186E1DCA4CD94099D /* Pods-ElsmartBLEAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B905D221E0ACF988611E9A1DBC11B5F /* Build configuration list for PBXNativeTarget "Pods-ElsmartBLEAppUITests" */;
+			buildPhases = (
+				49AD2AC04552286791E5EE5829F1B48B /* Headers */,
+				A324E171E63AD06ACF304C9D4BB51AB5 /* Sources */,
+				0A6812935E044003C80E1B838474FFC2 /* Frameworks */,
+				566B7DE26B4EC6959E65778AC1B290C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDF3CE0F14C40BFB8E0FD63D85F02678 /* PBXTargetDependency */,
+			);
+			name = "Pods-ElsmartBLEAppUITests";
+			productName = "Pods-ElsmartBLEAppUITests";
+			productReference = 1216DE381C842E41550287394DDDAC8F /* Pods_ElsmartBLEAppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E1F3E030ADC41D7EE53DFD70C04BC6AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B4E53744B62D78C566165DFF3A4B04C /* Pods-ElsmartBLEApp */,
+				D74EB27C339ED972EC496A01A19C13F0 /* Pods-ElsmartBLEAppTests */,
+				E378400094259F9186E1DCA4CD94099D /* Pods-ElsmartBLEAppUITests */,
+				3BBC3A0A57552E5876A51B824246AD34 /* SwiftyBluetooth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00EB4FAF9A2835DA8393E24251592B59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AEBA9D8A1BD658601C0F6DBF1EE908 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		566B7DE26B4EC6959E65778AC1B290C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		608EC692C92CC1A1DF7394F29E520685 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B071A5BEFD84183783003C910D69182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33EDEF7D35998F6750A24A2DE1CA98CC /* Pods-ElsmartBLEApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A324E171E63AD06ACF304C9D4BB51AB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A710B84FD2EC7E4980BC16233F8D9CE /* Pods-ElsmartBLEAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20DF02BDFD598D1679C9F22AEF3425C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44A77F93026E1445F95801AC8682FFFB /* CBExtensions.swift in Sources */,
+				F9D5CE31044508AACDD47B38F8AD4F67 /* CBUUIDConvertible.swift in Sources */,
+				EA6204410C6246907EA20C3A77B38895 /* CBUUIDPath.swift in Sources */,
+				53C304976C5A99F73139835A84D785A6 /* Central.swift in Sources */,
+				378899D6F6B1C051AE2866D877FA2FA0 /* CentralProxy.swift in Sources */,
+				46B02738582E600FFC85C68748A394AF /* DescriptorValue.swift in Sources */,
+				B978A45256D40742DC36109968B447FD /* Peripheral.swift in Sources */,
+				CBA51DCDF38AAC19F4BF3BFA9FCB4020 /* PeripheralProxy.swift in Sources */,
+				CD279984D1267B381ACC05B3F27C2C7E /* Result.swift in Sources */,
+				8D3D7F314166C266C7E5CDFB2AE12DCC /* SBError.swift in Sources */,
+				FF660AE095857938A764FADC43F3244B /* SwiftyBluetooth-dummy.m in Sources */,
+				B4A3312A4AE0D26013CE4C98E7138BE1 /* SwiftyBluetooth.swift in Sources */,
+				99FF2E7E3ACBD3637B8A30C449D878AC /* Util.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F619BCE62A44514F027AB422BFEB73CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379FB83B4EC014D0B9FA272B9438142E /* Pods-ElsmartBLEAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B248FDC313C1E2CCBD7C32381FE10D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ElsmartBLEApp";
+			target = 0B4E53744B62D78C566165DFF3A4B04C /* Pods-ElsmartBLEApp */;
+			targetProxy = 3E03D784067E147FCB5EA88D50C0AB99 /* PBXContainerItemProxy */;
+		};
+		F36BCD3AFB43C31DFCFACDD887C46A9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyBluetooth;
+			target = 3BBC3A0A57552E5876A51B824246AD34 /* SwiftyBluetooth */;
+			targetProxy = 6CD3976DF4F52BEFD6FD118E76C4A229 /* PBXContainerItemProxy */;
+		};
+		FDF3CE0F14C40BFB8E0FD63D85F02678 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ElsmartBLEApp";
+			target = 0B4E53744B62D78C566165DFF3A4B04C /* Pods-ElsmartBLEApp */;
+			targetProxy = 08BA9D63E624B84BB106E2825A160659 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11EDD5020DC0889CD6426C79E815910E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F87F756C70F31C9827F546D41011F00 /* SwiftyBluetooth.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyBluetooth/SwiftyBluetooth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyBluetooth/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyBluetooth/SwiftyBluetooth.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyBluetooth;
+				PRODUCT_NAME = SwiftyBluetooth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2C7BEC888E0909D3B60860E4384A0486 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A975DF93E9BD1AA9F4BB14D4D004241D /* Pods-ElsmartBLEApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ElsmartBLEApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElsmartBLEApp/Pods-ElsmartBLEApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2EA74B5AA45B4A4DCEC17AC9AF7A89C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6A358C596C0AF2C1D63C3A1DFD8CA3F /* Pods-ElsmartBLEAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ElsmartBLEAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElsmartBLEAppUITests/Pods-ElsmartBLEAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		30A793E794F9A6ABE6823EF919C1C864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E2515270B26DFCA59F9C6983DBC999F /* Pods-ElsmartBLEAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ElsmartBLEAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElsmartBLEAppTests/Pods-ElsmartBLEAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		488F99873D15102E17B765A1E6A1F42F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D6DD8BB29C857789A851D46D77EF27 /* Pods-ElsmartBLEAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ElsmartBLEAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElsmartBLEAppTests/Pods-ElsmartBLEAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5DE19CECB206ACCCACF04D62F93FFDA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		858D01EEFE984249A9581D18DBEA53F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A459A665B8A87748B84C02E770D1FAD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E393CF504E702CD0DEB5354FCC3839CF /* Pods-ElsmartBLEAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ElsmartBLEAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElsmartBLEAppUITests/Pods-ElsmartBLEAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C40BA2BD9AC2B9CF519D60F06A7C28B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F87F756C70F31C9827F546D41011F00 /* SwiftyBluetooth.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyBluetooth/SwiftyBluetooth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyBluetooth/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyBluetooth/SwiftyBluetooth.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyBluetooth;
+				PRODUCT_NAME = SwiftyBluetooth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E2AAC49BD4768292EF44BC3F2C8A2CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 453E70E6445E1745E548542A9F0F3F0F /* Pods-ElsmartBLEApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ElsmartBLEApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElsmartBLEApp/Pods-ElsmartBLEApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		222644346B6AA334CF87787C6C044AE5 /* Build configuration list for PBXNativeTarget "Pods-ElsmartBLEAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30A793E794F9A6ABE6823EF919C1C864 /* Debug */,
+				488F99873D15102E17B765A1E6A1F42F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B905D221E0ACF988611E9A1DBC11B5F /* Build configuration list for PBXNativeTarget "Pods-ElsmartBLEAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EA74B5AA45B4A4DCEC17AC9AF7A89C8 /* Debug */,
+				A459A665B8A87748B84C02E770D1FAD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				858D01EEFE984249A9581D18DBEA53F1 /* Debug */,
+				5DE19CECB206ACCCACF04D62F93FFDA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B854541346154D74CA23951A1F0B841A /* Build configuration list for PBXNativeTarget "Pods-ElsmartBLEApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2AAC49BD4768292EF44BC3F2C8A2CF4 /* Debug */,
+				2C7BEC888E0909D3B60860E4384A0486 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6A0E3F465D4F9B1A5CCB21C4DF9380C /* Build configuration list for PBXNativeTarget "SwiftyBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C40BA2BD9AC2B9CF519D60F06A7C28B5 /* Debug */,
+				11EDD5020DC0889CD6426C79E815910E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

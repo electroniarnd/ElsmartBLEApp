@@ -1,0 +1,321 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CBUUIDPath"
+- "=="
+- "servicePath"
+- "characteristicPath"
+- "descriptorPath"
+provides-nominal:
+- "15SwiftyBluetooth10CBUUIDPathV"
+provides-member:
+- ["15SwiftyBluetooth10CBUUIDPathV", ""]
+- ["So9CBServiceC", ""]
+- ["So16CBCharacteristicC", ""]
+- ["So12CBDescriptorC", ""]
+- ["So9CBServiceC", "uuidPath"]
+- ["So16CBCharacteristicC", "uuidPath"]
+- ["So12CBDescriptorC", "uuidPath"]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "AssignmentPrecedence"
+- "Bool"
+- "CBCharacteristic"
+- "CBDescriptor"
+- "CBService"
+- "CBUUID"
+- "CBUUIDConvertible"
+- "CBUUIDPath"
+- "Hashable"
+- "Int"
+- !private "String"
+- "characteristicPath"
+- "descriptorPath"
+- "servicePath"
+depends-member:
+- !private ["SK", "append"]
+- !private ["SK", "hashValue"]
+- !private ["SK", "init"]
+- ["So11CBAttributeC", "CBUUIDPath"]
+- !private ["So11CBAttributeC", "characteristic"]
+- !private ["So11CBAttributeC", "characteristicPath"]
+- !private ["So11CBAttributeC", "descriptorPath"]
+- !private ["So11CBAttributeC", "service"]
+- !private ["So11CBAttributeC", "servicePath"]
+- ["So11CBAttributeC", "uuidPath"]
+- ["So16CBCharacteristicC", "CBUUIDPath"]
+- !private ["So16CBCharacteristicC", "characteristicPath"]
+- !private ["So16CBCharacteristicC", "service"]
+- ["So16CBCharacteristicC", "uuidPath"]
+- ["So12CBDescriptorC", "CBUUIDPath"]
+- !private ["So12CBDescriptorC", "characteristic"]
+- !private ["So12CBDescriptorC", "descriptorPath"]
+- ["So12CBDescriptorC", "uuidPath"]
+- ["So9CBServiceC", "CBUUIDPath"]
+- !private ["So9CBServiceC", "servicePath"]
+- ["So9CBServiceC", "uuidPath"]
+- !private ["So6CBUUIDC", "uuidString"]
+- !private ["15SwiftyBluetooth17CBUUIDConvertibleP", "CBUUIDRepresentation"]
+- !private ["15SwiftyBluetooth17CBUUIDConvertibleP", "append"]
+- !private ["15SwiftyBluetooth17CBUUIDConvertibleP", "characteristic"]
+- !private ["15SwiftyBluetooth17CBUUIDConvertibleP", "characteristicPath"]
+- !private ["15SwiftyBluetooth17CBUUIDConvertibleP", "descriptorPath"]
+- !private ["15SwiftyBluetooth17CBUUIDConvertibleP", "hashValue"]
+- !private ["15SwiftyBluetooth17CBUUIDConvertibleP", "init"]
+- !private ["15SwiftyBluetooth17CBUUIDConvertibleP", "service"]
+- !private ["15SwiftyBluetooth17CBUUIDConvertibleP", "servicePath"]
+- !private ["15SwiftyBluetooth17CBUUIDConvertibleP", "uuidString"]
+- ["15SwiftyBluetooth10CBUUIDPathV", "CBUUID"]
+- ["15SwiftyBluetooth10CBUUIDPathV", "Int"]
+- !private ["15SwiftyBluetooth10CBUUIDPathV", "String"]
+- ["15SwiftyBluetooth10CBUUIDPathV", "deinit"]
+- ["15SwiftyBluetooth10CBUUIDPathV", "hash"]
+- ["15SwiftyBluetooth10CBUUIDPathV", "hashValue"]
+- ["15SwiftyBluetooth10CBUUIDPathV", "init"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "characteristic"]
+- !private ["s7CVarArgP", "characteristicPath"]
+- !private ["s7CVarArgP", "descriptorPath"]
+- !private ["s7CVarArgP", "hashValue"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "service"]
+- !private ["s7CVarArgP", "servicePath"]
+- !private ["s7CVarArgP", "uuidString"]
+- !private ["Sl", "append"]
+- !private ["Sl", "hashValue"]
+- !private ["Sl", "init"]
+- !private ["SL", "append"]
+- !private ["SL", "hashValue"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "characteristic"]
+- !private ["s28CustomDebugStringConvertibleP", "characteristicPath"]
+- !private ["s28CustomDebugStringConvertibleP", "descriptorPath"]
+- !private ["s28CustomDebugStringConvertibleP", "hashValue"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "service"]
+- !private ["s28CustomDebugStringConvertibleP", "servicePath"]
+- !private ["s28CustomDebugStringConvertibleP", "uuidString"]
+- !private ["s29CustomPlaygroundQuickLookableP", "append"]
+- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "hashValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "characteristic"]
+- !private ["s23CustomStringConvertibleP", "characteristicPath"]
+- !private ["s23CustomStringConvertibleP", "descriptorPath"]
+- !private ["s23CustomStringConvertibleP", "hashValue"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "service"]
+- !private ["s23CustomStringConvertibleP", "servicePath"]
+- !private ["s23CustomStringConvertibleP", "uuidString"]
+- !private ["Se", "append"]
+- !private ["Se", "hashValue"]
+- !private ["Se", "init"]
+- !private ["SE", "append"]
+- !private ["SE", "hashValue"]
+- !private ["SE", "init"]
+- !private ["SQ", "String"]
+- ["SQ", ""]
+- !private ["SQ", "append"]
+- !private ["SQ", "characteristic"]
+- !private ["SQ", "characteristicPath"]
+- !private ["SQ", "descriptorPath"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "init"]
+- !private ["SQ", "service"]
+- !private ["SQ", "servicePath"]
+- !private ["SQ", "uuidString"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "append"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "hashValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "append"]
+- !private ["s26ExpressibleByStringLiteralP", "hashValue"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "append"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "hashValue"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "String"]
+- ["SH", ""]
+- !private ["SH", "append"]
+- !private ["SH", "characteristic"]
+- !private ["SH", "characteristicPath"]
+- !private ["SH", "descriptorPath"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "init"]
+- !private ["SH", "service"]
+- !private ["SH", "servicePath"]
+- !private ["SH", "uuidString"]
+- !private ["s6HasherV", "combine"]
+- !private ["s25LosslessStringConvertibleP", "append"]
+- !private ["s25LosslessStringConvertibleP", "hashValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "append"]
+- !private ["s10MirrorPathP", "hashValue"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "append"]
+- !private ["So8NSCodingP", "hashValue"]
+- !private ["So9NSCopyingP", "append"]
+- !private ["So9NSCopyingP", "hashValue"]
+- !private ["So9NSCopyingP", "uuidString"]
+- !private ["So21NSItemProviderReadingP", "append"]
+- !private ["So21NSItemProviderReadingP", "hashValue"]
+- !private ["So21NSItemProviderWritingP", "append"]
+- !private ["So21NSItemProviderWritingP", "hashValue"]
+- !private ["So16NSMutableCopyingP", "append"]
+- !private ["So16NSMutableCopyingP", "hashValue"]
+- ["So8NSObjectC", "CBUUIDPath"]
+- !private ["So8NSObjectC", "append"]
+- !private ["So8NSObjectC", "characteristic"]
+- !private ["So8NSObjectC", "characteristicPath"]
+- !private ["So8NSObjectC", "descriptorPath"]
+- !private ["So8NSObjectC", "hashValue"]
+- !private ["So8NSObjectC", "service"]
+- !private ["So8NSObjectC", "servicePath"]
+- ["So8NSObjectC", "uuidPath"]
+- !private ["So8NSObjectC", "uuidString"]
+- !private ["So8NSObjectP", "append"]
+- !private ["So8NSObjectP", "characteristic"]
+- !private ["So8NSObjectP", "characteristicPath"]
+- !private ["So8NSObjectP", "descriptorPath"]
+- !private ["So8NSObjectP", "hashValue"]
+- !private ["So8NSObjectP", "service"]
+- !private ["So8NSObjectP", "servicePath"]
+- !private ["So8NSObjectP", "uuidString"]
+- !private ["So14NSSecureCodingP", "append"]
+- !private ["So14NSSecureCodingP", "hashValue"]
+- !private ["So8NSStringC", "append"]
+- !private ["So8NSStringC", "hashValue"]
+- !private ["Sm", "append"]
+- !private ["Sm", "hashValue"]
+- !private ["Sm", "init"]
+- !private ["ST", "append"]
+- !private ["ST", "hashValue"]
+- !private ["ST", "init"]
+- !private ["SS", "append"]
+- !private ["SS", "hashValue"]
+- !private ["SS", "init"]
+- !private ["Sy", "append"]
+- !private ["Sy", "hashValue"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "append"]
+- !private ["s16TextOutputStreamP", "hashValue"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "append"]
+- !private ["s20TextOutputStreamableP", "hashValue"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "append"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "hashValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "append"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "hashValue"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "append"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "hashValue"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "append"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "hashValue"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "append"]
+- !private ["s33_ExpressibleByStringInterpolationP", "hashValue"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "hashValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "append"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "characteristic"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "characteristicPath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "descriptorPath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "hashValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "service"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "servicePath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "uuidString"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "append"]
+- !private ["s16_SwiftStringViewP", "hashValue"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "SK"
+- "So11CBAttributeC"
+- "So16CBCharacteristicC"
+- "So12CBDescriptorC"
+- "So9CBServiceC"
+- !private "So6CBUUIDC"
+- !private "15SwiftyBluetooth17CBUUIDConvertibleP"
+- "15SwiftyBluetooth10CBUUIDPathV"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s6HasherV"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "Sm"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/Target Support Files/SwiftyBluetooth/SwiftyBluetooth-umbrella.h"
+- "/Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/build/Pods.build/Debug-iphonesimulator/SwiftyBluetooth.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1332fdaddf21dc0a927b49a329ae7628"

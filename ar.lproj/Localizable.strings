@@ -1,0 +1,43 @@
+/* 
+  Localizable.strings
+  ElsmartBLEApp
+
+  Created by Suraj_Mobiloitte on 24/04/18.
+  Copyright © 2018 Mahak_Mobiloitte. All rights reserved.
+*/
+
+"Punch" = "لكمة";
+"Register" = "تسجيل";
+"Unregister" = "غير المسجلة";
+"Version" = "الإصدار:";
+
+"BadgeNo" = "قم الشارة";
+"Title" = "اللقب";
+"Department" = "القسم";
+"Card Valid From" = "البطاقة صالحة من";
+"Card Isued From" = "البطاقة صادرة من";
+"Card_Expired" = "البطاقة منتهية";
+"IMEI" = "IMEI";
+"Model Number" = "رقم الموديل";
+"Status" = "الحالة";
+"Service URL" = "رابط الخدمة";
+"System" = "النظام";
+"Registered" = "مسجل";
+"UnRegistered" = "غير مسجل";
+"Select a device" = "اختر جهازا";
+"Registration" = "التسجيل";
+"About" = "حول";
+"Debug" = "التصحيح";
+"Vibration" = "اهتزاز";
+"TurnOnBluetooth" = "يريد التطبيق تشغيل البلوتوث.";
+"mElsmart" = "م  السمارت";
+"Cancel"  = "إلغاء";
+"Eacs" = "نظام التحكم بالعبور";
+"Elsmart" = "السمارت";
+
+//Error Messages
+"Please enter badge number" = "الرجاء إدخال رقم الشارة";
+"Please enter IMEI" = "يرجى إدخال IMEI";
+"Please enter ModelNo" = "الرجاء إدخال ModelNo";
+"You are not a registered user yet. Please register first." = "أنت لست مستخدم مسجل حتى الآن. الرجاء التسجيل أولاً.";
+"Something went wrong please try again." = "حدث خطأ ما. أعد المحاولة من فضلك.";

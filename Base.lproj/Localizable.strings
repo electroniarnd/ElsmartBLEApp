@@ -1,0 +1,43 @@
+/* 
+  Localizable.strings
+  ElsmartBLEApp
+
+  Created by Suraj_Mobiloitte on 24/04/18.
+  Copyright © 2018 Mahak_Mobiloitte. All rights reserved.
+*/
+
+"Punch" = "Punch";
+"Register" = "REGISTER";
+"Unregister" = "UNREGISTER";
+"Version" = "Version:";
+
+"BadgeNo" = "BadgeNo";
+"Title" = "Title";
+"Department" = "Department";
+"Card Valid From" = "Card Valid From";
+"Card Isued From" = "Card Isued From";
+"Card_Expired" = "Card_Expired";
+"IMEI" = "IMEI";
+"Model Number" = "Model Number";
+"Status" = "Status";
+"Service URL" = "Service URL";
+"System" = "System";
+"Registered" = "Registered";
+"UnRegistered" = "UnRegistered";
+"Select a device" = "Select a device";
+"Registration" = "Registration";
+"About" = "About";
+"Debug" = "Debug";
+"Vibration" = "Vibration";
+"TurnOnBluetooth" = "The app wants to turn on Bluetooth.";
+"mElsmart" = "mElsmart";
+"Cancel"   = "Cancel";
+"Eacs" = "Eacs";
+"Elsmart" = "Elsmart";
+
+//Error Messages
+"Please enter badge number" = "Please enter badge number";
+"Please enter IMEI" = "Please enter IMEI";
+"Please enter ModelNo" = "Please enter ModelNo";
+"You are not a registered user yet. Please register first." = "You are not a registered user yet. Please register first.";
+"Something went wrong please try again." = "Something went wrong please try again.";

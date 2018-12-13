@@ -1,0 +1,157 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Box"
+- "Weak"
+provides-nominal:
+- "15SwiftyBluetooth3BoxC"
+- "15SwiftyBluetooth4WeakC"
+provides-member:
+- ["15SwiftyBluetooth3BoxC", ""]
+- ["15SwiftyBluetooth4WeakC", ""]
+- ["s6UInt16V", ""]
+- ["s6UInt16V", "init"]
+provides-dynamic-lookup:
+depends-top-level:
+- "AnyObject"
+- "AssignmentPrecedence"
+- "Box"
+- "CastingPrecedence"
+- !private "NSNumber"
+- "UInt16"
+- "Weak"
+depends-member:
+- !private ["Sz", "UInt16"]
+- !private ["Sz", "init"]
+- ["15SwiftyBluetooth3BoxC", "T"]
+- ["15SwiftyBluetooth3BoxC", "init"]
+- ["15SwiftyBluetooth3BoxC", "value"]
+- !private ["s7CVarArgP", "UInt16"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "intValue"]
+- !private ["SL", "UInt16"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "intValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "UInt16"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "UInt16"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "UInt16"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "intValue"]
+- !private ["Se", "UInt16"]
+- !private ["Se", "init"]
+- !private ["SE", "UInt16"]
+- !private ["SE", "init"]
+- !private ["SQ", "UInt16"]
+- !private ["SQ", "init"]
+- !private ["SQ", "intValue"]
+- !private ["s27ExpressibleByBooleanLiteralP", "intValue"]
+- !private ["s25ExpressibleByFloatLiteralP", "intValue"]
+- !private ["s27ExpressibleByIntegerLiteralP", "UInt16"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "intValue"]
+- !private ["s17FixedWidthIntegerP", "UInt16"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SH", "UInt16"]
+- !private ["SH", "init"]
+- !private ["SH", "intValue"]
+- !private ["s25LosslessStringConvertibleP", "UInt16"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["So8NSCodingP", "intValue"]
+- !private ["So9NSCopyingP", "intValue"]
+- !private ["So8NSNumberC", "intValue"]
+- !private ["So8NSObjectC", "intValue"]
+- !private ["So8NSObjectP", "intValue"]
+- !private ["So14NSSecureCodingP", "intValue"]
+- !private ["So7NSValueC", "intValue"]
+- !private ["Sj", "UInt16"]
+- !private ["Sj", "init"]
+- !private ["Sx", "UInt16"]
+- !private ["Sx", "init"]
+- ["s6UInt16V", "AnyObject"]
+- !private ["s6UInt16V", "NSNumber"]
+- !private ["s6UInt16V", "UInt16"]
+- ["s6UInt16V", "init"]
+- !private ["SU", "UInt16"]
+- !private ["SU", "init"]
+- ["15SwiftyBluetooth4WeakC", "T"]
+- ["15SwiftyBluetooth4WeakC", "init"]
+- ["15SwiftyBluetooth4WeakC", "value"]
+- !private ["s18_BitwiseOperationsP", "UInt16"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "UInt16"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "UInt16"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "intValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "intValue"]
+- !private ["s21_ObjectiveCBridgeableP", "UInt16"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s14_StringElementP", "UInt16"]
+- !private ["s14_StringElementP", "init"]
+depends-nominal:
+- !private "Sz"
+- "15SwiftyBluetooth3BoxC"
+- !private "s7CVarArgP"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So8NSNumberC"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So7NSValueC"
+- !private "Sj"
+- !private "Sx"
+- "s6UInt16V"
+- !private "SU"
+- "15SwiftyBluetooth4WeakC"
+- !private "s18_BitwiseOperationsP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s14_StringElementP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/Target Support Files/SwiftyBluetooth/SwiftyBluetooth-umbrella.h"
+- "/Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/build/Pods.build/Debug-iphonesimulator/SwiftyBluetooth.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "da7452c3a8a8d7b1724cc9e90d62295d"

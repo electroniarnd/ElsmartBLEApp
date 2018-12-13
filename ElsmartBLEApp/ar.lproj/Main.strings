@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Status"; ObjectID = "LMH-bK-mdH"; */
+"LMH-bK-mdH.text" = "الحالة";
+
+/* Class = "UIButton"; normalTitle = "Connect"; ObjectID = "MgE-sT-H9H"; */
+"MgE-sT-H9H.normalTitle" = "الاتصال";
+
+/* Class = "UILabel"; text = "<Select a device>"; ObjectID = "O6Y-hg-Ffv"; */
+"O6Y-hg-Ffv.text" = "<اختر جهاز>";
+
+/* Class = "UILabel"; text = "mElsmart"; ObjectID = "QPY-ss-n94"; */
+"QPY-ss-n94.text" = "م  السمارت";
+
+/* Class = "UILabel"; text = "Device:"; ObjectID = "gpV-zd-uzW"; */
+"gpV-zd-uzW.text" = "جهاز:";
+
+/* Class = "UILabel"; text = "mElsmart"; ObjectID = "dkN-cI-wX0"; */
+"dkN-cI-wX0.text" = "م  السمارت";
+
+/* Class = "UILabel"; text = "mElsmart"; ObjectID = "ojl-mW-iEU"; */
+"ojl-mW-iEU.text" = "م  السمارت";
+
+/* Class = "UILabel"; text = "mElsmart"; ObjectID = "5Wo-LS-T6p"; */
+"5Wo-LS-T6p.text" = "م  السمارت";
