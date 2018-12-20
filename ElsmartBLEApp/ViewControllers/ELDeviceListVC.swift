@@ -30,28 +30,23 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
     var thirdCommand = [UInt8]()
     var connectedPeripheral : Peripheral? = nil
     var Terdetails : Peripheral? = nil
-    
+    var autovalue: String?
     var deviceList = [ELDeviceInfo]()
     var periArray = [Peripheral]()
     var index = 0
-    
+    var TerDisplay=[String]()
     // Timer to set reps
     var repTimer : Timer?
-    
+    let defaults = UserDefaults.standard
     // Timer to set reps
     var commandTimer : Timer?
     var commandTime = 0
-    
     var db: OpaquePointer? //pradeep
-    
-    
+
     //MARK:- View Life Cycle Methods
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpDefaults()
-        
-        
         //pradeep
         
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
@@ -62,7 +57,7 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
         }
         
         //creating table
-        if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS tblLogs (id INTEGER PRIMARY KEY AUTOINCREMENT,date TEXT,badgeNo TEXT, ter TEXT,direction TEXT)", nil, nil, nil) != SQLITE_OK {
+        if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS tblLogs (id INTEGER PRIMARY KEY AUTOINCREMENT,date REAL,badgeNo TEXT, ter TEXT,direction TEXT)", nil, nil, nil) != SQLITE_OK {
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("error creating table: \(errmsg)")
         }
@@ -71,7 +66,47 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("error creating table: \(errmsg)")
         }
+    }
+    
+    func fetchLastRegisteredUserDataLocally(){
+            let AutoValue = defaults.string(forKey: "AutoValue")
+            self.autovalue=AutoValue  as! String?
+       
+    }
+
+    func DisplayTerminal(){
         
+        var stmt1: OpaquePointer?
+        TerDisplay.removeAll()
+        var db1: OpaquePointer? //pradeep
+        let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+            .appendingPathComponent("Elsmart.sqlite")
+        if sqlite3_open(fileURL.path, &db1) != SQLITE_OK {
+            print("error opening database")
+        }
+        //creating table
+        if sqlite3_exec(db1, "CREATE TABLE IF NOT EXISTS tblTerminals (id INTEGER PRIMARY KEY AUTOINCREMENT,Name TEXT,Address TEXT)", nil, nil, nil) != SQLITE_OK {
+            let errmsg = String(cString: sqlite3_errmsg(db1)!)
+            print("error creating table: \(errmsg)")
+        }
+        let queryString2 = "SELECT * FROM tblTerminals"
+        //preparing the query
+        if sqlite3_prepare(db1, queryString2, -1, &stmt1, nil) != SQLITE_OK{
+            let errmsg = String(cString: sqlite3_errmsg(db1)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+        //traversing through all the records
+        while(sqlite3_step(stmt1) == SQLITE_ROW){
+         let Name = sqlite3_column_text(stmt1, 1)
+            if Name != nil
+            {
+                let nm=String(cString: Name!)
+            TerDisplay.append(nm)
+            }
+        }
+        sqlite3_close(stmt1)
+        sqlite3_close(db1)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -113,24 +148,45 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
         
         self.deviceList.removeAll()
         self.periArray.removeAll()
-
+         DisplayTerminal()
+         fetchLastRegisteredUserDataLocally()
         SwiftyBluetooth.scanForPeripherals(withServiceUUIDs: [CBUUID(string: BLE_SERVICE)] , timeoutAfter: 15) { scanResult in
             switch scanResult {
             case .scanStarted:
                 break
             case .scanResult(let peripheral, let advertisementData, let RSSI):
-                
                 let obj = ELDeviceInfo()
                 obj.deviceIP = "\(peripheral.identifier)"
                 obj.deviceName = peripheral.name
                 obj.deviceRssi = "\(RSSI ?? 0)"
                 
-                self.deviceList.append(obj)
-                self.periArray.append(peripheral)
-                DispatchQueue.main.async {
-                    self.deviceListTableView.reloadData()
-                    self.handlePopupCustomHeight()
+            if self.autovalue == "1"
+            {
+                if self.TerDisplay.contains(peripheral.name)
+                {
+                self.connectedDeviceInfo=obj
+                self.connectedPeripheral = peripheral
+                peripheral.connect(withTimeout: 60) { result in
+                switch result {
+                    case .success:
+                        self.getNotifiedForConnectedPeripheral(paripheralDevice: peripheral)
+                        self.writeVal(paripheralDevice: peripheral)
+                        //Terdetails = self.periArray[indexPath.row]
+                        break // You are now connected to the peripheral
+                    case .failure(let error):do {
+                                                }
+                break // An error happened while connecting
+                            }
+                        }
+                return;
                 }
+            }
+            self.deviceList.append(obj)
+            self.periArray.append(peripheral)
+            DispatchQueue.main.async {
+            self.deviceListTableView.reloadData()
+            self.handlePopupCustomHeight()
+                                      }
                 break
             case .scanStopped(let error):
                 break
@@ -138,6 +194,13 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
         }
     }
     
+    func getDate(date1: String) -> Date? {
+        let dateFormatter=DateFormatter()
+        dateFormatter.dateFormat="yyyy-MM-dd HH:mm:ss"
+        dateFormatter.timeZone=TimeZone.current
+        dateFormatter.locale=Locale.current
+        return dateFormatter.date(from: date1)
+    }
     
     
     //MARK:- UITableView DataSource and Delegate Methods
@@ -149,12 +212,10 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ELDeviceListTableCell", for: indexPath) as! ELDeviceListTableCell
-        
         let obj = deviceList[indexPath.row]
         cell.nameLbl.text = obj.deviceName
         cell.deviceRssiLbl.text = "Rssi = \(obj.deviceRssi)"
         cell.deviceAddressLbl.text = obj.deviceIP
-        
         return cell
     }
     
@@ -167,14 +228,12 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
         connectedDeviceInfo = deviceList[indexPath.row]
         index = indexPath.row
         connectedPeripheral = self.periArray[indexPath.row]
-        
         self.connectedPeripheral?.connect(withTimeout: 60) { result in
             switch result {
             case .success:
                 self.getNotifiedForConnectedPeripheral(paripheralDevice: self.connectedPeripheral!)
                 self.writeVal(paripheralDevice: self.connectedPeripheral!)
-                //Terdetails = self.periArray[indexPath.row]
-            break // You are now connected to the peripheral
+            break
             case .failure(let error):do {
             }
                 break // An error happened while connecting
@@ -218,7 +277,6 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     //MARK:- Get notified for connected periferal and set notifier ble connand response.
     func getNotifiedForConnectedPeripheral(paripheralDevice : Peripheral){
-        
         paripheralDevice.setNotifyValue(toEnabled: true, forCharacWithUUID: BLE_CHARACTERISTIC, ofServiceWithUUID: BLE_SERVICE) { result  in
             // If there were no errors, you will now receive Notifications when that characteristic value gets updated.
             switch result {
@@ -243,7 +301,9 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                                                     guard let dataBytes = charac.value else {
                                                         return
                                                     }
-                                                    
+                                                    var isterexist=0
+                                                    let formattedDate:String?
+                                                    var stmt: OpaquePointer?
                                                     var bytearrayString = [String]()
                                                     for bytee in dataBytes {
                                                         bytearrayString.append(String(bytee))
@@ -295,7 +355,7 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                                                             
                                                             // Date and time.
                                                             var dateTime  = [0x12]
-                                                            var terID = String(bytes[14])
+                                                            let terID = Int32(bytes[10])
                                                             // Badge number
                                                             var badgeNoBytes  = [0x12]
                                                             
@@ -323,7 +383,8 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                                                                 
                                                             }
                                                             
-                                                            let formattedDate = self.getFormattedDate(dateHexArr: dateTime)
+                                                           // let formattedDate = self.getFormattedDate(dateHexArr: dateTime)
+                                                            let formattedDateLog = self.getFormattedDateLog(dateHexArr: dateTime)
                                                             
                                                             let charArray = badgeNoNameBytes.map { Character(UnicodeScalar(UInt32($0))!) }
                                                             var nameStr = ""
@@ -331,12 +392,8 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                                                                 nameStr = nameStr + "\(obj)"
                                                             }
 
-                                                            
-                                                            
-                                                            
-                                                            
-                                                            
-                                                            
+                                                           let datetimeTer = self.getDate(date1: formattedDateLog)
+
                                                             // Get data from ble as required.
                                                             // Get command status.
                                                             let commandStatus1 = dataBytes[22]
@@ -384,10 +441,6 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                                                                     mrequiredfiledir="OUT"
                                                                 }
                                                                 
-                                                                
-                                                                
-                                                                var stmt: OpaquePointer?
-                                                                
                                                                 //the insert query
                                                                 let queryString = "INSERT INTO tblLogs (date, badgeNo,ter,direction) VALUES (?,?,?,?)"
                                                                 
@@ -399,10 +452,16 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                                                                 }
                                                                 
                                                                 //binding the parameters
-                                                                if sqlite3_bind_text(stmt, 1, formattedDate, -1, nil) != SQLITE_OK{
-                                                                    let errmsg = String(cString: sqlite3_errmsg(self.db)!)
-                                                                    print("failure binding name: \(errmsg)")
-                                                                    return
+                                                              if  let reDate = datetimeTer {
+                                                                    if sqlite3_bind_double(stmt, 1,reDate.timeIntervalSinceReferenceDate) != SQLITE_OK{
+                                                                        let errmsg = String(cString: sqlite3_errmsg(self.db)!)
+                                                                        print("failure binding name: \(errmsg)")
+                                                                        return
+                                                                    }
+                                                               }
+                                                                else
+                                                                {
+                                                                 sqlite3_bind_null(stmt, 1)
                                                                 }
                                                                 
                                                                 if sqlite3_bind_text(stmt, 2, nameStr, -1, nil) != SQLITE_OK{
@@ -411,7 +470,7 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                                                                     return
                                                                 }
                                                                 
-                                                                if sqlite3_bind_text(stmt, 3, terID, -1, nil) != SQLITE_OK{
+                                                                if sqlite3_bind_int(stmt, 3, terID) != SQLITE_OK{
                                                                     let errmsg = String(cString: sqlite3_errmsg(self.db)!)
                                                                     print("failure binding name: \(errmsg)")
                                                                     return
@@ -423,7 +482,6 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                                                                     return
                                                                 }
                                                                 
-                                                           
                                                                 //executing the query to insert values
                                                                 if sqlite3_step(stmt) != SQLITE_DONE {
                                                                     let errmsg = String(cString: sqlite3_errmsg(self.db)!)
@@ -435,6 +493,15 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                                                                 
                                                                 let name = self.connectedDeviceInfo.deviceName
                                                                 let Address = self.connectedDeviceInfo.deviceIP
+
+                                                                isterexist = 0
+                                                                    if self.TerDisplay.contains(name)
+                                                                    {
+                                                                        isterexist = 1
+                                                                      
+                                                                    }
+                                                                if isterexist == 0
+                                                                {
                                                                 
                                                                 let queryStringTer = "INSERT INTO tblTerminals (Address, Name) VALUES (?,?)"
                                                                 
@@ -457,29 +524,21 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                                                                     print("failure binding name: \(errmsg)")
                                                                     return
                                                                 }
-                                                                
-                                                              
-                                                                
-                                                                
+                                                                    
                                                                 //executing the query to insert values
                                                                 if sqlite3_step(stmt) != SQLITE_DONE {
                                                                     let errmsg = String(cString: sqlite3_errmsg(self.db)!)
                                                                     print("failure inserting hero: \(errmsg)")
                                                                     return
                                                                 }
-                                                                
                                                                 print("Terminal  saved successfully")
+                                                                }
                                                                 
-                                                                
-                                                                
-                                                                
-                                                                
-                                                                
-                                                                
-                                                                
-                                                                
+                                                                 sqlite3_close(stmt)
+                                                                 sqlite3_close(self.db)
                                                             }
                                                             else {
+                                                                
                                                                 if commandStatus1 == 0x01 {
                                                                     _ = AlertController.alert("Something went wrong.", message: "Card Blacklisted")
                                                                 }
@@ -546,19 +605,25 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                                                     _ = AlertController.alert("Something went wrong.", message: "Cutomer Mismatch")
                                                     
                                                 }
-                                                                
-                                                                
-                                                                
-                                                                
-                                                                else {
-                                                                    _ = AlertController.alert("Something went wrong.", message: "\(commandStatus1)")
-                                                                }
-                                                                
-                                                                return
-                                                            }
+ 
+                                                else {
+                                                        _ = AlertController.alert("Something went wrong.", message: "\(commandStatus1)")
+                                                    }
+                                                    return
+                                                    }
+                                                            if  let date=datetimeTer{
+                                                            let formatter = DateFormatter()
+                                                            formatter.dateFormat="dd MMM yyyy hh:mm:ss a"
+                                                            formatter.amSymbol="AM"
+                                                            formatter.pmSymbol="PM"
+                                                            formattedDate = formatter.string(from: date)
+                                                        }
+                                                        else
+                                                        {
+                                                            formattedDate="Invalid datetime"
+                                                        }
                                                             
-                                                            
-                                                            let userInfoDict = ["badgeNameNo":"\(nameStr)" ,"dateTime":"\(formattedDate)","Dir":"\(mrequiredfiledir)"]
+                                                            let userInfoDict = ["badgeNameNo":"\(nameStr)" ,"dateTime":"\(formattedDate!)","Dir":"\(mrequiredfiledir)"]
                                                             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "punchInformation"), object: nil, userInfo: ["UserInfo":userInfoDict])
                                                             self.dismiss(animated: true, completion: nil)
                                                             
@@ -568,13 +633,9 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                                                              //_ = AlertController.alert("other response  == ", message:"\(bytearrayString)")
                                                         }
                                                     }
-                                                    
-                                                    
                                                 }
-                                                
-                                                
-            }
-}
+                                        }
+                                }
 
     //MARK:- Get formatted date
     func getFormattedDate( dateHexArr : [Int]) -> String{
@@ -584,12 +645,25 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
         let dataHours = dateHexArr[3]
         let dataMinutes = dateHexArr[4]
         let dataSeconds = dateHexArr[5]
-        
         let monthName = DateFormatter().monthSymbols[dataMonth - 1]
         let endIndex = monthName.index(monthName.startIndex, offsetBy: +3)
         let truncatedMonth = monthName.substring(to: endIndex)
-        
-        let formatedDate = String( format : "%@:%@:%@ %@:%@:%@","\(dataYear+2000)","\(truncatedMonth)","\(dataDay)","\(dataHours)","\(dataMinutes)","\(dataSeconds)")
+        let formatedDate = String( format : "%@ %@ %@ %@:%@:%@","\(dataDay)","\(truncatedMonth)","\(dataYear+2000)","\(dataHours)","\(dataMinutes)","\(dataSeconds)")
+        print(formatedDate)
+        return formatedDate
+    }
+    
+    func getFormattedDateLog( dateHexArr : [Int]) -> String{
+        let dataYear = dateHexArr[0]
+        let dataMonth = dateHexArr[1]
+        let dataDay = dateHexArr[2]
+        let dataHours = dateHexArr[3]
+        let dataMinutes = dateHexArr[4]
+        let dataSeconds = dateHexArr[5]
+        //let monthName = DateFormatter().monthSymbols[dataMonth - 1]
+        //let endIndex = monthName.index(monthName.startIndex, offsetBy: +3)
+       // let truncatedMonth = monthName.substring(to: endIndex)
+        let formatedDate = String( format : "%@-%@-%@ %@:%@:%@","\(dataYear+2000)","\(dataMonth)","\(dataDay)","\(dataHours)","\(dataMinutes)","\(dataSeconds)")
         print(formatedDate)
         return formatedDate
         
@@ -597,13 +671,11 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     // Get name badge number.
     func getNameBadge( dateHexArr : [Int]) -> String{
-
         var badgeName = ""
         for byteObj in dateHexArr {
             badgeName = badgeName + "\(byteObj)"
         }
         return badgeName
-        
     }
    
     func disconnectCurrentPeriferal(){
@@ -658,10 +730,8 @@ func writeCommandValue2Val(dataArray : [UInt8])  {
                                             case .failure(let error):
                                                 self.disconnectCurrentPeriferal()
                                                 break // An error happened while writting the data.
-                                            }
-    }
-    
-    
+                                                }
+      }
 }
 
     
@@ -670,7 +740,6 @@ func writeCommandValue2Val(dataArray : [UInt8])  {
     public func writeThirdCommandValue(){
         
         self.setTimerForAssignedTime()
-
         var requestDict = Dictionary<String,Any>()
         var count  = 0
         var array1 = [UInt8]()
@@ -756,10 +825,11 @@ extension Data {
         let rawValue: Int
         static let upperCase = HexEncodingOptions(rawValue: 1 << 0)
     }
-    
     func hexEncodedString(options: HexEncodingOptions = []) -> String {
         let format = options.contains(.upperCase) ? "%02hhX" : "%02hhx"
         return map { String(format: format, $0) }.joined()
     }
+    
+   
 }
 

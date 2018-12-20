@@ -164,6 +164,10 @@ extension CustomCollectionViewLayout {
         
         switch columnIndex {
         case 0:
+            text = "MMM-999999"
+        case 2:
+            text = "MMM-99"
+        case 3:
             text = "MMM-99"
             
         default:

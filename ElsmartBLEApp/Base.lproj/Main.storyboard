@@ -877,7 +877,6 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8op-vL-pbx">
                                 <rect key="frame" x="312" y="142" width="51" height="31"/>
                                 <connections>
-                                    <action selector="swAuto:" destination="sAt-M7-9kF" eventType="valueChanged" id="4Tb-Cc-HUm"/>
                                     <action selector="swVib:" destination="sAt-M7-9kF" eventType="valueChanged" id="T8T-c0-3N2"/>
                                 </connections>
                             </switch>
@@ -927,6 +926,11 @@
                             <constraint firstAttribute="trailing" secondItem="hZf-G0-NZ3" secondAttribute="trailing" id="u8m-Rv-hos"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="autosw" destination="KCX-WC-SYA" id="Guu-KP-IjM"/>
+                        <outlet property="biometricSW" destination="RCO-OD-wYB" id="dEX-fY-Rzm"/>
+                        <outlet property="vibration" destination="8op-vL-pbx" id="t09-tM-AYu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uwy-5o-bxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

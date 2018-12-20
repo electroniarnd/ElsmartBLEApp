@@ -13,13 +13,15 @@ class logs {
     var id: Int
     var badgeNo: String?
     var date: String?
-    var ter: String?
+    var time: String?
+    var ter: Int?
     var direction: String?
     
-    init( id: Int, date: String?, badgeNo: String?,  ter: String?, direction: String?){
+    init( id: Int, date: String?,time: String?, badgeNo: String?,  ter: Int?, direction: String?){
        
         self.id = id
-         self.date = date
+        self.date = date
+        self.time = time
         self.badgeNo = badgeNo
         self.ter = ter
         self.direction = direction

@@ -42,7 +42,7 @@ open class AlertController {
     
     open class func alert(_ title: String, message: String) -> UIAlertController {
         return alert(title, message: message, acceptMessage: "OK") { () -> () in
-            // Do nothing
+           
         }
     }
     

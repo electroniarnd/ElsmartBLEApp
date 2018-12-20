@@ -15,7 +15,7 @@ class ELHomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate,CBCen
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         
     }
-    
+    var autovalue: String?
     @IBOutlet weak var homeTitleLbl: ELCustomLabel!
     @IBOutlet weak var connectBtn: UIButton!
     @IBOutlet weak var badgeNoLbl: ELCustomLabel!
@@ -31,12 +31,9 @@ class ELHomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate,CBCen
     @IBOutlet weak var dateLabel: UILabel!
    // @IBOutlet weak var badgeNoLabel: UILabel!
     @IBOutlet weak var checkMarkBtn: UIButton!
-    
     @IBOutlet weak var dir: UILabel!
-    
+    let defaults = UserDefaults.standard
     var optionArrayList = [String]()
-
-    
     var dateFinal = ""
     var nameStr = ""
     
@@ -44,9 +41,42 @@ class ELHomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate,CBCen
     override func viewDidLoad() {
         super.viewDidLoad()
         self.checkMarkBtn.isHidden = true
-        // Do any additional setup after loading the view, typically from a nib.
+   // Do any additional setup after loading the view, typically from a nib.
         self.setUpInitial()
-
+        fetchLastRegisteredUserDataLocally()
+        if  autovalue == "1"
+        {
+        
+        if let badgeNumber = NSUSERDEFAULT.value(forKey: "badgeNumber") {
+            print(badgeNumber)
+            
+            SwiftyBluetooth.asyncState { (AsyncCentralState) in
+                switch AsyncCentralState{
+                case .poweredOn:
+                    DispatchQueue.main.async {
+                        let deviceVC = self.storyboard?.instantiateViewController(withIdentifier: "ELDeviceListVC") as! ELDeviceListVC
+                        deviceVC.modalTransitionStyle = .crossDissolve
+                        deviceVC.modalPresentationStyle = .overFullScreen
+                        self.present(deviceVC, animated: true, completion: nil)
+                    }
+                    break
+                default:
+                    let opts = [CBCentralManagerOptionShowPowerAlertKey: true]
+                    CBCentralManager(delegate: self, queue: nil, options: opts)
+                    break
+                }
+            }
+        } else {
+            _ = AlertController.alert("", message: NSLocalizedString(KUnregisteredUser, comment: ""))
+            
+              }
+        }
+    }
+    
+    func fetchLastRegisteredUserDataLocally(){
+        let AutoValue = defaults.string(forKey: "AutoValue")
+        self.autovalue=AutoValue  as! String?
+        
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -76,7 +106,6 @@ class ELHomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate,CBCen
                 self.dateLabel.text = dict?.validatedValue("dateTime", expected: "" as AnyObject) as? String
                 self.dir.text = dict?.validatedValue("Dir", expected: "" as AnyObject) as? String
                 self.checkMarkBtn.isHidden = false
-
             }
         }
     }
@@ -88,7 +117,7 @@ class ELHomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate,CBCen
             navigationViewHeightConst.constant += 20
         }
         responseView.isHidden = true
-     //   punchBtn.setTitle(NSLocalizedString(kPunch, comment: ""), for: .normal)
+    //   punchBtn.setTitle(NSLocalizedString(kPunch, comment: ""), for: .normal)
       
         homeOptionTableView.rowHeight = UITableViewAutomaticDimension
         homeOptionTableView.estimatedRowHeight = 55
@@ -100,8 +129,6 @@ class ELHomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate,CBCen
         homeMenuView.layer.shadowOffset = CGSize(width: 3.0, height: 2.0)
         homeMenuView.layer.shadowRadius = 5.0
         homeMenuView.layer.shadowColor = UIColor.darkGray.cgColor
-			
-			
     }
     
     
@@ -130,9 +157,6 @@ class ELHomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate,CBCen
             }
             homeMenuView.isHidden = !homeMenuView.isHidden
         }
-        
-        
-        
         else if indexPath.row == 1{
             DispatchQueue.main.async {
                 let SettingsVC = self.storyboard?.instantiateViewController(withIdentifier: "ELLogsViewController") as! ELLogsViewController
@@ -140,9 +164,6 @@ class ELHomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate,CBCen
             }
             homeMenuView.isHidden = !homeMenuView.isHidden
         }
-        
-        
-        
         else if indexPath.row == 2{
             DispatchQueue.main.async {
                 let SettingsVC = self.storyboard?.instantiateViewController(withIdentifier: "ELSettingsViewController") as! ELSettingsViewController
@@ -150,8 +171,6 @@ class ELHomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate,CBCen
             }
             homeMenuView.isHidden = !homeMenuView.isHidden
         }
-            
-            
         else if indexPath.row == 3{
             DispatchQueue.main.async {
                 let aboutVC = self.storyboard?.instantiateViewController(withIdentifier: "ELTerminalViewController") as! ELTerminalViewController
@@ -159,8 +178,6 @@ class ELHomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate,CBCen
             }
             homeMenuView.isHidden = !homeMenuView.isHidden
         }
-        
-        
         else if indexPath.row == 4{
              DispatchQueue.main.async {
             let aboutVC = self.storyboard?.instantiateViewController(withIdentifier: "ELAboutViewController") as! ELAboutViewController
@@ -168,18 +185,6 @@ class ELHomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate,CBCen
             }
             homeMenuView.isHidden = !homeMenuView.isHidden
         }
-        
-        
-        
-        
-       
-        
-        
-       
-            
-            
-        
-        
        
     }
     
@@ -230,7 +235,7 @@ class ELHomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate,CBCen
 				statusDescriptionLbl.backgroundColor = .green
 				badgeNoLbl.text = badgeNumber as? String
 				nameLbl.text = NSUSERDEFAULT.value(forKey: "regUsername") as? String
-               // self.badgeNoLabel.text = badgeNumber as? String
+    // self.badgeNoLabel.text = badgeNumber as? String
 		} else {
 				statusDescriptionLbl.text = NSLocalizedString(KUnregistered, comment: "")
 				statusDescriptionLbl.backgroundColor = .red
@@ -240,7 +245,7 @@ class ELHomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate,CBCen
     //MARK: Memory Warning Methods
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // Dispose of any resources that can be recreated.
     }
 	func updateUIForSuccess()  {
 		

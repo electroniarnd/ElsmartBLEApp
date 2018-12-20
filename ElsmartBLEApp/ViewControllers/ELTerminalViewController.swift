@@ -40,20 +40,20 @@ class ELTerminalViewController: UIViewController,UICollectionViewDataSource,UICo
             if TerDetail.count == 0
             {
                 if indexPath.row == 0 {
-                    cell.CustomLabel.text = "Pradeep"//String(indexPath.section)
+                    cell.CustomLabel.text = ""//String(indexPath.section)
                 }
                 if indexPath.row == 1 {
-                    cell.CustomLabel.text = "Pradeep"//String(indexPath.section)
+                    cell.CustomLabel.text = ""//String(indexPath.section)
                 }
                 if indexPath.row == 2 {
-                    cell.CustomLabel.text = "Pradeep"//String(indexPath.section)
+                    cell.CustomLabel.text = ""//String(indexPath.section)
                 }
                 
             }
                 
             else
             {
-                tervalue = TerDetail[indexPath.row]
+                tervalue = TerDetail[indexPath.section - 1]
                 if indexPath.row == 0 {
                     cell.CustomLabel.text = String(tervalue.id)//String(indexPath.section)
                 }
@@ -73,7 +73,7 @@ class ELTerminalViewController: UIViewController,UICollectionViewDataSource,UICo
     
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 50
+        return TerDetail.count + 1
     }
 
 
@@ -103,7 +103,8 @@ class ELTerminalViewController: UIViewController,UICollectionViewDataSource,UICo
     
     
     func readValues(){
-        
+        var name:String?
+        var address:String?
         //first empty the list of heroes
         TerDetail.removeAll()
         
@@ -122,20 +123,29 @@ class ELTerminalViewController: UIViewController,UICollectionViewDataSource,UICo
         
         //traversing through all the records
         while(sqlite3_step(stmt) == SQLITE_ROW){
-            let id = sqlite3_column_int(stmt, 0)
-            let Name = String(cString: sqlite3_column_text(stmt, 1))
-            let Address = String(cString: sqlite3_column_text(stmt, 2))
-         
-            
-            
+            let id  = sqlite3_column_int(stmt, 0)
+           if let Name = sqlite3_column_text(stmt, 1)
+           {
+               name = String(cString: Name)
+            }
+            else
+           {
+            name=""
+            }
+           if let Address = sqlite3_column_text(stmt, 2)
+           {
+            address = String(cString: Address)
+           }
+            else
+           {
+            address=""
+           }
             //adding values to list
-            TerDetail.append(TerDetails( id: Int(id),Name: String(describing: Name), Address: String(describing: Address)))
-            
-            
+            if name! != ""
+            {
+            TerDetail.append(TerDetails( id: Int(id),Name: String(describing: name!), Address: String(describing: address!)))
+            }
         }
-        
-        
-        
     }
     /*
     // MARK: - Navigation
