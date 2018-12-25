@@ -28,12 +28,65 @@
 "Registration" = "Registration";
 "About" = "About";
 "Debug" = "Debug";
+"Logs" = "Logs";
 "Vibration" = "Vibration";
 "TurnOnBluetooth" = "The app wants to turn on Bluetooth.";
 "mElsmart" = "mElsmart";
 "Cancel"   = "Cancel";
 "Eacs" = "Eacs";
 "Elsmart" = "Elsmart";
+"OUT" = "OUT";
+"IN" = "IN";
+"Settings" = "Settings";
+"Registered Terminal" = "Registered Terminal";
+"ID" = "ID";
+"Name" = "Name";
+"Address" = "Address";
+"Date" = "Date";
+"Address" = "Address";
+"TerNo" = "TerNo";
+"Dir" = "Dir";
+"Information" = "Information";
+"Secondary Data added successfully" = "Secondary Data added successfully";
+"Ok" = "Ok";
+"OK" = "OK";
+"Registered successfully" = "Registered successfully";
+"Are you sure to do Registration Again" = "Are you sure to do Registration Again";
+"Are you sure to Unregister?" = "Are you sure to Unregister?";
+
+//Error List
+"Card Blacklisted" = "Card Blacklisted";
+"Access Denied" = "Access Denied";
+"CARD EXPIRED" = "CARD EXPIRED";
+"ANTIPASS BACK ERROR" = "ANTIPASS BACK ERROR";
+"ACCESS DURING LOCK" = "ACCESS DURING LOCK";
+"ACCESS DURING HOLIDAY" = "ACCESS DURING HOLIDAY";
+"ACCESS DURING LEAVE" = "ACCESS DURING LEAVE";
+"PIN_FAIL" = "PIN_FAIL";
+"BIO_FAIL" = "BIO_FAIL";
+"DURESS_CODE" = "DURESS_CODE";
+"ACCESS_SCHEDULE" = "ACCESS_SCHEDULE";
+"FLASH_WRITE_FAIL" = "FLASH_WRITE_FAIL";
+"BIO_DEVICE_ERR" = "BIO_DEVICE_ERR";
+"Eacs ACCESCORT" = "Eacs ACCESCORT";
+"Eacs CARDTWING" = "Eacs CARDTWING";
+"SYSTEM_HALTED" = "SYSTEM_HALTED";
+"FP TIMEOUT ERROR" = "FP TIMEOUT ERROR";
+"NOT SUPPORTED" = "NOT SUPPORTED";
+"NOT ENROLLED" = "NOT ENROLLED" ;
+"NO FINGER DETECTED" = "NO FINGER DETECTED";
+"READER ERROR" = "READER ERROR";
+"Cutomer Mismatch" = "Cutomer Mismatch";
+"Something went wrong:" = "Something went wrong:";
+"Sucessfully deleted" = "Sucessfully deleted";
+"Could not delete" = "Could not delete";
+"Error occurred while deleting a record" = "Error occurred while deleting a record";
+
+
+
+
+
+
 
 //Error Messages
 "Please enter badge number" = "Please enter badge number";

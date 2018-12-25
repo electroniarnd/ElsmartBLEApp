@@ -12,6 +12,13 @@ class ELTerminalViewController: UIViewController,UICollectionViewDataSource,UICo
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
     }
+   
+
+    @IBOutlet weak var uiCollectiobvw: UICollectionView!
+    
+        
+    @IBOutlet weak var btndelview: UIButton!
+    
     var TerDetail = [TerDetails]()
     var db: OpaquePointer?
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -27,13 +34,13 @@ class ELTerminalViewController: UIViewController,UICollectionViewDataSource,UICo
         
         if indexPath.section == 0 {
             if indexPath.row == 0 {
-                cell.CustomLabel.text = "ID"
+                cell.CustomLabel.text = NSLocalizedString("ID", comment: "")
             }
             if indexPath.row == 1{
-                cell.CustomLabel.text = "Name"
+                cell.CustomLabel.text = NSLocalizedString("Name", comment: "")
             }
             if indexPath.row == 2{
-                cell.CustomLabel.text = "Address"
+                cell.CustomLabel.text = NSLocalizedString("Address", comment: "")
             }
             
         } else {
@@ -77,9 +84,52 @@ class ELTerminalViewController: UIViewController,UICollectionViewDataSource,UICo
     }
 
 
+    
+    
+    
+    @IBAction func btndelete(_ sender: UIButton) {
+        let queryString = "delete FROM tblTerminals"
+        
+        //statement pointer
+        var stmt:OpaquePointer?
+        
+        //preparing the query
+        if sqlite3_prepare_v2(self.db, queryString, -1, &stmt, nil) == SQLITE_OK{
+            if sqlite3_step(stmt) == SQLITE_DONE
+            {
+               AlertController.alert( "",message: NSLocalizedString("Sucessfully deleted", comment: ""))
+                print("Sucessfully deleted")
+            }
+            else
+            {
+                 AlertController.alert( "",message: NSLocalizedString("Could not delete", comment: ""))
+                print("could not delete.")
+            }
+        }
+        else
+        {
+             AlertController.alert( NSLocalizedString("Something went wrong", comment: ""),message: NSLocalizedString("Error occurred while deleting a record", comment: ""))
+            print("Error occurred while deleting a record")
+        }
+        sqlite3_finalize(stmt)
+        //DispatchQueue.main.async {
+         //   self.uiCollectiobvw.reloadData()
+        //}
+      self.viewDidLoad()
+      self.uiCollectiobvw.reloadData()
+    
+        
+    }
+    
+    
+   
+    
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+      //  uiCollectiobvw.reloadData()
+       // btndelview.center = self.view.center
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
             .appendingPathComponent("Elsmart.sqlite")
         
@@ -94,6 +144,7 @@ class ELTerminalViewController: UIViewController,UICollectionViewDataSource,UICo
         }
         // Do any additional setup after loading the view.
        readValues()
+       
     }
     
 

@@ -22,6 +22,8 @@ let kCancel             = "Cancel"
 let kResponseCode       = "responseCode"
 let KVersion            = "Version"
 let mElsmart            = "mElsmart"
+let mOUT                = "OUT"
+let mIN                 = "IN"
 let KEacs               = "Eacs"
 let KElsmart            = "Elsmart"
 //For Registration headings or title

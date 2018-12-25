@@ -10,7 +10,10 @@
 "Register" = "تسجيل";
 "Unregister" = "غير المسجلة";
 "Version" = "الإصدار:";
-
+"Logs" = "سجلات";
+"OUT" = "خروج";
+"IN" = "دخول";
+"Settings" = "الإعدادات";
 "BadgeNo" = "قم الشارة";
 "Title" = "اللقب";
 "Department" = "القسم";
@@ -34,6 +37,53 @@
 "Cancel"  = "إلغاء";
 "Eacs" = "نظام التحكم بالعبور";
 "Elsmart" = "السمارت";
+"Registered Terminal" = "القارىء المسجل";
+"ID" = "المعرّف";
+"Name" = "الإسم";
+"Address" = "عنوان";
+"Date" = "تاريخ";
+"Time" = "وقت";
+"TerNo" = "رقم القارئ";
+"Dir" = "الاتجاه";
+"Information" = "معلومات";
+"Secondary Data added successfully" = "تمت إضافة البيانات الثانوية بنجاح";
+"Ok" = "حسناً";
+"Registered successfully" = "نجاح التسجيل";
+"OK" = "حسناً";
+"Are you sure to do Registration Again" = "هل أنت متأكد من القيام بالتسجيل مرة أخرى؟";
+"Are you sure to Unregister?" = "Are you sure to Unregister?";
+
+//Error List
+
+//Error List
+"Card Blacklisted" = "بطاقة محظورة";
+"Access Denied" = "تم رفض الدخول";
+"CARD EXPIRED" = "البطاقة منتهية";
+"ANTIPASS BACK ERROR" = "ANTIPASS BACK ERROR";
+"ACCESS DURING LOCK" = "الدخول أثناء القفل";
+"ACCESS DURING HOLIDAY" = "الدخول أثناء العطل";
+"ACCESS DURING LEAVE" = "الدخول أثناء الإجازة";
+"PIN_FAIL" = "فشل الرقم السري";
+"BIO_FAIL" = "فشل البصمة";
+"DURESS_CODE" = "DURESS_CODE";
+"ACCESS_SCHEDULE" = "جدول العبور";
+"FLASH_WRITE_FAIL" = "FLASH_WRITE_FAIL";
+"BIO_DEVICE_ERR" = "BIO_DEVICE_ERR";
+"Eacs ACCESCORT" = "Eacs ACCESCORT";
+"Eacs CARDTWING" = "Eacs CARDTWING";
+"SYSTEM_HALTED" = "SYSTEM_HALTED";
+"FP TIMEOUT ERROR" = "FP TIMEOUT ERROR";
+"NOT SUPPORTED" = "NOT SUPPORTED";
+"NOT ENROLLED" = "NOT ENROLLED" ;
+"NO FINGER DETECTED" = "NO FINGER DETECTED";
+"READER ERROR" = "READER ERROR";
+"Cutomer Mismatch" = "Cutomer Mismatch";
+"Something went wrong:" = "Something went wrong:";
+"Sucessfully deleted" = "تم حذف بنجاح";
+"Could not delete" = "لا يمكن الحذف";
+"Error occurred while deleting a record" = "خطأ أثناء حذف السجل";
+
+
 
 //Error Messages
 "Please enter badge number" = "الرجاء إدخال رقم الشارة";

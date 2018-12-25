@@ -22,6 +22,14 @@
 		183CFD5021C2503C00C06A2A /* TerminalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CFD4F21C2503C00C06A2A /* TerminalCollectionViewCell.swift */; };
 		183CFD5821C2519A00C06A2A /* TerminalCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CFD5721C2519A00C06A2A /* TerminalCollectionViewLayout.swift */; };
 		183CFD5C21C255CE00C06A2A /* TerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CFD5B21C255CE00C06A2A /* TerDetails.swift */; };
+		1869F01021D24B5E009DDD41 /* in.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1869F00421D24B5D009DDD41 /* in.mp3 */; };
+		1869F01121D24B5E009DDD41 /* out.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1869F00921D24B5D009DDD41 /* out.mp3 */; };
+		1869F01221D24B5E009DDD41 /* click2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1869F00A21D24B5D009DDD41 /* click2.mp3 */; };
+		1869F01321D24B5E009DDD41 /* error.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1869F00B21D24B5D009DDD41 /* error.mp3 */; };
+		1869F01421D24B5E009DDD41 /* accessdenied.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1869F00C21D24B5D009DDD41 /* accessdenied.mp3 */; };
+		1869F01521D24B5E009DDD41 /* blacklisted.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1869F00D21D24B5D009DDD41 /* blacklisted.mp3 */; };
+		1869F01621D24B5E009DDD41 /* antipassback.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1869F00E21D24B5E009DDD41 /* antipassback.mp3 */; };
+		1869F01721D24B5E009DDD41 /* cardexpired.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1869F00F21D24B5E009DDD41 /* cardexpired.mp3 */; };
 		18700F1221B952FD00681C8F /* ELLogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18700F1121B952FD00681C8F /* ELLogsViewController.swift */; };
 		18700F1821B9531900681C8F /* ELTerminalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18700F1721B9531900681C8F /* ELTerminalViewController.swift */; };
 		18ED334F21B8215F00D98C9A /* ELSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED334E21B8215F00D98C9A /* ELSettingsViewController.swift */; };
@@ -175,6 +183,14 @@
 		183CFD4F21C2503C00C06A2A /* TerminalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalCollectionViewCell.swift; sourceTree = "<group>"; };
 		183CFD5721C2519A00C06A2A /* TerminalCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalCollectionViewLayout.swift; sourceTree = "<group>"; };
 		183CFD5B21C255CE00C06A2A /* TerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerDetails.swift; sourceTree = "<group>"; };
+		1869F00421D24B5D009DDD41 /* in.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = in.mp3; sourceTree = "<group>"; };
+		1869F00921D24B5D009DDD41 /* out.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = out.mp3; sourceTree = "<group>"; };
+		1869F00A21D24B5D009DDD41 /* click2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click2.mp3; sourceTree = "<group>"; };
+		1869F00B21D24B5D009DDD41 /* error.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = error.mp3; sourceTree = "<group>"; };
+		1869F00C21D24B5D009DDD41 /* accessdenied.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = accessdenied.mp3; sourceTree = "<group>"; };
+		1869F00D21D24B5D009DDD41 /* blacklisted.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blacklisted.mp3; sourceTree = "<group>"; };
+		1869F00E21D24B5E009DDD41 /* antipassback.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = antipassback.mp3; sourceTree = "<group>"; };
+		1869F00F21D24B5E009DDD41 /* cardexpired.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cardexpired.mp3; sourceTree = "<group>"; };
 		18700F1121B952FD00681C8F /* ELLogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELLogsViewController.swift; sourceTree = "<group>"; };
 		18700F1721B9531900681C8F /* ELTerminalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELTerminalViewController.swift; sourceTree = "<group>"; };
 		18ED334E21B8215F00D98C9A /* ELSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELSettingsViewController.swift; sourceTree = "<group>"; };
@@ -471,6 +487,22 @@
 			path = Headers;
 			sourceTree = "<group>";
 		};
+		1869EFEE21D22938009DDD41 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				1869F00C21D24B5D009DDD41 /* accessdenied.mp3 */,
+				1869F00E21D24B5E009DDD41 /* antipassback.mp3 */,
+				1869F00D21D24B5D009DDD41 /* blacklisted.mp3 */,
+				1869F00F21D24B5E009DDD41 /* cardexpired.mp3 */,
+				1869F00A21D24B5D009DDD41 /* click2.mp3 */,
+				1869F00B21D24B5D009DDD41 /* error.mp3 */,
+				1869F00421D24B5D009DDD41 /* in.mp3 */,
+				1869F00921D24B5D009DDD41 /* out.mp3 */,
+			);
+			name = Sound;
+			path = ElsmartBLEApp/Sound;
+			sourceTree = SOURCE_ROOT;
+		};
 		18FF432721C1041E006709F6 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
@@ -583,6 +615,7 @@
 		94D2CD36208A05D80094DFEE /* ElsmartBLEApp */ = {
 			isa = PBXGroup;
 			children = (
+				1869EFEE21D22938009DDD41 /* Sound */,
 				18FF432721C1041E006709F6 /* Layout */,
 				12C671BF2091E39000D6C3CD /* WebServiceHelper */,
 				12C671BC2091D39200D6C3CD /* ModelClasses */,
@@ -776,10 +809,18 @@
 				94D2CD42208A05D80094DFEE /* LaunchScreen.storyboard in Resources */,
 				94D2CD3F208A05D80094DFEE /* Assets.xcassets in Resources */,
 				94D2CD3D208A05D80094DFEE /* Main.storyboard in Resources */,
+				1869F01121D24B5E009DDD41 /* out.mp3 in Resources */,
+				1869F01221D24B5E009DDD41 /* click2.mp3 in Resources */,
+				1869F01421D24B5E009DDD41 /* accessdenied.mp3 in Resources */,
+				1869F01621D24B5E009DDD41 /* antipassback.mp3 in Resources */,
+				1869F01021D24B5E009DDD41 /* in.mp3 in Resources */,
 				6079A385208F5C6800B0D013 /* Localizable.strings in Resources */,
+				1869F01521D24B5E009DDD41 /* blacklisted.mp3 in Resources */,
+				1869F01721D24B5E009DDD41 /* cardexpired.mp3 in Resources */,
 				60515F5A208DF1C0005CAD7B /* roboto.regular.ttf in Resources */,
 				60515F59208DF1C0005CAD7B /* roboto.medium.ttf in Resources */,
 				60515F58208DF1C0005CAD7B /* roboto.light.ttf in Resources */,
+				1869F01321D24B5E009DDD41 /* error.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

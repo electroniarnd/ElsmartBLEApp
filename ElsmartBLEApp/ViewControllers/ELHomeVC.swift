@@ -105,7 +105,21 @@ class ELHomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate,CBCen
                 self.statusIdLabel.text = dict?.validatedValue("badgeNameNo", expected: "" as AnyObject) as? String
                 self.dateLabel.text = dict?.validatedValue("dateTime", expected: "" as AnyObject) as? String
                 self.dir.text = dict?.validatedValue("Dir", expected: "" as AnyObject) as? String
+                 let PunchValue = dict?.validatedValue("PunchValue", expected: "" as AnyObject) as? String
+              
                 self.checkMarkBtn.isHidden = false
+                  if PunchValue == "1"
+                  {
+                    let img = UIImage(named: "tick")
+                    self.checkMarkBtn.setImage(img, for: .normal)
+                  }
+                else
+                  {
+                    let img = UIImage(named: "cross180")
+                    self.checkMarkBtn.setImage(img, for: .normal)
+                    
+                  }
+                
             }
         }
     }
@@ -222,7 +236,7 @@ class ELHomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate,CBCen
 						break
 					}
 				}
-			} else {
+ 			} else {
 				_ = AlertController.alert("", message: NSLocalizedString(KUnregisteredUser, comment: ""))
 				
 			}

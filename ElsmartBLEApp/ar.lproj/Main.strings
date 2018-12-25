@@ -22,3 +22,23 @@
 
 /* Class = "UILabel"; text = "mElsmart"; ObjectID = "5Wo-LS-T6p"; */
 "5Wo-LS-T6p.text" = "م  السمارت";
+//name
+"CdO-bT-IgU.text" = "الإسم";
+//date
+"6qv-6M-h0E.text" = "تاريخ";
+//ststus
+"B2B-Z5-4xS.text"  = "الحالة";
+//melsmart
+"oT0-sk-9vL.text" =   "م  السمارت";
+//melsmart
+"Nll-Bc-7yO.text" =   "م  السمارت";
+//melsmart
+"Qfb-ZV-D2O.text" =   "م  السمارت";
+//AutoPunch
+"vdX-om-T6m.text" = "بصمة تلقائية";
+//Vibration
+"IU6-mk-f0z.text" = "اهتزاز";
+//Biometric
+"WC7-FL-cGP.text" = "البصمة";
+
+

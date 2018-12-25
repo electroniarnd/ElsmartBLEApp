@@ -11,6 +11,7 @@ import  SwiftyBluetooth
 import CoreBluetooth
 import AudioToolbox
 import SQLite3
+import AVFoundation
 
 let BLE_SERVICE = "0000E0FF-3C17-D293-8E48-14FE2E4DA212"
 let BLE_CHARACTERISTIC  = "0000FFE1-0000-1000-8000-00805F9B34FB"
@@ -34,6 +35,7 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
     var deviceList = [ELDeviceInfo]()
     var periArray = [Peripheral]()
     var index = 0
+    var ErrorMeassge="Something went wrong"
     var TerDisplay=[String]()
     // Timer to set reps
     var repTimer : Timer?
@@ -41,31 +43,16 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
     // Timer to set reps
     var commandTimer : Timer?
     var commandTime = 0
+    var punchvalue = 0
     var db: OpaquePointer? //pradeep
+    var Player: AVAudioPlayer!
 
     //MARK:- View Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpDefaults()
         //pradeep
-        
-        let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
-            .appendingPathComponent("Elsmart.sqlite")
-        
-        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
-            print("error opening database")
-        }
-        
-        //creating table
-        if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS tblLogs (id INTEGER PRIMARY KEY AUTOINCREMENT,date REAL,badgeNo TEXT, ter TEXT,direction TEXT)", nil, nil, nil) != SQLITE_OK {
-            let errmsg = String(cString: sqlite3_errmsg(db)!)
-            print("error creating table: \(errmsg)")
-        }
-        
-        if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS tblTerminals (id INTEGER PRIMARY KEY AUTOINCREMENT,Name TEXT,Address TEXT)", nil, nil, nil) != SQLITE_OK {
-            let errmsg = String(cString: sqlite3_errmsg(db)!)
-            print("error creating table: \(errmsg)")
-        }
+        setinitdatabase()
     }
     
     func fetchLastRegisteredUserDataLocally(){
@@ -166,6 +153,7 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                 {
                 self.connectedDeviceInfo=obj
                 self.connectedPeripheral = peripheral
+                self.dismiss(animated: true, completion: nil)
                 peripheral.connect(withTimeout: 60) { result in
                 switch result {
                     case .success:
@@ -303,6 +291,7 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                                                     }
                                                     var isterexist=0
                                                     let formattedDate:String?
+                                                    var SoundURL  = ""
                                                     var stmt: OpaquePointer?
                                                     var bytearrayString = [String]()
                                                     for bytee in dataBytes {
@@ -402,7 +391,7 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                                                             res=res & 0xFF9E
                                                             if commandStatus1 == 0x00 && commandStatus2 == 0x00
                                                             {
-                                                                
+                                                                self.punchvalue = 1
                                                                 
                                                                  mrequiredfiledir = String(dataBytes[56])
                                                                 var mutableArray = [UInt8]()
@@ -432,13 +421,16 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                                                                 else {
                                                                     print("Ooops! Something went wrong!")
                                                                 }
-                                                                if mrequiredfiledir=="100"
+                                                                if dataBytes[56] & 0x0C == 0x08
                                                                 {
-                                                                    mrequiredfiledir="IN"
+                                                                    self.ErrorMeassge = NSLocalizedString(mOUT, comment: "")
+                                                                    SoundURL =  Bundle.main.path(forResource: "out", ofType: "mp3") ?? ""
+                                                                    
                                                                 }
                                                                 else
                                                                 {
-                                                                    mrequiredfiledir="OUT"
+                                                                    self.ErrorMeassge = NSLocalizedString(mIN, comment: "")
+                                                                   SoundURL = Bundle.main.path(forResource: "in", ofType: "mp3") ?? ""
                                                                 }
                                                                 
                                                                 //the insert query
@@ -476,7 +468,7 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                                                                     return
                                                                 }
                                                                 
-                                                                if sqlite3_bind_text(stmt, 4, mrequiredfiledir, -1, nil) != SQLITE_OK{
+                                                                if sqlite3_bind_text(stmt, 4, self.ErrorMeassge, -1, nil) != SQLITE_OK{
                                                                     let errmsg = String(cString: sqlite3_errmsg(self.db)!)
                                                                     print("failure binding name: \(errmsg)")
                                                                     return
@@ -538,79 +530,103 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                                                                  sqlite3_close(self.db)
                                                             }
                                                             else {
-                                                                
+                                                                self.punchvalue = 0
                                                                 if commandStatus1 == 0x01 {
-                                                                    _ = AlertController.alert("Something went wrong.", message: "Card Blacklisted")
+                                                                 self.ErrorMeassge = NSLocalizedString("Card Blacklisted", comment: "")  //  _ = AlertController.alert("Something went wrong.", message: "Card Blacklisted")
+                                                                   SoundURL = Bundle.main.path(forResource: "blacklisted", ofType: "mp3") ?? ""
                                                                 }
                                                                     if commandStatus1 == 0x02 {
-                                                                        _ = AlertController.alert("Something went wrong.", message: "Access Denied")
+                                                                     self.ErrorMeassge = NSLocalizedString("Access Denied", comment: "")  //  _ = AlertController.alert("Something went wrong.", message: "Access Denied")
+                                                                      SoundURL = Bundle.main.path(forResource: "accessdenied", ofType: "mp3") ?? ""
                                                                 }
                                                                 if commandStatus1 == 0x03 {
-                                                                    _ = AlertController.alert("Something went wrong.", message: "CARD EXPIRED")
+                                                                    self.ErrorMeassge = NSLocalizedString("CARD EXPIRED", comment: "") //_ = AlertController.alert("Something went wrong.", message: "CARD EXPIRED")
+                                                                   SoundURL = Bundle.main.path(forResource: "cardexpired", ofType: "mp3") ?? ""
                                                                 }
                                                                  else if commandStatus1 == 0x04{
-                                                                    _ = AlertController.alert("Something went wrong.", message: "ANTIPASS BACK ERROR")
+                                                                   self.ErrorMeassge = NSLocalizedString("ANTIPASS BACK ERROR", comment: "") //  _ = AlertController.alert("Something went wrong.", message: "ANTIPASS BACK ERROR")
+                                                                  SoundURL = Bundle.main.path(forResource: "antipassback", ofType: "mp3") ?? ""
                                                                 }
                                                                    else if commandStatus1 == 0x05 {
-                                                                        _ = AlertController.alert("Something went wrong.", message: "ACCESS DURING LOCK")
+                                                                      self.ErrorMeassge = NSLocalizedString("ACCESS DURING LOCK", comment: "")   //_ = AlertController.alert("Something went wrong.", message: "ACCESS DURING LOCK")
+                                                                    SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3") ?? ""
                                                                 }
                                                                      else   if commandStatus1 == 0x06 {
-                                                                            _ = AlertController.alert("Something went wrong.", message: "ACCESS DURING HOLIDAY")
+                                                                          self.ErrorMeassge = NSLocalizedString("ACCESS DURING HOLIDAY" , comment: "")
+                                                                    SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3") ?? ""//_ = AlertController.alert("Something went wrong.", message: "ACCESS DURING HOLIDAY")
                                                                 }
-                                                                         else   if commandStatus1 == 0x07 {                                                                                _ = AlertController.alert("Something went wrong.", message: "ACCESS DURING LEAVE")
+                                                                         else   if commandStatus1 == 0x07 {
+                                                                   self.ErrorMeassge = NSLocalizedString("ACCESS DURING LEAVE" , comment: "")
+                                                                    SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3") ?? ""// _ = AlertController.alert("Something went wrong.", message: "ACCESS DURING LEAVE")
                                                              
                                                                 } else if commandStatus1 == 0x08{
-                                                                    _ = AlertController.alert("Something went wrong.", message: "PIN_FAIL")
+                                                                   self.ErrorMeassge = NSLocalizedString("PIN_FAIL" , comment: "")
+                                                                    SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3") ?? ""// _ = AlertController.alert("Something went wrong.", message: "PIN_FAIL")
                                                                 }
                                                                               else  if commandStatus1 == 0x09 {
-                                                                                    _ = AlertController.alert("Something went wrong.", message: "BIO_FAIL")
-                                                                } else if commandStatus1 == 0x0A{
-                                                                    _ = AlertController.alert("Something went wrong.", message: "DURESS_CODE")
+                                                                                    self.ErrorMeassge = NSLocalizedString("BIO_FAIL" , comment: "")
+                                                                                 SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3") ?? ""//    _ = AlertController.alert("Something went wrong.", message: "BIO_FAIL")
+                                                                                }
+                                                                                  else if commandStatus1 == 0x0A{
+                                                                                  self.ErrorMeassge = NSLocalizedString("DURESS_CODE" , comment: "")
+                                                                                  SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3") ?? ""
+                                                                    //  _ = AlertController.alert("Something went wrong.", message: "DURESS_CODE")
                                                                                 } else if commandStatus1 == 0x0B{
-                                                                                    _ = AlertController.alert("Something went wrong.", message: "ACCESS_SCHEDULE")
+                                                                                 self.ErrorMeassge = NSLocalizedString("ACCESS_SCHEDULE"  , comment: "")
+                                                                                      SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3") ?? ""
+                                                                                   // _ = AlertController.alert("Something went wrong.", message: "ACCESS_SCHEDULE")
                                                                                 } else if commandStatus1 == 0x0C{
-                                                                                    _ = AlertController.alert("Something went wrong.", message: "FLASH_WRITE_FAIL")
+                                                                                  self.ErrorMeassge = NSLocalizedString("FLASH_WRITE_FAIL"  , comment: "")
+                                                                     SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3") ?? ""
+                                                                    //_ = AlertController.alert("Something went wrong.", message: "FLASH_WRITE_FAIL")
                                                                                 } else if commandStatus1 == 0x0D{
-                                                                                    _ = AlertController.alert("Something went wrong.", message: "BIO_DEVICE_ERR")
+                                                                                 self.ErrorMeassge = NSLocalizedString("BIO_DEVICE_ERR"  , comment: "")
+                                                                            SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3") ?? ""
+                                                                                  // _ = AlertController.alert("Something went wrong.", message: "BIO_DEVICE_ERR")
                                                                                 } else if commandStatus1 == 0x0E{
-                                                                                    _ = AlertController.alert("Something went wrong.", message: "Eacs ACCESCORT")
+                                                                                  self.ErrorMeassge = NSLocalizedString("Eacs ACCESCORT"   , comment: "")
+                                                                    SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3") ?? ""
+                                                                                //  _ = AlertController.alert("Something went wrong.", message: "Eacs ACCESCORT")
                                                                                 } else if commandStatus1 == 0x0F{
-                                                                                    _ = AlertController.alert("Something went wrong.", message: "Eacs CARDTWING")
-                                                                                
-                                                                } else if commandStatus1 == 0x10{
-                                                                    _ = AlertController.alert("Something went wrong.", message: "SYSTEM_HALTED")
-
-                                                                } else if commandStatus1 == 0x11{
-                                                                    _ = AlertController.alert("Something went wrong.", message: "FP TIMEOUT ERROR")
-
-                                                                } else if commandStatus1 == 0x12{
-                                                                    _ = AlertController.alert("Something went wrong.", message: "NOT SUPPORTED")
+                                                                                  self.ErrorMeassge = NSLocalizedString("Eacs CARDTWING"   , comment: "")
+                                                                            //     SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3")
+                                                                    // _ = AlertController.alert("Something went wrong.", message: "Eacs CARDTWING")
+                                                                                } else if commandStatus1 == 0x10{
+                                                                                  self.ErrorMeassge = NSLocalizedString("SYSTEM_HALTED"   , comment: "")
+                                                                             SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3") ?? ""
+                                                                    //  _ = AlertController.alert("Something went wrong.", message: "SYSTEM_HALTED")
+                                                                                } else if commandStatus1 == 0x11{
+                                                                                 self.ErrorMeassge = NSLocalizedString("FP TIMEOUT ERROR"   , comment: "")
+                                                                              SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3") ?? ""
+                                                                    // _ = AlertController.alert("Something went wrong.", message: "FP TIMEOUT ERROR")
                                                                                 } else if commandStatus1 == 0x12{
-                                                                                    _ = AlertController.alert("Something went wrong.", message: "NOT SUPPORTED")
-
-                            
-                                                            } else if commandStatus1 == 0x13{
-                                                                _ = AlertController.alert("Something went wrong.", message: "NOT ENROLLED")
-                                                                
-                                                            
-                                                        } else if commandStatus1 == 0x14{
-                                                            _ = AlertController.alert("Something went wrong.", message: "NO FINGER DETECTED")
-                                                            
-                                                        
-                                                    } else if commandStatus1 == 0x15{
-                                                        _ = AlertController.alert("Something went wrong.", message: "READER ERROR")
-                                                        
-                                                    
-                                                } else if commandStatus1 == 0x16{
-                                                    _ = AlertController.alert("Something went wrong.", message: "Cutomer Mismatch")
-                                                    
-                                                }
- 
-                                                else {
-                                                        _ = AlertController.alert("Something went wrong.", message: "\(commandStatus1)")
-                                                    }
-                                                    return
-                                                    }
+                                                                                self.ErrorMeassge =  NSLocalizedString("NOT SUPPORTED"    , comment: "")
+                                                                             SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3") ?? ""
+                                                                    // _ = AlertController.alert("Something went wrong.", message: "NOT SUPPORTED")
+                                                                                }  else if commandStatus1 == 0x13{
+                                                                                self.ErrorMeassge = NSLocalizedString("NOT ENROLLED"    , comment: "")
+                                                                           SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3") ?? ""
+                                                                    //_ = AlertController.alert("Something went wrong.", message: "NOT ENROLLED")
+                                                                                } else if commandStatus1 == 0x14{
+                                                                                  self.ErrorMeassge = NSLocalizedString("NO FINGER DETECTED" , comment: "")
+                                                                    SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3") ?? ""
+                                                                     //_ = AlertController.alert("Something went wrong.", message: "NO FINGER DETECTED")
+                                                                                } else if commandStatus1 == 0x15{
+                                                                                  self.ErrorMeassge = NSLocalizedString("READER ERROR" , comment: "")
+                                                                      SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3") ?? ""
+                                                                    //_ = AlertController.alert("Something went wrong.", message: "READER ERROR")
+                                                                                } else if commandStatus1 == 0x16{
+                                                                                  self.ErrorMeassge = NSLocalizedString("Cutomer Mismatch"  , comment: "")
+                                                                    SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3") ?? ""
+                                                                    //  _ = AlertController.alert("Something went wrong.", message: "Cutomer Mismatch")
+                                                                                }
+                                                                           else {
+                                                                    self.ErrorMeassge = " \(NSLocalizedString("Something went wrong:"  , comment: "")) \(commandStatus1)"
+                                                                       SoundURL = Bundle.main.path(forResource: "error", ofType: "mp3") ?? ""
+                                                                    // _ = AlertController.alert("Something went wrong.", message: "\(commandStatus1)")
+                                                              }
+                                                              // return
+                                                           }
                                                             if  let date=datetimeTer{
                                                             let formatter = DateFormatter()
                                                             formatter.dateFormat="dd MMM yyyy hh:mm:ss a"
@@ -623,7 +639,21 @@ class ELDeviceListVC: UIViewController,UITableViewDataSource,UITableViewDelegate
                                                             formattedDate="Invalid datetime"
                                                         }
                                                             
-                                                            let userInfoDict = ["badgeNameNo":"\(nameStr)" ,"dateTime":"\(formattedDate!)","Dir":"\(mrequiredfiledir)"]
+                                                            
+                                                            if SoundURL != ""
+                                                            {
+                                                                let SoundPath = URL(fileURLWithPath: SoundURL)
+                                                                
+                                                                self.Player = try? AVAudioPlayer(contentsOf: SoundPath)
+                                                                self.Player.prepareToPlay()
+                                                                self.Player.play()
+                                                                
+                                                                
+                                                            }
+                                                            
+                                                            
+                                                            
+                                                            let userInfoDict = ["badgeNameNo":"\(nameStr)" ,"dateTime":"\(formattedDate!)","Dir":"\(self.ErrorMeassge)","PunchValue":"\(self.punchvalue)"]
                                                             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "punchInformation"), object: nil, userInfo: ["UserInfo":userInfoDict])
                                                             self.dismiss(animated: true, completion: nil)
                                                             
@@ -816,6 +846,27 @@ override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
 }
+    
+    func setinitdatabase()
+    {
+        let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+            .appendingPathComponent("Elsmart.sqlite")
+        
+        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+            print("error opening database")
+        }
+        
+        //creating table
+        if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS tblLogs (id INTEGER PRIMARY KEY AUTOINCREMENT,date REAL,badgeNo TEXT, ter TEXT,direction TEXT)", nil, nil, nil) != SQLITE_OK {
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error creating table: \(errmsg)")
+        }
+        
+        if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS tblTerminals (id INTEGER PRIMARY KEY AUTOINCREMENT,Name TEXT,Address TEXT)", nil, nil, nil) != SQLITE_OK {
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error creating table: \(errmsg)")
+        }
+    }
 
 }
 

@@ -32,19 +32,19 @@ class ELLogsViewController: UIViewController,UICollectionViewDataSource,UICollec
         let logvalue: logs
         if indexPath.section == 0 {
             if indexPath.row == 0 {
-                cell.CustomLabel.text = "Date"
+                cell.CustomLabel.text = NSLocalizedString("Date", comment: "")
             }
             if indexPath.row == 1{
-                cell.CustomLabel.text = "Time"
+                cell.CustomLabel.text = NSLocalizedString("Time", comment: "")
             }
             if indexPath.row == 2{
-                cell.CustomLabel.text = "Ter"
+                cell.CustomLabel.text = NSLocalizedString("TerNo", comment: "")
             }
             if indexPath.row == 3{
-                cell.CustomLabel.text = "Dir"
+                cell.CustomLabel.text = NSLocalizedString("Dir", comment: "")
             }
             if indexPath.row == 4{
-                cell.CustomLabel.text = "Name"
+                cell.CustomLabel.text = NSLocalizedString("Name", comment: "")
             }
         } else {
            if log.count == 0

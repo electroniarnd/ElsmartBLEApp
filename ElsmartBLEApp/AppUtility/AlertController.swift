@@ -45,6 +45,13 @@ open class AlertController {
            
         }
     }
+        
+        
+        open class func alert(_ title: String, message: String, acceptMessage: String) -> UIAlertController {
+            return alert(title, message: message, acceptMessage: acceptMessage) { () -> () in
+                
+            }
+        }
     
     open class func alert(_ title: String, message: String, acceptMessage: String, acceptBlock: @escaping () -> ()) -> UIAlertController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)

@@ -239,8 +239,8 @@ class ELRegistrationVC: UIViewController,UITableViewDataSource,UITableViewDelega
     
     @IBAction func registrationBtnACtion(_ sender: UIButton) {
         self.view.endEditing(true)
-        if self.regObj.regStatus == KRegistered {
-            _ = AlertController.alert("", message: "Do you want to register again?", buttons: ["Cancel","Ok"], tapBlock: { (action, index) in
+        if self.regObj.regStatus == NSLocalizedString(KRegistered, comment: "")  {
+            _ = AlertController.alert("", message: NSLocalizedString("Are you sure to do Registration Again", comment: ""), buttons: [NSLocalizedString("Cancel", comment: ""),NSLocalizedString("Ok", comment: "")], tapBlock: { (action, index) in
                 if index == 1{
                     if self.verifyFields(){
                         self.getCardHolderData()
@@ -256,23 +256,35 @@ class ELRegistrationVC: UIViewController,UITableViewDataSource,UITableViewDelega
     }
     
     @IBAction func unregisterBtnACtion(_ sender: UIButton) {
-       regObj.regStatus = NSLocalizedString(KUnregistered, comment: "")
-        if(regObj.regStatus == NSLocalizedString(KUnregistered, comment: "")){
-            unRegisterBtn.alpha = 0.5
-            unRegisterBtn.isUserInteractionEnabled = false
-        }else{
-            unRegisterBtn.alpha = 1.0
-            unRegisterBtn.isUserInteractionEnabled = true
-        }
-        DispatchQueue.global(qos: .background).async {
-            self.removeUser()
-            // Fetch user data stored locally.
-            self.fetchLastRegisteredUserDataLocally()
-            DispatchQueue.main.async {
-                self.registrationTableView.reloadData()
-            }
-        }
+        
+        
+        
+        _ = AlertController.alert("", message: NSLocalizedString("Are you sure to Unregister?", comment: ""), buttons: [NSLocalizedString("Cancel", comment: ""),NSLocalizedString("Ok", comment: "")], tapBlock: { (action, index) in
+            if index == 1{
+                self.regObj.regStatus = NSLocalizedString(KUnregistered, comment: "")
+                if( self.regObj.regStatus == NSLocalizedString(KUnregistered, comment: "")){
+                     self.unRegisterBtn.alpha = 0.5
+                     self.unRegisterBtn.isUserInteractionEnabled = false
+                }else{
+                     self.unRegisterBtn.alpha = 1.0
+                     self.unRegisterBtn.isUserInteractionEnabled = true
+                }
+                DispatchQueue.global(qos: .background).async {
+                    self.removeUser()
+                    // Fetch user data stored locally.
+                    self.fetchLastRegisteredUserDataLocally()
+                    DispatchQueue.main.async {
+                        self.registrationTableView.reloadData()
+                    }
+                }
 
+            }
+        })
+        
+        
+        
+        
+       
     }
     
     //MARK:- UITableVIew Delegates and DataSource Methods
@@ -541,8 +553,8 @@ class ELRegistrationVC: UIViewController,UITableViewDataSource,UITableViewDelega
                 
                 
                 
-                _ = AlertController.alert("Information", message: "Secondary Data added successfully \n\n BadgeNo: \(self.regObj.regBadgeNo) \n IMEI: \(self.regObj.regIMEI)", buttons: ["Ok"], tapBlock: { (UIAlertAction, Int) in
-                     _ = AlertController.alert("Information", message: "Registered successfully \n\n BadgeNo: \(self.regObj.regBadgeNo) \n IMEI: \(self.regObj.regIMEI)")
+                _ = AlertController.alert( NSLocalizedString("Information", comment: ""), message: " \(NSLocalizedString("Secondary Data added successfully", comment: "")) \n\n \(NSLocalizedString("BadgeNo", comment: "")): \(self.regObj.regBadgeNo) \n IMEI: \(self.regObj.regIMEI)", buttons: ["\(NSLocalizedString("Ok", comment: ""))"], tapBlock: { (UIAlertAction, Int) in
+                    _ = AlertController.alert(NSLocalizedString("Information", comment: ""), message: " \(NSLocalizedString("Registered successfully", comment: "")) \n\n \(NSLocalizedString("BadgeNo", comment: "")): \(self.regObj.regBadgeNo) \n IMEI: \(self.regObj.regIMEI)",acceptMessage: NSLocalizedString("OK", comment: ""))
                 })
 				self.saveData()
                
