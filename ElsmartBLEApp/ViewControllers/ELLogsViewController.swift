@@ -98,6 +98,10 @@ class ELLogsViewController: UIViewController,UICollectionViewDataSource,UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "IPhone5-bg1")
+        backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
             .appendingPathComponent("Elsmart.sqlite")
         

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 //App Colors
-let kAppLightGrayColor = UIColor.init(red: 242/255.0, green: 242/255.0, blue: 242/255.0, alpha: 1.0)
+let kAppLightGrayColor = UIColor.init(red: 0/255.0, green: 0/255.0, blue: 242/255.0, alpha: 1.0)
 let kAppGrayShadowColor = UIColor.init(red: 215/255.0, green: 215/255.0, blue: 215/255.0, alpha: 1.0)
 
 //For Static headings or Titles or ButtonName
@@ -48,9 +48,9 @@ let KLogs              = "Logs"
 let KRegisteredTerminal          = "Registered Terminal"
 let KVSetting           =  "Settings"
 //For Static Messages
-let KBlankBadgeNo       = "Please enter badge number"
-let KBlankIMEI          = "Please enter IMEI"
-let KBlankModelNO       = "Please enter ModelNo"
+let KBlankBadgeNo       = "Badge number is blank or  exceeds the size limit of 10"
+let KBlankIMEI          = "IMEI is blank or  exceeds the size limit of 15"
+let KBlankModelNO       = "ModelNo is blank or  exceeds the size limit of 15"
 let KTurnOnBluetooth    = "TurnOnBluetooth"
 let KBlankServiceUrl    = "Please enter service url"
 let KUnregisteredUser   = "You are not a registered user yet. Please register first."

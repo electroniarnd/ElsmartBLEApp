@@ -50,6 +50,7 @@
 "Ok" = "حسناً";
 "Registered successfully" = "نجاح التسجيل";
 "OK" = "حسناً";
+"Ok" = "حسناً";
 "Are you sure to do Registration Again" = "هل أنت متأكد من القيام بالتسجيل مرة أخرى؟";
 "Are you sure to Unregister?" = "Are you sure to Unregister?";
 
@@ -71,18 +72,20 @@
 "BIO_DEVICE_ERR" = "BIO_DEVICE_ERR";
 "Eacs ACCESCORT" = "Eacs ACCESCORT";
 "Eacs CARDTWING" = "Eacs CARDTWING";
-"SYSTEM_HALTED" = "SYSTEM_HALTED";
+"SYSTEM_HALTED" = "توقف النظام";
 "FP TIMEOUT ERROR" = "FP TIMEOUT ERROR";
-"NOT SUPPORTED" = "NOT SUPPORTED";
-"NOT ENROLLED" = "NOT ENROLLED" ;
-"NO FINGER DETECTED" = "NO FINGER DETECTED";
-"READER ERROR" = "READER ERROR";
-"Cutomer Mismatch" = "Cutomer Mismatch";
-"Something went wrong:" = "Something went wrong:";
+"NOT SUPPORTED" = "غير مدعومة";
+"NOT ENROLLED" = "غير مسجلة" ;
+"NO FINGER DETECTED" = "لم يتم تحديد البصمة";
+"READER ERROR" = "خطأ في القارئ";
+"Cutomer Mismatch" = "المستخدم لا يتطابق ";
+"Something went wrong:" = "خدث شيء خاطئ";
 "Sucessfully deleted" = "تم حذف بنجاح";
 "Could not delete" = "لا يمكن الحذف";
 "Error occurred while deleting a record" = "خطأ أثناء حذف السجل";
-
+"Badge number is blank or  exceeds the size limit of 10" = "Badge number is blank or  exceeds the size limit of 10";
+"IMEI is blank or  exceeds the size limit of 15" = "IMEI is blank or  exceeds the size limit of 15";
+"ModelNo is blank or  exceeds the size limit of 15" = "ModelNo is blank or  exceeds the size limit of 15";
 
 
 //Error Messages
@@ -91,3 +94,7 @@
 "Please enter ModelNo" = "الرجاء إدخال ModelNo";
 "You are not a registered user yet. Please register first." = "أنت لست مستخدم مسجل حتى الآن. الرجاء التسجيل أولاً.";
 "Something went wrong please try again." = "حدث خطأ ما. أعد المحاولة من فضلك.";
+"General Error" = "General Error";
+"AM" = "ص";
+"PM" = "م";
+

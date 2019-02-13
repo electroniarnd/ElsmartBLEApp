@@ -18,6 +18,10 @@ class ELAboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpInitial()
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "IPhone5-bg1")
+        backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
     }
     
     //MARK:- Helper Methods

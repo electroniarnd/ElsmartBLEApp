@@ -128,6 +128,8 @@ class ELTerminalViewController: UIViewController,UICollectionViewDataSource,UICo
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
       //  uiCollectiobvw.reloadData()
        // btndelview.center = self.view.center
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)

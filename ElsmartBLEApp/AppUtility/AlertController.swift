@@ -45,6 +45,12 @@ open class AlertController {
            
         }
     }
+    
+    open class func alert(_ title: String, message: String,ok: String) -> UIAlertController {
+        return alert(title, message: message, acceptMessage: ok) { () -> () in
+            
+        }
+    }
         
         
         open class func alert(_ title: String, message: String, acceptMessage: String) -> UIAlertController {

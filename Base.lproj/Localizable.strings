@@ -81,11 +81,12 @@
 "Sucessfully deleted" = "Sucessfully deleted";
 "Could not delete" = "Could not delete";
 "Error occurred while deleting a record" = "Error occurred while deleting a record";
-
-
-
-
-
+"General Error" = "General Error";
+"AM" = "AM";
+"PM" = "PM";
+"Badge number is blank or  exceeds the size limit of 10" = "Badge number is blank or  exceeds the size limit of 10";
+"IMEI is blank or  exceeds the size limit of 15" = "IMEI is blank or  exceeds the size limit of 15";
+"ModelNo is blank or  exceeds the size limit of 15" = "ModelNo is blank or  exceeds the size limit of 15";
 
 
 //Error Messages

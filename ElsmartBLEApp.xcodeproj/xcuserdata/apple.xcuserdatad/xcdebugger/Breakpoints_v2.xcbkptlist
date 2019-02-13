@@ -6,17 +6,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
-            timestampString = "567410882.360341"
+            timestampString = "571505503.727932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "528"
-            endingLineNumber = "528"
-            landmarkName = "getAdditionalData()"
-            landmarkType = "7">
+            startingLineNumber = "562"
+            endingLineNumber = "562"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
-            timestampString = "567410882.360394"
+            timestampString = "571505503.728052"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "574"
-            endingLineNumber = "574"
-            landmarkName = "saveData()"
-            landmarkType = "7">
+            startingLineNumber = "660"
+            endingLineNumber = "660"
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
@@ -42,11 +42,11 @@
                   moduleName = "ElsmartBLEApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
-                  timestampString = "567431934.174994"
+                  timestampString = "571497918.334718"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "574"
-                  endingLineNumber = "574"
+                  startingLineNumber = "660"
+                  endingLineNumber = "660"
                   offsetFromSymbolStart = "28">
                </Location>
                <Location
@@ -57,11 +57,11 @@
                   moduleName = "ElsmartBLEApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
-                  timestampString = "567431934.176488"
+                  timestampString = "571497918.33639"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "575"
-                  endingLineNumber = "575"
+                  startingLineNumber = "661"
+                  endingLineNumber = "661"
                   offsetFromSymbolStart = "28">
                </Location>
             </Locations>
@@ -74,13 +74,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
-            timestampString = "567410882.360433"
+            timestampString = "571505503.728121"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "fetchLastRegisteredUserDataLocally()"
-            landmarkType = "7">
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -90,13 +90,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
-            timestampString = "567410882.360468"
+            timestampString = "571505503.728181"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "465"
-            endingLineNumber = "465"
-            landmarkName = "getCardHolderData()"
-            landmarkType = "7">
+            startingLineNumber = "499"
+            endingLineNumber = "499"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.000788"
+            timestampString = "571505503.728242"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "367"
-            endingLineNumber = "367"
+            startingLineNumber = "372"
+            endingLineNumber = "372"
             landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.001199"
+            timestampString = "571505503.728326"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "303"
-            endingLineNumber = "303"
+            startingLineNumber = "311"
+            endingLineNumber = "311"
             landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ModelClasses/ELDeviceInfo.swift"
-            timestampString = "567433158.001472"
+            timestampString = "567438243.243359"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "250"
@@ -150,11 +150,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ModelClasses/ELDeviceInfo.swift"
-            timestampString = "567433158.001515"
+            timestampString = "567438243.243396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "265"
@@ -170,7 +170,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ModelClasses/ELDeviceInfo.swift"
-            timestampString = "567433158.001551"
+            timestampString = "567438243.2434289"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "264"
@@ -186,7 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ModelClasses/ELDeviceInfo.swift"
-            timestampString = "567433158.001586"
+            timestampString = "567438243.243462"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
@@ -234,7 +234,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ModelClasses/ELDeviceInfo.swift"
-            timestampString = "567433158.001621"
+            timestampString = "567438243.2434959"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
@@ -250,7 +250,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ModelClasses/ELDeviceInfo.swift"
-            timestampString = "567433158.001654"
+            timestampString = "567438243.243528"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "76"
@@ -266,7 +266,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ModelClasses/ELDeviceInfo.swift"
-            timestampString = "567433158.001687"
+            timestampString = "567438243.243561"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "97"
@@ -282,7 +282,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ModelClasses/ELDeviceInfo.swift"
-            timestampString = "567433158.00172"
+            timestampString = "567438243.243595"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "272"
@@ -294,31 +294,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
-            timestampString = "567410882.360589"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "549"
-            endingLineNumber = "549"
-            landmarkName = "getAdditionalData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.0017689"
+            timestampString = "571505503.728518"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "369"
-            endingLineNumber = "369"
+            startingLineNumber = "374"
+            endingLineNumber = "374"
             landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -326,46 +310,46 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
-            timestampString = "567410882.360633"
+            timestampString = "571505503.728588"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "409"
-            endingLineNumber = "409"
-            landmarkName = "getCardHolderData()"
-            landmarkType = "7">
+            startingLineNumber = "443"
+            endingLineNumber = "443"
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "ElsmartBLEApp.ELRegistrationVC.getCardHolderData() -&gt; ()"
                   moduleName = "ElsmartBLEApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
-                  timestampString = "566749642.095907"
+                  timestampString = "571497918.461442"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "398"
-                  endingLineNumber = "398"
+                  startingLineNumber = "444"
+                  endingLineNumber = "444"
                   offsetFromSymbolStart = "2964">
                </Location>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Optional&lt;Swift.AnyObject&gt;, Swift.Optional&lt;__C.NSError&gt;, Swift.Optional&lt;Swift.Int&gt;) -&gt; () in ElsmartBLEApp.ELRegistrationVC.getCardHolderData() -&gt; ()"
                   moduleName = "ElsmartBLEApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
-                  timestampString = "566749642.097301"
+                  timestampString = "571497918.4628429"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "400"
-                  endingLineNumber = "400"
+                  startingLineNumber = "446"
+                  endingLineNumber = "446"
                   offsetFromSymbolStart = "76">
                </Location>
             </Locations>
@@ -378,13 +362,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
-            timestampString = "567410882.360667"
+            timestampString = "571505503.728682"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "399"
-            endingLineNumber = "399"
-            landmarkName = "getCardHolderData()"
-            landmarkType = "7">
+            startingLineNumber = "433"
+            endingLineNumber = "433"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -394,11 +378,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
-            timestampString = "567409683.658717"
+            timestampString = "571559644.8178"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -410,11 +394,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
-            timestampString = "567409683.6587909"
+            timestampString = "571559644.818115"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -442,11 +426,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
-            timestampString = "567409683.6588759"
+            timestampString = "571559644.818349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -458,11 +442,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
-            timestampString = "567409683.658977"
+            timestampString = "571559644.8185689"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
             landmarkName = "setUpInitial()"
             landmarkType = "7">
          </BreakpointContent>
@@ -474,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELAboutViewController.swift"
-            timestampString = "567013662.290099"
+            timestampString = "569862632.5903029"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "backBtnAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -490,11 +474,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELLogsViewController.swift"
-            timestampString = "567342909.0761549"
+            timestampString = "571475767.6344121"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "BackBtn(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -506,13 +490,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
-            timestampString = "567410882.360757"
+            timestampString = "571505503.72925"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
-            landmarkName = "setUpInitial()"
-            landmarkType = "7">
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -522,11 +506,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELLogsViewController.swift"
-            timestampString = "567342909.076221"
+            timestampString = "571475767.634667"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "readValues()"
             landmarkType = "7">
          </BreakpointContent>
@@ -538,11 +522,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.002126"
+            timestampString = "571505503.729346"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "ELDeviceListVC"
             landmarkType = "3">
          </BreakpointContent>
@@ -554,11 +538,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.002388"
+            timestampString = "571505503.72943"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "216"
-            endingLineNumber = "216"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -570,7 +554,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELTerminalViewController.swift"
-            timestampString = "567419556.1915751"
+            timestampString = "571471016.510697"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
@@ -586,7 +570,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELTerminalViewController.swift"
-            timestampString = "567419556.191619"
+            timestampString = "571471016.511008"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
@@ -602,11 +586,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELLogsViewController.swift"
-            timestampString = "567342909.076786"
+            timestampString = "571475767.634739"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
             landmarkName = "readValues()"
             landmarkType = "7">
          </BreakpointContent>
@@ -618,7 +602,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELLogsViewController.swift"
-            timestampString = "567342909.076825"
+            timestampString = "571475767.634781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "74"
@@ -634,7 +618,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELLogsViewController.swift"
-            timestampString = "567342909.076925"
+            timestampString = "571475767.634818"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
@@ -650,7 +634,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELLogsViewController.swift"
-            timestampString = "567342909.0769989"
+            timestampString = "571475767.634849"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "75"
@@ -666,7 +650,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELLogsViewController.swift"
-            timestampString = "567342909.077039"
+            timestampString = "571475767.634879"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
@@ -682,7 +666,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELLogsViewController.swift"
-            timestampString = "567342909.077075"
+            timestampString = "571475767.634909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -698,7 +682,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELLogsViewController.swift"
-            timestampString = "567342909.0771101"
+            timestampString = "571475767.634939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "76"
@@ -714,11 +698,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELSettingsViewController.swift"
-            timestampString = "567014584.77847"
+            timestampString = "569862632.5911731"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "swBio(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -730,11 +714,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELSettingsViewController.swift"
-            timestampString = "567014584.7785029"
+            timestampString = "569862632.591205"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "swVib(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -746,11 +730,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELSettingsViewController.swift"
-            timestampString = "567014584.778535"
+            timestampString = "569862632.591235"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "swAuto(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -762,11 +746,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.002739"
+            timestampString = "571505503.729632"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "432"
-            endingLineNumber = "432"
+            startingLineNumber = "441"
+            endingLineNumber = "441"
             landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -778,11 +762,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.0029989"
+            timestampString = "571505503.72972"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "430"
-            endingLineNumber = "430"
+            startingLineNumber = "439"
+            endingLineNumber = "439"
             landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -794,11 +778,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELLogsViewController.swift"
-            timestampString = "567342909.077193"
+            timestampString = "571475767.63501"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
             landmarkName = "readValues()"
             landmarkType = "7">
          </BreakpointContent>
@@ -810,11 +794,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.003263"
+            timestampString = "571505503.729813"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "searchForNearByBluetoothDevices()"
             landmarkType = "7">
          </BreakpointContent>
@@ -826,7 +810,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.003511"
+            timestampString = "571505503.729907"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
+            landmarkName = "searchForNearByBluetoothDevices()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.729985"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "153"
@@ -842,27 +842,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.003754"
+            timestampString = "571505503.730073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
-            landmarkName = "searchForNearByBluetoothDevices()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.004105"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "236"
-            endingLineNumber = "236"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
             landmarkName = "writeVal(paripheralDevice:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -874,11 +858,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.004367"
+            timestampString = "571505503.730173"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "searchForNearByBluetoothDevices()"
             landmarkType = "7">
          </BreakpointContent>
@@ -890,11 +874,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.004619"
+            timestampString = "571505503.730262"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "searchForNearByBluetoothDevices()"
             landmarkType = "7">
          </BreakpointContent>
@@ -906,11 +890,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.0048701"
+            timestampString = "571505503.73034"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "DisplayTerminal()"
             landmarkType = "7">
          </BreakpointContent>
@@ -922,11 +906,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.005114"
+            timestampString = "571505503.73043"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "DisplayTerminal()"
             landmarkType = "7">
          </BreakpointContent>
@@ -938,119 +922,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.005353"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "DisplayTerminal()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.005596"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
-            landmarkName = "searchForNearByBluetoothDevices()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.005842"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "483"
-            endingLineNumber = "483"
-            landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.006099"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "235"
-            endingLineNumber = "235"
-            landmarkName = "writeVal(paripheralDevice:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
-            timestampString = "567409683.660054"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.006361"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
-            landmarkName = "searchForNearByBluetoothDevices()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.006605"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
-            landmarkName = "searchForNearByBluetoothDevices()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.0068491"
+            timestampString = "571505503.730517"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "89"
@@ -1066,11 +938,107 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.007094"
+            timestampString = "571505503.730612"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "381"
-            endingLineNumber = "381"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "searchForNearByBluetoothDevices()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.7306989"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "246"
+            endingLineNumber = "246"
+            landmarkName = "writeVal(paripheralDevice:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
+            timestampString = "571559644.819007"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.730889"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "searchForNearByBluetoothDevices()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.730991"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "searchForNearByBluetoothDevices()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.731086"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "DisplayTerminal()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.731174"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "384"
+            endingLineNumber = "384"
             landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1082,27 +1050,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.007345"
+            timestampString = "571505503.73125"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "614"
-            endingLineNumber = "614"
-            landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.007592"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
             landmarkName = "getDate(date1:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1114,11 +1066,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.007834"
+            timestampString = "571505503.7313401"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "638"
-            endingLineNumber = "638"
+            startingLineNumber = "464"
+            endingLineNumber = "464"
             landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1130,11 +1082,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.00808"
+            timestampString = "571505503.731428"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "629"
-            endingLineNumber = "629"
+            startingLineNumber = "455"
+            endingLineNumber = "455"
             landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1146,11 +1098,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.008324"
+            timestampString = "571505503.73155"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "386"
-            endingLineNumber = "386"
+            startingLineNumber = "395"
+            endingLineNumber = "395"
             landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1178,11 +1130,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.008586"
+            timestampString = "571505503.7316819"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "346"
-            endingLineNumber = "346"
+            startingLineNumber = "352"
+            endingLineNumber = "352"
             landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1194,11 +1146,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.008836"
+            timestampString = "571505503.731778"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "345"
-            endingLineNumber = "345"
+            startingLineNumber = "351"
+            endingLineNumber = "351"
             landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1210,11 +1162,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.009081"
+            timestampString = "571505503.731868"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "347"
-            endingLineNumber = "347"
+            startingLineNumber = "353"
+            endingLineNumber = "353"
             landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1226,11 +1178,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.009326"
+            timestampString = "571505503.731959"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "348"
-            endingLineNumber = "348"
+            startingLineNumber = "354"
+            endingLineNumber = "354"
             landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1241,28 +1193,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.009572"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "344"
-            endingLineNumber = "344"
-            landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
-            timestampString = "567409683.660259"
+            timestampString = "571559644.81932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "updateUserInfo(notification:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1274,13 +1210,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
-            timestampString = "567410882.361618"
+            timestampString = "571505503.732152"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "242"
-            endingLineNumber = "242"
-            landmarkName = "registrationBtnACtion(_:)"
-            landmarkType = "7">
+            startingLineNumber = "264"
+            endingLineNumber = "264"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1290,13 +1226,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
-            timestampString = "567410882.361656"
+            timestampString = "571505503.732245"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "241"
-            endingLineNumber = "241"
-            landmarkName = "registrationBtnACtion(_:)"
-            landmarkType = "7">
+            startingLineNumber = "263"
+            endingLineNumber = "263"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1306,13 +1242,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
-            timestampString = "567410882.36169"
+            timestampString = "571505503.7323231"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "287"
-            endingLineNumber = "287"
-            landmarkName = "unregisterBtnACtion(_:)"
-            landmarkType = "7">
+            startingLineNumber = "319"
+            endingLineNumber = "319"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1322,12 +1258,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
-            timestampString = "567410882.3617229"
+            timestampString = "571505503.732401"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "252"
-            endingLineNumber = "252"
-            landmarkName = "registrationBtnACtion(_:)"
+            startingLineNumber = "279"
+            endingLineNumber = "279"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.732475"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "413"
+            endingLineNumber = "413"
+            landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1338,7 +1290,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.009864"
+            timestampString = "571505503.732579"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "403"
+            endingLineNumber = "403"
+            landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.732668"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "404"
@@ -1353,44 +1321,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.010124"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "394"
-            endingLineNumber = "394"
-            landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.01037"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "395"
-            endingLineNumber = "395"
-            landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
-            timestampString = "567409683.6603841"
+            timestampString = "571559644.819593"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "222"
-            endingLineNumber = "222"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
             landmarkName = "connectAction(_:)"
             landmarkType = "7">
             <Locations>
@@ -1434,11 +1370,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
-            timestampString = "567409683.6604331"
+            timestampString = "571559644.819808"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "223"
-            endingLineNumber = "223"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
             landmarkName = "connectAction(_:)"
             landmarkType = "7">
             <Locations>
@@ -1482,11 +1418,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
-            timestampString = "567409683.660488"
+            timestampString = "571559644.820017"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "240"
-            endingLineNumber = "240"
+            startingLineNumber = "249"
+            endingLineNumber = "249"
             landmarkName = "connectAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1498,11 +1434,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
-            timestampString = "567409683.660527"
+            timestampString = "571559644.8202209"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "221"
-            endingLineNumber = "221"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
             landmarkName = "connectAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1514,11 +1450,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
-            timestampString = "567409683.6605771"
+            timestampString = "571559644.820425"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "224"
-            endingLineNumber = "224"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
             landmarkName = "connectAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1530,11 +1466,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
-            timestampString = "567409683.66063"
+            timestampString = "571559644.820628"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "225"
-            endingLineNumber = "225"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
             landmarkName = "connectAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1546,11 +1482,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
-            timestampString = "567409683.660676"
+            timestampString = "571559644.820833"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "235"
-            endingLineNumber = "235"
+            startingLineNumber = "244"
+            endingLineNumber = "244"
             landmarkName = "connectAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1562,7 +1498,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
-            timestampString = "567409683.660727"
+            timestampString = "571559644.821036"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
@@ -1610,11 +1546,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
-            timestampString = "567409683.660768"
+            timestampString = "571559644.8212399"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "220"
-            endingLineNumber = "220"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
             landmarkName = "connectAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1626,7 +1562,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELTerminalViewController.swift"
-            timestampString = "567419556.199088"
+            timestampString = "571471016.511584"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
@@ -1642,7 +1578,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELTerminalViewController.swift"
-            timestampString = "567419556.199131"
+            timestampString = "571471016.51178"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "121"
@@ -1658,13 +1594,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
-            timestampString = "567410882.362246"
+            timestampString = "571505503.733628"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "277"
-            endingLineNumber = "277"
-            landmarkName = "unregisterBtnACtion(_:)"
-            landmarkType = "7">
+            startingLineNumber = "309"
+            endingLineNumber = "309"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1674,7 +1610,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELTerminalViewController.swift"
-            timestampString = "567419556.19918"
+            timestampString = "571471016.511979"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "116"
@@ -1690,7 +1626,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELTerminalViewController.swift"
-            timestampString = "567419556.199217"
+            timestampString = "571471016.512161"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "115"
@@ -1706,7 +1642,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELTerminalViewController.swift"
-            timestampString = "567419556.199253"
+            timestampString = "571471016.512343"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "118"
@@ -1722,11 +1658,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELTerminalViewController.swift"
-            timestampString = "567419556.19929"
+            timestampString = "571471016.5125231"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "readValues()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1738,11 +1674,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELTerminalViewController.swift"
-            timestampString = "567419556.199324"
+            timestampString = "571471016.5127029"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
             landmarkName = "readValues()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1750,15 +1686,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.010754"
+            timestampString = "571505503.733773"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "427"
-            endingLineNumber = "427"
+            startingLineNumber = "436"
+            endingLineNumber = "436"
             landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1766,65 +1702,865 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.0110461"
+            timestampString = "571505503.7338589"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "656"
-            endingLineNumber = "656"
-            landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-            timestampString = "567433158.011284"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "378"
-            endingLineNumber = "378"
+            startingLineNumber = "381"
+            endingLineNumber = "381"
             landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #2 (Foundation.Notification) -&gt; () in ElsmartBLEApp.ELDeviceListVC.getNotifiedForConnectedPeripheral(paripheralDevice: SwiftyBluetooth.Peripheral) -&gt; ()"
                   moduleName = "ElsmartBLEApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-                  timestampString = "567432037.095944"
+                  timestampString = "571493366.346522"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "378"
-                  endingLineNumber = "378"
-                  offsetFromSymbolStart = "7492">
+                  startingLineNumber = "381"
+                  endingLineNumber = "381"
+                  offsetFromSymbolStart = "7428">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Int) -&gt; Swift.Character in closure #2 (Foundation.Notification) -&gt; () in ElsmartBLEApp.ELDeviceListVC.getNotifiedForConnectedPeripheral(paripheralDevice: SwiftyBluetooth.Peripheral) -&gt; ()"
                   moduleName = "ElsmartBLEApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
-                  timestampString = "567432037.0977041"
+                  timestampString = "571493366.347923"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "378"
-                  endingLineNumber = "378"
+                  startingLineNumber = "381"
+                  endingLineNumber = "381"
                   offsetFromSymbolStart = "36">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.733948"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "400"
+            endingLineNumber = "400"
+            landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.734046"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "434"
+            endingLineNumber = "434"
+            landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.734122"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "401"
+            endingLineNumber = "401"
+            landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.734216"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "249"
+            endingLineNumber = "249"
+            landmarkName = "writeVal(paripheralDevice:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.734308"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "542"
+            endingLineNumber = "542"
+            landmarkName = "setTimerForAssignedTime()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.7344019"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "547"
+            endingLineNumber = "547"
+            landmarkName = "setTimerForAssignedTime()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.734496"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "546"
+            endingLineNumber = "546"
+            landmarkName = "setTimerForAssignedTime()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.734587"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "257"
+            endingLineNumber = "257"
+            landmarkName = "writeVal(paripheralDevice:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.734669"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.7347651"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "393"
+            endingLineNumber = "393"
+            landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.734848"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "254"
+            endingLineNumber = "254"
+            landmarkName = "writeVal(paripheralDevice:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.7349401"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "556"
+            endingLineNumber = "556"
+            landmarkName = "cancelTimerInResponse()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.735018"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "255"
+            endingLineNumber = "255"
+            landmarkName = "writeVal(paripheralDevice:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.735101"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "253"
+            endingLineNumber = "253"
+            landmarkName = "writeVal(paripheralDevice:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.735189"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "903"
+            endingLineNumber = "903"
+            landmarkName = "setTimerForPunch()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.735263"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.735358"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.735447"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "searchForNearByBluetoothDevices()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.735543"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "searchForNearByBluetoothDevices()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.735622"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "searchForNearByBluetoothDevices()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.735713"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "searchForNearByBluetoothDevices()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ElsmartBLEApp.ELDeviceListVC.searchForNearByBluetoothDevices() -&gt; ()"
+                  moduleName = "ElsmartBLEApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+                  timestampString = "569687638.082306"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "560">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SwiftyBluetooth.PeripheralScanResult) -&gt; () in ElsmartBLEApp.ELDeviceListVC.searchForNearByBluetoothDevices() -&gt; ()"
+                  moduleName = "ElsmartBLEApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+                  timestampString = "569687638.083665"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SwiftyBluetooth/SwiftyBluetooth/Source/Central.swift"
+            timestampString = "571497844.66342"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "retrievePeripherals(withUUIDs:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftyBluetooth.Central.retrievePeripherals(withUUIDs: Swift.Array&lt;SwiftyBluetooth.CBUUIDConvertible&gt;) -&gt; Swift.Array&lt;SwiftyBluetooth.Peripheral&gt;"
+                  moduleName = "SwiftyBluetooth"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/SwiftyBluetooth/SwiftyBluetooth/Source/Central.swift"
+                  timestampString = "571497918.679333"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "169"
+                  endingLineNumber = "169"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SwiftyBluetooth.CBUUIDConvertible) -&gt; Swift.Optional&lt;Foundation.UUID&gt; in SwiftyBluetooth.Central.retrievePeripherals(withUUIDs: Swift.Array&lt;SwiftyBluetooth.CBUUIDConvertible&gt;) -&gt; Swift.Array&lt;SwiftyBluetooth.Peripheral&gt;"
+                  moduleName = "SwiftyBluetooth"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/SwiftyBluetooth/SwiftyBluetooth/Source/Central.swift"
+                  timestampString = "571497918.6819741"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "169"
+                  endingLineNumber = "169"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SwiftyBluetooth/SwiftyBluetooth/Source/Central.swift"
+            timestampString = "571497844.663468"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "scanForPeripherals(withServiceUUIDs:options:timeoutAfter:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SwiftyBluetooth/SwiftyBluetooth/Source/CBUUIDConvertible.swift"
+            timestampString = "569678776.36036"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "ExtractCBUUIDs(_:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftyBluetooth.ExtractCBUUIDs(Swift.Optional&lt;Swift.Array&lt;SwiftyBluetooth.CBUUIDConvertible&gt;&gt;) -&gt; Swift.Optional&lt;Swift.Array&lt;__C.CBUUID&gt;&gt;"
+                  moduleName = "SwiftyBluetooth"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/SwiftyBluetooth/SwiftyBluetooth/Source/CBUUIDConvertible.swift"
+                  timestampString = "569689363.597592"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SwiftyBluetooth.CBUUIDConvertible) -&gt; __C.CBUUID in SwiftyBluetooth.ExtractCBUUIDs(Swift.Optional&lt;Swift.Array&lt;SwiftyBluetooth.CBUUIDConvertible&gt;&gt;) -&gt; Swift.Optional&lt;Swift.Array&lt;__C.CBUUID&gt;&gt;"
+                  moduleName = "SwiftyBluetooth"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/ios_appwith_ble_for_elsmart-18043195-ios1/ElsmartBLEApp/Pods/SwiftyBluetooth/SwiftyBluetooth/Source/CBUUIDConvertible.swift"
+                  timestampString = "569689363.5999711"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SwiftyBluetooth/SwiftyBluetooth/Source/CentralProxy.swift"
+            timestampString = "571505503.7358429"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "scanWithTimeout(_:serviceUUIDs:options:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SwiftyBluetooth/SwiftyBluetooth/Source/CentralProxy.swift"
+            timestampString = "571505503.735914"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "scanWithTimeout(_:serviceUUIDs:options:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SwiftyBluetooth/SwiftyBluetooth/Source/CentralProxy.swift"
+            timestampString = "571505503.735976"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "scanWithTimeout(_:serviceUUIDs:options:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SwiftyBluetooth/SwiftyBluetooth/Source/CentralProxy.swift"
+            timestampString = "571505503.736033"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "scanWithTimeout(_:serviceUUIDs:options:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SwiftyBluetooth/SwiftyBluetooth/Source/Central.swift"
+            timestampString = "571497844.6636651"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "scanForPeripherals(withServiceUUIDs:options:timeoutAfter:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SwiftyBluetooth/SwiftyBluetooth/Source/SwiftyBluetooth.swift"
+            timestampString = "569692055.245249"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "scanForPeripherals(withServiceUUIDs:options:timeoutAfter:completion:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SwiftyBluetooth/SwiftyBluetooth/Source/Central.swift"
+            timestampString = "571497844.6637191"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "setSharedInstanceWith(restoreIdentifier:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SwiftyBluetooth/SwiftyBluetooth/Source/Central.swift"
+            timestampString = "571497844.663761"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "init(stateRestoreIdentifier:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
+            timestampString = "571505503.7361521"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "569"
+            endingLineNumber = "569"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
+            timestampString = "571505503.7362241"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "563"
+            endingLineNumber = "563"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SwiftyBluetooth/SwiftyBluetooth/Source/Central.swift"
+            timestampString = "571497844.6638891"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "init(stateRestoreIdentifier:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
+            timestampString = "571559644.82177"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
+            timestampString = "571559644.8219841"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "touchesBegan(_:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
+            timestampString = "571505503.736499"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
+            timestampString = "571505503.736565"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "707"
+            endingLineNumber = "707"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELRegistrationVC.swift"
+            timestampString = "571505503.736653"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "706"
+            endingLineNumber = "706"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELTerminalViewController.swift"
+            timestampString = "571471023.240916"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "btndelete(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.736757"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
+            landmarkName = "writeVal(paripheralDevice:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELHomeVC.swift"
+            timestampString = "571559644.822234"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "updateUserInfo(notification:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.7369061"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "882"
+            endingLineNumber = "882"
+            landmarkName = "DisplayValue(formattedDate:nameStr:Meassge:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElsmartBLEApp/ViewControllers/ELDeviceListVC.swift"
+            timestampString = "571505503.736999"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "383"
+            endingLineNumber = "383"
+            landmarkName = "getNotifiedForConnectedPeripheral(paripheralDevice:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

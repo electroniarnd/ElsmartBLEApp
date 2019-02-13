@@ -8,15 +8,17 @@
 
 import UIKit
 import AudioToolbox
+import SQLite3
 
 class ELRegistrationVC: UIViewController,UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate,UIGestureRecognizerDelegate {
    
+    let defaults = UserDefaults.standard
     @IBOutlet weak var registrationTableView: UITableView!
     @IBOutlet weak var navBarHeightConst: NSLayoutConstraint!
     @IBOutlet weak var registerBtn: ELCustomShadowButton!
     @IBOutlet weak var unRegisterBtn: ELCustomShadowButton!
     @IBOutlet weak var registrationTitleLbl: ELCustomLabel!
-    
+    var db: OpaquePointer?
     var registrationTitleList = [String]()
     var regObj = ELRegistrationInfo.registrationObject
     var additionaltDataList = NSMutableArray()
@@ -28,6 +30,26 @@ class ELRegistrationVC: UIViewController,UITableViewDataSource,UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+            .appendingPathComponent("Elsmart.sqlite")
+        
+        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+            print("error opening database")
+        }
+        
+        //creating table
+        if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS tblTerminals (id INTEGER PRIMARY KEY AUTOINCREMENT,Name TEXT,Address TEXT)", nil, nil, nil) != SQLITE_OK {
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error creating table: \(errmsg)")
+        }
+        
+        if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS tblLogs (id INTEGER PRIMARY KEY AUTOINCREMENT,Name TEXT,Address TEXT)", nil, nil, nil) != SQLITE_OK {
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error creating table: \(errmsg)")
+        }
+        
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -159,14 +181,14 @@ class ELRegistrationVC: UIViewController,UITableViewDataSource,UITableViewDelega
     func verifyFields() -> Bool{
         var verify = true
         // ---  email validation  ---
-        if regObj.regBadgeNo == "" {
+        if regObj.regBadgeNo == "" || regObj.regBadgeNo.count > 10 {
             _ = AlertController.alert("", message: NSLocalizedString(KBlankBadgeNo, comment: ""))
             verify = false
-        }else if regObj.regIMEI == "" {
+        }else if regObj.regIMEI == "" || regObj.regIMEI.count  > 15 {
             _ = AlertController.alert("", message: NSLocalizedString(KBlankIMEI, comment: ""))
             verify = false
             // ---  password validation  ---
-        }else if regObj.regModelNo == ""{
+        }else if regObj.regModelNo == "" || regObj.regModelNo.count > 15{
             _ = AlertController.alert("", message: NSLocalizedString(KBlankModelNO, comment: ""))
             verify = false
         }
@@ -244,6 +266,11 @@ class ELRegistrationVC: UIViewController,UITableViewDataSource,UITableViewDelega
                 if index == 1{
                     if self.verifyFields(){
                         self.getCardHolderData()
+                        self.defaults.set("0", forKey: "AutoValue")
+                        self.defaults.set("0", forKey: "BiometricValue")
+                        self.defaults.set("0", forKey: "VibrationValue")
+                        self.Delete_Terminal()
+                        self.Delete_Logs()
                     }
                 }
             })
@@ -271,6 +298,11 @@ class ELRegistrationVC: UIViewController,UITableViewDataSource,UITableViewDelega
                 }
                 DispatchQueue.global(qos: .background).async {
                     self.removeUser()
+                     self.defaults.set("0", forKey: "AutoValue")
+                     self.defaults.set("0", forKey: "BiometricValue")
+                     self.defaults.set("0", forKey: "VibrationValue")
+                     self.Delete_Terminal()
+                     self.Delete_Logs()
                     // Fetch user data stored locally.
                     self.fetchLastRegisteredUserDataLocally()
                     DispatchQueue.main.async {
@@ -352,9 +384,11 @@ class ELRegistrationVC: UIViewController,UITableViewDataSource,UITableViewDelega
             return cell
         case 8:
             if regObj.regStatus ==  NSLocalizedString(KRegistered, comment: ""){
-                cell.descriptionTextField.layer.backgroundColor = UIColor.green.cgColor
+//                cell.descriptionTextField.layer.backgroundColor = UIColor.green.cgColor
+                 cell.descriptionTextField.textColor = UIColor.green
             }else{
-                cell.descriptionTextField.layer.backgroundColor = UIColor.red.cgColor
+                cell.descriptionTextField.textColor = UIColor.red
+              //  cell.descriptionTextField.layer.backgroundColor = UIColor.red.cgColor
             }
             cell.descriptionTextField.text = regObj.regStatus
             cell.descriptionTextField.isUserInteractionEnabled = false
@@ -532,30 +566,27 @@ class ELRegistrationVC: UIViewController,UITableViewDataSource,UITableViewDelega
                 }
 
                 //Store info into model class from API response
-                if let additionalDataArr = additionalDataArr[1]{
+                if let additionalDataArr = additionalDataArr[2]{
                     self.regObj.regTitle = additionalDataArr
                 }
-                if let additionalDataArr = additionalDataArr[2]  {
+                if let additionalDataArr = additionalDataArr[1]  {
                     self.regObj.regDepartment = additionalDataArr
                 }
-                if let additionalDataArr = additionalDataArr[3]  {
-                    self.regObj.regCardExpired = additionalDataArr
-                }
-                if let additionalDataArr =  additionalDataArr[4] {
-                    self.regObj.regCardValidFrom = additionalDataArr
-                }
-                if let additionalDataArr = additionalDataArr[5]{
-                    self.regObj.regCardIsuedFrom = additionalDataArr
-                }
+              let additionalDataArr1 = additionalDataArr[5] ?? ""///self.getFormattedDate(string: additionalDataArr[5] ?? "")     // let additionalDataArr1 = self.getFormattedDate(string: additionalDataArr[5] ?? "")
+                    self.regObj.regCardExpired = additionalDataArr1
+                let additionalDataArr2 = additionalDataArr[4] ?? ""//self.getFormattedDate(string: additionalDataArr[4] ?? "")
+                     self.regObj.regCardValidFrom = additionalDataArr2
+                let additionalDataArr3 = additionalDataArr[3] ?? ""//self.getFormattedDate(string: additionalDataArr[3] ?? "")
+                    self.regObj.regCardIsuedFrom = additionalDataArr3
+                
+                
                 if  let additionalDataArr = additionalDataArr[6]{
                     self.regObj.regUsername = additionalDataArr
                 }
                 
                 
                 
-                _ = AlertController.alert( NSLocalizedString("Information", comment: ""), message: " \(NSLocalizedString("Secondary Data added successfully", comment: "")) \n\n \(NSLocalizedString("BadgeNo", comment: "")): \(self.regObj.regBadgeNo) \n IMEI: \(self.regObj.regIMEI)", buttons: ["\(NSLocalizedString("Ok", comment: ""))"], tapBlock: { (UIAlertAction, Int) in
-                    _ = AlertController.alert(NSLocalizedString("Information", comment: ""), message: " \(NSLocalizedString("Registered successfully", comment: "")) \n\n \(NSLocalizedString("BadgeNo", comment: "")): \(self.regObj.regBadgeNo) \n IMEI: \(self.regObj.regIMEI)",acceptMessage: NSLocalizedString("OK", comment: ""))
-                })
+                _ = AlertController.alert( NSLocalizedString("Information", comment: ""), message: " \(NSLocalizedString("Registered successfully", comment: "")) \n\n \(NSLocalizedString("BadgeNo", comment: "")): \(self.regObj.regBadgeNo) \n IMEI: \(self.regObj.regIMEI)",ok: NSLocalizedString("OK", comment: ""))
 				self.saveData()
                
                 
@@ -567,7 +598,62 @@ class ELRegistrationVC: UIViewController,UITableViewDataSource,UITableViewDelega
             
         }
     }
-	
+    
+    func Delete_Terminal(){
+    let queryString = "delete FROM tblTerminals"
+    
+    //statement pointer
+    var stmt:OpaquePointer?
+    
+    //preparing the query
+    if sqlite3_prepare_v2(self.db, queryString, -1, &stmt, nil) == SQLITE_OK{
+    if sqlite3_step(stmt) == SQLITE_DONE
+    {
+   // AlertController.alert( "",message: NSLocalizedString("Sucessfully deleted", comment: ""))
+    //print("Sucessfully deleted")
+    }
+    else
+    {
+    AlertController.alert( "",message: NSLocalizedString("Could not delete", comment: ""))
+    print("could not delete.")
+    }
+    }
+    else
+    {
+    AlertController.alert( NSLocalizedString("Something went wrong", comment: ""),message: NSLocalizedString("Error occurred while deleting a record", comment: ""))
+    print("Error occurred while deleting a record")
+    }
+    sqlite3_finalize(stmt)
+    }
+    
+    
+    
+    func Delete_Logs(){
+        let queryString = "delete FROM tblLogs"
+        
+        //statement pointer
+        var stmt:OpaquePointer?
+        
+        //preparing the query
+        if sqlite3_prepare_v2(self.db, queryString, -1, &stmt, nil) == SQLITE_OK{
+            if sqlite3_step(stmt) == SQLITE_DONE
+            {
+                //AlertController.alert( "",message: NSLocalizedString("Sucessfully deleted", comment: ""))
+               // print("Sucessfully deleted")
+            }
+            else
+            {
+                AlertController.alert( "",message: NSLocalizedString("Could not delete", comment: ""))
+                print("could not delete.")
+            }
+        }
+        else
+        {
+            AlertController.alert( NSLocalizedString("Something went wrong", comment: ""),message: NSLocalizedString("Error occurred while deleting a record", comment: ""))
+            print("Error occurred while deleting a record")
+        }
+        sqlite3_finalize(stmt)
+    }
     // MARK:- Save data locally.
 	func saveData(){
         
@@ -616,4 +702,19 @@ class ELRegistrationVC: UIViewController,UITableViewDataSource,UITableViewDelega
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+     func getFormattedDate(string: String) -> String{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy hh:mm:ss a" // This formate is input formated .
+        if !string.isEmpty
+        {
+            let formateDate = dateFormatter.date(from:string)!//"2018-02-02 06:50:16 +0000")
+            dateFormatter.dateFormat = "dd MMM yyyy" // Output Formated
+            
+            print ("Print :\(dateFormatter.string(from: formateDate))")//Print :02-02-2018
+            return dateFormatter.string(from: formateDate)
+        }
+         return ""
+    }
+    
 }

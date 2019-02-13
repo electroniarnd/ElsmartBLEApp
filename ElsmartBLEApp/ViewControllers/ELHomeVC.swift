@@ -81,11 +81,18 @@ class ELHomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate,CBCen
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         homeMenuView.isHidden = true
+         self.responseView.isHidden = true
+        self.checkMarkBtn.isHidden = true
     }
 	
 	override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 		updateLabels()
+        
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "IPhone5-bg1")
+        backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
         
         NotificationCenter.default.addObserver(self, selector: #selector(updateUserInfo(notification:)), name: NSNotification.Name(rawValue: "punchInformation"), object: nil)
 		
@@ -103,19 +110,21 @@ class ELHomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate,CBCen
                let dict = info.validatedValue("UserInfo", expected: NSDictionary() as AnyObject) as? Dictionary<String,Any>
                 self.responseView.isHidden = false
                 self.statusIdLabel.text = dict?.validatedValue("badgeNameNo", expected: "" as AnyObject) as? String
+                print( dict?.validatedValue("badgeNameNo", expected: "" as AnyObject) as? String)
                 self.dateLabel.text = dict?.validatedValue("dateTime", expected: "" as AnyObject) as? String
                 self.dir.text = dict?.validatedValue("Dir", expected: "" as AnyObject) as? String
                  let PunchValue = dict?.validatedValue("PunchValue", expected: "" as AnyObject) as? String
               
-                self.checkMarkBtn.isHidden = false
+                 self.checkMarkBtn.isHidden = false
                   if PunchValue == "1"
                   {
-                    let img = UIImage(named: "tick")
-                    self.checkMarkBtn.setImage(img, for: .normal)
+                  let img = UIImage(named: "tick")
+                  self.checkMarkBtn.setImage(img, for: .normal)
+                  //self.checkMarkBtn.setBackgroundImage(img, for: UIControlState.normal)
                   }
                 else
                   {
-                    let img = UIImage(named: "cross180")
+                    let img = UIImage(named: "cross1")
                     self.checkMarkBtn.setImage(img, for: .normal)
                     
                   }
@@ -245,14 +254,15 @@ class ELHomeVC: UIViewController,UITableViewDataSource,UITableViewDelegate,CBCen
 	
 	func updateLabels()  {
 		if let badgeNumber = NSUSERDEFAULT.value(forKey: "badgeNumber") {
-				statusDescriptionLbl.text = NSLocalizedString(KRegistered, comment: "")
-				statusDescriptionLbl.backgroundColor = .green
-				badgeNoLbl.text = badgeNumber as? String
-				nameLbl.text = NSUSERDEFAULT.value(forKey: "regUsername") as? String
+            statusDescriptionLbl.text = NSLocalizedString(KRegistered, comment: "")
+          //  statusDescriptionLbl.backgroundColor = .green
+            badgeNoLbl.text = badgeNumber as? String
+            nameLbl.text = NSUSERDEFAULT.value(forKey: "regUsername") as? String
+            nameLbl.isHidden=true
     // self.badgeNoLabel.text = badgeNumber as? String
 		} else {
-				statusDescriptionLbl.text = NSLocalizedString(KUnregistered, comment: "")
-				statusDescriptionLbl.backgroundColor = .red
+            statusDescriptionLbl.text = NSLocalizedString(KUnregistered, comment: "")
+            //statusDescriptionLbl.backgroundColor = .red
 		}
 	}
     
